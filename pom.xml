@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.akarazhev</groupId>
+    <artifactId>java-tutorial</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>java-tutorial</name>
+    <description>Java Tutorial</description>
+    <url>http://akarazhev.github.io/java-tutorial</url>
+
+    <properties>
+        <maven.compiler.release>11</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.plugin>3.8.1</maven.compiler.plugin>
+        <junit.version>5.5.2</junit.version>
+    </properties>
+
+    <modules>
+        <module>algorithms</module>
+        <module>data-structures</module>
+        <module>design-patterns</module>
+    </modules>
+
+    <developers>
+        <developer>
+            <name>Andrey Karazhev</name>
+            <email>karazhev@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/akarazhev/java-tutorial</url>
+        <connection>scm:git:git://github.com/akarazhev/java-tutorial.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:akarazhev/java-tutorial.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <dependencies>
+        <!-- Test dependencies -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven.compiler.plugin}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
