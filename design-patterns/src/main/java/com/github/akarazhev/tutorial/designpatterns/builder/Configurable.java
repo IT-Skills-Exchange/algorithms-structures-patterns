@@ -73,13 +73,13 @@ interface Configurable {
         private void setProperties(final Collection<Property> target, final int index, final String[] paths,
                                    final Collection<Property> source) {
             if (index < paths.length) {
-                final int nextIndex = index + 1;
+                final var nextIndex = index + 1;
                 final var current = target.stream().
                         filter(property -> paths[index].equals(property.getName())).findFirst();
                 if (current.isPresent()) {
                     setProperties(current.get().getProps(), nextIndex, paths, source);
                 } else {
-                    final Property newProperty = new Property.Builder(paths[index], "").build();
+                    final var newProperty = new Property.Builder(paths[index], "").build();
                     target.add(newProperty);
                     setProperties(newProperty.getProps(), nextIndex, paths, source);
                 }

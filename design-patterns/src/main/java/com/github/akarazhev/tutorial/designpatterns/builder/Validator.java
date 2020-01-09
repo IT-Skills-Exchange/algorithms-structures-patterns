@@ -110,7 +110,7 @@ public final class Validator<T> {
             return object;
         }
 
-        final IllegalStateException exception = new IllegalStateException();
+        final var exception = new IllegalStateException();
         exceptions.forEach(exception::addSuppressed);
         throw exception;
     }
