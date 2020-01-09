@@ -174,4 +174,4 @@ final var property = new Property.Builder("Property", "Value").
 
 ### Links
 
-* [Builder pattern](https://en.wikipedia.org/wiki/Builder_pattern)
+* [Builder Pattern](https://en.wikipedia.org/wiki/Builder_pattern)
