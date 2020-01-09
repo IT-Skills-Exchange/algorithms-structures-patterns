@@ -1,7 +1,9 @@
 # design-patterns
 design-patterns
 
-## The Builder Pattern
+## Builder pattern
+
+The pattern belongs the creational category.
 
 ### Solution to the problem 
 
@@ -21,7 +23,13 @@ Wikipedia says:
 
 > The builder pattern is an object creation software design pattern with the intentions of finding a solution to the telescoping constructor anti-pattern.
 
-### Example
+### Class diagram
+
+The class diagram will be:
+
+![alt text](./etc/builder.png "Builder class diagram")
+
+### Coding example
 
 Let's create a property:
 
