@@ -1,2 +1,2 @@
-module com.github.akarazhev.tutorial.designpatterns {
+open module com.github.akarazhev.tutorial.designpatterns {
 }
