@@ -1,8 +1,8 @@
-# Builder pattern
+# The Builder Pattern
 
 The pattern belongs the creational category.
 
-## Solution to the problem 
+## Solution To The Problem 
 
 Separate the construction of a complex object from its representation so that the same construction process can create different representations.
 
@@ -20,13 +20,13 @@ Wikipedia says:
 
 > The builder pattern is an object creation software design pattern with the intentions of finding a solution to the telescoping constructor anti-pattern.
 
-## Class diagram
+## Class Diagram
 
 The class diagram will be:
 
 ![alt text](../etc/builder.png "Builder class diagram")
 
-## Coding example
+## Coding Example
 
 Let's create a property:
 
@@ -168,7 +168,7 @@ final var property = new Property.Builder("Property", "Value").
     build();
 ```
 
-## Real world examples
+## Real World Examples
 
 * [java.lang.StringBuilder](http://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html)
 * [java.nio.ByteBuffer](http://docs.oracle.com/javase/8/docs/api/java/nio/ByteBuffer.html#put-byte-) as well as similar buffers such as FloatBuffer, IntBuffer and so on.

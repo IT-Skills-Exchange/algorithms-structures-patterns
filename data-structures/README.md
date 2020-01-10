@@ -1,3 +1,3 @@
-# data-structures
+# Data Structures
 
 The data structures tutorial.

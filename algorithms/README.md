@@ -1,3 +1,3 @@
-# algorithms
+# Algorithms
 
 The algorithms tutorial.

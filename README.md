@@ -1,3 +1,3 @@
-# java-tutorial
+# Java Tutorial
 
 The java tutorial.

@@ -1,3 +1,3 @@
-# design-patterns
+# Design Patterns
 
 The design patterns tutorial.
