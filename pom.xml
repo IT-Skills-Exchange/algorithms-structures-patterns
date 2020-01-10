@@ -12,9 +12,10 @@
     <url>http://akarazhev.github.io/java-tutorial</url>
 
     <properties>
-        <maven.compiler.release>11</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>11</maven.compiler.release>
         <maven.compiler.plugin>3.8.1</maven.compiler.plugin>
+        <maven.surefire.plugin>2.22.2</maven.surefire.plugin>
         <junit.version>5.5.2</junit.version>
     </properties>
 
@@ -54,6 +55,10 @@
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>${maven.compiler.plugin}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven.surefire.plugin}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
