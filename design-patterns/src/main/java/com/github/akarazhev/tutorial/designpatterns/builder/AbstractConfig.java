@@ -8,7 +8,6 @@ import java.util.stream.Stream;
  * and provides additional functionality for getting properties.
  */
 abstract class AbstractConfig implements Configurable {
-
     /**
      * Returns a property by paths.
      *

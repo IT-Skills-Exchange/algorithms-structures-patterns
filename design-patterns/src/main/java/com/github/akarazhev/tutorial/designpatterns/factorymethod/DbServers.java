@@ -15,6 +15,7 @@ public final class DbServers {
      * Returns a default H2db server.
      *
      * @return a h2db server.
+     * @throws SQLException when a db server encounters a problem.
      */
     public static DbServer newH2dbServer() throws SQLException {
         return new H2dbServer();

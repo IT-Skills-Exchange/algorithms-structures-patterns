@@ -4,7 +4,10 @@ import org.h2.tools.Server;
 
 import java.sql.SQLException;
 
-public final class H2dbServer implements DbServer {
+/**
+ * Provides basic implementation for the h2db server.
+ */
+final class H2dbServer implements DbServer {
     private Server server;
 
     /**
