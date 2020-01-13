@@ -3,13 +3,13 @@ package com.github.akarazhev.tutorial.designpatterns.factorymethod;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Servers test")
-final class ServersTest {
+@DisplayName("WebServers test")
+final class WebServersTest {
 
     @Test
     @DisplayName("Start a new http server")
     void startNewHttpServer() throws Exception {
-        final var server = Servers.newHttpServer().start();
+        final var server = WebServers.newHttpServer().start();
         // todo
         server.stop();
     }
@@ -17,7 +17,7 @@ final class ServersTest {
     @Test
     @DisplayName("Start a new https server")
     void startNewHttpsServer() throws Exception {
-        final var server = Servers.newHttpsServer().start();
+        final var server = WebServers.newHttpsServer().start();
         // todo
         server.stop();
     }

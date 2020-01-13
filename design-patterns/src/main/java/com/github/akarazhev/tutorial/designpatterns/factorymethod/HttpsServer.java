@@ -13,10 +13,15 @@ import java.security.KeyStore;
 /**
  * Provides basic implementation for the https server.
  */
-final class HttpsServer implements Server {
+final class HttpsServer implements WebServer {
     private com.sun.net.httpserver.HttpsServer httpsServer;
 
-    public HttpsServer() throws Exception {
+    /**
+     * Constructs a default https server.
+     *
+     * @throws Exception when a https server encounters a problem.
+     */
+    HttpsServer() throws Exception {
         httpsServer = com.sun.net.httpserver.HttpsServer.create();
         httpsServer.bind(new InetSocketAddress(8080), 0);
         httpsServer.createContext("/", exchange -> exchange.sendResponseHeaders(200, 0));
@@ -46,7 +51,7 @@ final class HttpsServer implements Server {
      * {@inheritDoc}
      */
     @Override
-    public Server start() {
+    public WebServer start() {
         httpsServer.start();
         return this;
     }
