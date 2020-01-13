@@ -1,12 +1,14 @@
 package com.github.akarazhev.tutorial.designpatterns;
 
 import com.github.akarazhev.tutorial.designpatterns.builder.Property;
+import org.h2.jdbcx.JdbcConnectionPool;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Modifier;
 import java.util.Collections;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -29,5 +31,13 @@ public class UnitTest {
         constructor.setAccessible(true);
         assertThrows(InvocationTargetException.class, constructor::newInstance);
         constructor.setAccessible(false);
+    }
+
+    protected void assertGetSchema() throws Exception {
+        final var pool = JdbcConnectionPool.create("jdbc:h2:tcp://localhost:8043/./etc/tutorial", "sa", "sa");
+        final var connection = pool.getConnection();
+        assertEquals("PUBLIC", connection.getSchema());
+        connection.close();
+        pool.dispose();
     }
 }

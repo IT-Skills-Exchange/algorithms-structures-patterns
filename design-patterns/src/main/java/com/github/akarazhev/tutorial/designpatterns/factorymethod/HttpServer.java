@@ -14,9 +14,19 @@ final class HttpServer implements WebServer {
      * @throws Exception when a http server encounters a problem.
      */
     HttpServer() throws Exception {
+        final var payload = "pong";
         httpServer = com.sun.net.httpserver.HttpServer.create();
         httpServer.bind(new InetSocketAddress(8080), 0);
-        httpServer.createContext("/", exchange -> exchange.sendResponseHeaders(200, 0));
+        httpServer.createContext("/ping", exchange -> {
+            exchange.sendResponseHeaders(200, payload.getBytes().length);
+
+            final var output = exchange.getResponseBody();
+            output.write(payload.getBytes());
+            output.flush();
+
+            exchange.close();
+
+        });
         httpServer.setExecutor(null);
     }
 
