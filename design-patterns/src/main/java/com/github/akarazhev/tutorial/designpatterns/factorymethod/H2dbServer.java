@@ -8,7 +8,7 @@ import java.sql.SQLException;
  * Provides basic implementation for the h2db server.
  */
 final class H2dbServer implements DbServer {
-    private Server server;
+    private final Server server;
 
     /**
      * Constructs a default h2db server.

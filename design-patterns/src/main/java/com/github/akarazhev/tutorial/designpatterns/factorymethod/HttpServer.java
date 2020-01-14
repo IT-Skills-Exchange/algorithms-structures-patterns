@@ -6,7 +6,7 @@ import java.net.InetSocketAddress;
  * Provides basic implementation for the http server.
  */
 final class HttpServer implements WebServer {
-    private com.sun.net.httpserver.HttpServer httpServer;
+    private final com.sun.net.httpserver.HttpServer httpServer;
 
     /**
      * Constructs a default http server.

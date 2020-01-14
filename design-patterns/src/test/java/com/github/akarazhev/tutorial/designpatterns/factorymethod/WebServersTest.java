@@ -10,6 +10,9 @@ import java.net.http.HttpResponse;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * Provides factory methods to create web servers test.
+ */
 @DisplayName("WebServers test")
 final class WebServersTest {
 

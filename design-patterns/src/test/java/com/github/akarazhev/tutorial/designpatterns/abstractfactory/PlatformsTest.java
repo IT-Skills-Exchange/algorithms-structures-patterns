@@ -5,6 +5,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+/**
+ * Provides a factory method to create an appropriate platform test.
+ */
 @DisplayName("Platforms test")
 final class PlatformsTest {
 

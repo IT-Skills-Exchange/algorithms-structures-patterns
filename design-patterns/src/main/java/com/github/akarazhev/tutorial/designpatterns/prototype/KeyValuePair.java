@@ -17,7 +17,7 @@ public final class KeyValuePair<T> implements Cloneable {
      * @param key   a key.
      * @param value a value.
      */
-    public KeyValuePair(String key, T value) {
+    public KeyValuePair(final String key, final T value) {
         this.key = Validator.of(key).get();
         this.value = Validator.of(value).get();
     }
@@ -56,12 +56,17 @@ public final class KeyValuePair<T> implements Cloneable {
      * {@inheritDoc}
      */
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        KeyValuePair<?> that = (KeyValuePair<?>) o;
-        return key.equals(that.key) &&
-                value.equals(that.value);
+    public boolean equals(final Object o) {
+        if (this == o) {
+            return true;
+        }
+
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+
+        final var that = (KeyValuePair<?>) o;
+        return key.equals(that.key) && value.equals(that.value);
     }
 
     /**

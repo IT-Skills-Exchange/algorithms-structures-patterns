@@ -12,6 +12,9 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * The property model that contains parameters, attributes and properties test.
+ */
 @DisplayName("Property test")
 final class PropertyTest extends UnitTest {
 

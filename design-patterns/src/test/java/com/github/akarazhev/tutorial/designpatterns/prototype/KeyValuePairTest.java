@@ -5,6 +5,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * Simple key-value util object test.
+ */
 @DisplayName("KeyValuePair test")
 final class KeyValuePairTest {
 

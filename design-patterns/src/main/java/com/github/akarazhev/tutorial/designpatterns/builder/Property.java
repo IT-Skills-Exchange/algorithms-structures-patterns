@@ -165,8 +165,14 @@ public final class Property extends AbstractConfig {
      */
     @Override
     public boolean equals(final Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+
         final var property = (Property) o;
         return Objects.equals(name, property.name) &&
                 Objects.equals(caption, property.caption) &&

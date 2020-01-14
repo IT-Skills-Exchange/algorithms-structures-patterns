@@ -24,7 +24,7 @@ public enum Logger {
      *
      * @param level a level value.
      */
-    public void setLevel(int level) {
+    public void setLevel(final int level) {
         this.level.set(level);
     }
 
