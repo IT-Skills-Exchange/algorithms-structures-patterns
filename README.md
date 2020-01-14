@@ -1,16 +1,40 @@
 # Java Tutorial
 
 This java tutorial is not a tutorial that will teach you the language itself, it's the collection of code samples which 
-can be used for better understanding ideas behind concepts of design patterns, data structures, algorithms. Every topic 
-has a small explanation of the problem or idea and the solution, you can use it as you wish and you want.
+can be used for better understanding ideas behind concepts of design patterns, data structures, algorithms. It assumes 
+that you are already familiar with the language. Each topic has a small explanation of the problem or idea and the solution, 
+you can use it as you wish and you want.
 
-## [Design Patterns](design-patterns/README.md)
+NOTE: The tutorial is not fully ready.
 
-## [Data Structures](data-structures/README.md)
+## [Design Patterns](design-patterns/README.md "The design patterns chapter")
 
-## [Algorithms](algorithms/README.md)
+In this tutorial the following design patterns will be described:
+
+* Creational: Abstract Factory, Builder, Factory Method, Prototype, Singleton; 
+* Structural: Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy; 
+* Behavioral: Chain Of Responsibility, Commander, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, 
+Template Method, Visitor.
+
+## [Data Structures](data-structures/README.md "The data structures chapter")
+
+In this tutorial the following data structures will be described:
+
+TODO
+
+## [Algorithms](algorithms/README.md "The algorithms chapter")
+
+In this tutorial the following algorithms will be described:
+
+TODO
 
 ## Build Requirements
 
-- Java 11+
-- Maven 3.6+
+* Java 11+
+* Maven 3.6+
+
+## Links
+
+* [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns "Design patterns in Wikipedia")
+* [Data Structures](https://en.wikipedia.org/wiki/List_of_data_structures "Data structures in Wikipedia") 
+* [Algorithm](https://en.wikipedia.org/wiki/Algorithm "Algorithm in Wikipedia") 
