@@ -11,7 +11,8 @@ NOTE: The tutorial is not fully ready.
 
 In this tutorial the following design patterns will be described:
 
-* Creational: Abstract Factory, Builder, Factory Method, Prototype, Singleton; 
+* Creational: Abstract Factory, [Builder](design-patterns/doc/builder.md "The builder chapter"), Factory Method, 
+Prototype, [Singleton](design-patterns/doc/singleton.md "The singleton chapter"); 
 * Structural: Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy; 
 * Behavioral: Chain Of Responsibility, Commander, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, 
 Template Method, Visitor.
@@ -20,13 +21,13 @@ Template Method, Visitor.
 
 In this tutorial the following data structures will be described:
 
-TODO
+TODO:
 
 ## [Algorithms](algorithms/README.md "The algorithms chapter")
 
 In this tutorial the following algorithms will be described:
 
-TODO
+TODO:
 
 ## Build Requirements
 

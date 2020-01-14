@@ -1,24 +1,23 @@
 # The Builder Pattern
 
-The pattern belongs the creational category.
+The pattern belongs to the creational category of the design patterns.
 
-## Solution To The Problem 
+## Idea 
 
-Separate the construction of a complex object from its representation so that the same construction process can create different representations.
+Separate the construction of a complex object from its representation so that the same construction process can create 
+different representations.
 
 ## Explanation
 
-Real world example:
+Wikipedia says:
 
-> Let's consider a property object that has many parameters with different types and we need to easily create various instances if the property. 
+> The builder pattern is an object creation software design pattern with the intentions of finding a solution 
+to the telescoping constructor anti-pattern.
 
 In plain words:
 
-> Allows you to create different flavors of an object while avoiding constructor pollution. Useful when there could be several flavors of an object. Or when there are a lot of steps involved in creation of an object.
-
-Wikipedia says:
-
-> The builder pattern is an object creation software design pattern with the intentions of finding a solution to the telescoping constructor anti-pattern.
+> Allows you to create different flavors of an object while avoiding constructor pollution. Useful when there could be 
+several flavors of an object. Or when there are a lot of steps involved in creation of an object.
 
 ## Class Diagram
 
@@ -26,7 +25,12 @@ The class diagram will be:
 
 ![alt text](../etc/builder.png "Builder class diagram")
 
-## Coding Example
+## Example
+
+The task:
+
+> Let's consider a property object that has many parameters with different types and we need to easily create various 
+instances if the property. 
 
 Let's create a property:
 
@@ -168,7 +172,7 @@ final var property = new Property.Builder("Property", "Value").
     build();
 ```
 
-## Real World Examples
+## More Examples
 
 * [java.lang.StringBuilder](http://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html)
 * [java.nio.ByteBuffer](http://docs.oracle.com/javase/8/docs/api/java/nio/ByteBuffer.html#put-byte-) as well as similar buffers such as FloatBuffer, IntBuffer and so on.

@@ -1,24 +1,21 @@
 # The Singleton Pattern
 
-The pattern belongs the creational category.
+The pattern belongs to the creational category of the design patterns.
 
-## Solution To The Problem
+## Idea
 
 Ensure a class only has one instance, and provide a global point of access to it.
 
 ## Explanation
 
-Real world example:
+Wikipedia says:
 
-> Let's consider to have a logger and runtime objects which must be instantiated only once. 
+> In software engineering, the singleton pattern is a software design pattern that restricts the instantiation of a 
+class to one object. This is useful when exactly one object is needed to coordinate actions across the system.
 
 In plain words:
 
 > Ensures that only one object of a particular class is ever created.
-
-Wikipedia says:
-
-> In software engineering, the singleton pattern is a software design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system.
 
 ## Class Diagram
 
@@ -26,7 +23,11 @@ The class diagram will be:
 
 ![alt text](../etc/singleton.png "Singleton class diagram")
 
-## Coding Example
+## Example
+
+The task:
+
+> Let's consider to have a logger and runtime objects which must be instantiated only once.
 
 Let's create a logger:
 
@@ -82,7 +83,7 @@ And then it can be used as:
 final var runtime = Runtime.getInstance();
 ```
 
-## Real World Examples
+## More Examples
 
 * [java.lang.Runtime#getRuntime()](http://docs.oracle.com/javase/8/docs/api/java/lang/Runtime.html#getRuntime%28%29)
 * [java.awt.Desktop#getDesktop()](http://docs.oracle.com/javase/8/docs/api/java/awt/Desktop.html#getDesktop--)
