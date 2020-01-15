@@ -29,8 +29,8 @@ The class diagram will be:
 
 The task:
 
-> Let's consider a property object that has many parameters with different types and we need to easily create various 
-instances if the property. 
+> Let's consider to create a property object that has many parameters with different types and we need to easily create 
+various instances if the property. 
 
 Let's create a property:
 
