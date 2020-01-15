@@ -5,8 +5,6 @@ import com.github.akarazhev.tutorial.designpatterns.factorymethod.DbServers;
 import com.github.akarazhev.tutorial.designpatterns.factorymethod.WebServer;
 import com.github.akarazhev.tutorial.designpatterns.factorymethod.WebServers;
 
-import java.sql.SQLException;
-
 /**
  * Provides basic methods for a Stand alone platform.
  */
@@ -15,7 +13,7 @@ public final class StandAlonePlatform implements Platform {
      * {@inheritDoc}
      */
     @Override
-    public DbServer newDbServer() throws SQLException {
+    public DbServer newDbServer() throws Exception {
         return DbServers.newH2dbServer();
     }
 
