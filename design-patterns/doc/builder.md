@@ -170,6 +170,7 @@ final var property = new Property.Builder("Property", "Value").
     properties(new String[0], Collections.singletonList(secondSubProperty)).
     properties(Collections.singletonList(thirdSubProperty)).
     build();
+// Additional code
 ```
 
 ## More Examples

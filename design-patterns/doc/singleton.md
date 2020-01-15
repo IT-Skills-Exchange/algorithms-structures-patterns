@@ -81,6 +81,7 @@ And then it can be used as:
 
 ```java
 final var runtime = Runtime.getInstance();
+// Additional code
 ```
 
 ## More Examples

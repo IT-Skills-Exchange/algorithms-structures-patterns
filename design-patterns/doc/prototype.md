@@ -67,6 +67,7 @@ And then it can be used as:
 ```java
 final var pair = new KeyValuePair<>("key", "value");
 final var clonedPair = pair.clone();
+// Additional code
 ```
 
 ## More Examples
