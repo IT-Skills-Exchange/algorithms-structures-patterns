@@ -19,7 +19,7 @@ In this tutorial the following design patterns will be described:
 * Creational: [Abstract Factory](./doc/abstract-factory.md "The abstract factory chapter"), 
 [Builder](./doc/builder.md "The builder chapter"), [Factory Method](./doc/factory-method.md "The factory method chapter"), 
 [Prototype](./doc/prototype.md "The prototype chapter"), [Singleton](./doc/singleton.md "The singleton chapter");
-* Structural: Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy; 
+* Structural: [Adapter](./doc/adapter.md "The adapter chapter"), Bridge, Composite, Decorator, Facade, Flyweight, Proxy; 
 * Behavioral: Chain Of Responsibility, Commander, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, 
 Template Method, Visitor.
 
