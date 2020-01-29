@@ -12,18 +12,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 final class ConfigsTest {
 
     @Test
-    @DisplayName("Get a configs value")
-    void getConfigsValue() {
+    @DisplayName("Get a configs id")
+    void getConfigsId() {
         final var configs = new Configs();
-        configs.add(new UserConfig("Name", 100));
-        assertEquals(100, configs.getValue());
+        configs.add(new UserConfig(100, "Name"));
+        assertEquals(100, configs.getId());
     }
 
     @Test
     @DisplayName("Get a configs name")
     void getConfigsName() {
         final var configs = new Configs();
-        configs.add(new UserConfig("Name", 100));
+        configs.add(new UserConfig(100, "Name"));
         assertEquals("Name", configs.getName());
     }
 }

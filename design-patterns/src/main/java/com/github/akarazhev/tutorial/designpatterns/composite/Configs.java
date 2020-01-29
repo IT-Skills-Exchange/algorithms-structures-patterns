@@ -1,5 +1,7 @@
 package com.github.akarazhev.tutorial.designpatterns.composite;
 
+import com.github.akarazhev.tutorial.designpatterns.adapter.Config;
+
 import java.util.Collection;
 import java.util.LinkedList;
 
@@ -31,10 +33,10 @@ final class Configs implements Config {
      * {@inheritDoc}
      */
     @Override
-    public int getValue() {
+    public int getId() {
         int value = 0;
         for (final var config : configs) {
-            value += config.getValue();
+            value += config.getId();
         }
 
         return value;

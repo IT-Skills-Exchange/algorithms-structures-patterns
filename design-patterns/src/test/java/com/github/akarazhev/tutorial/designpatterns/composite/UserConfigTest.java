@@ -12,16 +12,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 final class UserConfigTest {
 
     @Test
-    @DisplayName("Get a user config value")
-    void getUserConfigValue() {
-        final UserConfig userConfig = new UserConfig("Name", 100);
-        assertEquals(100, userConfig.getValue());
+    @DisplayName("Get a user config id")
+    void getUserConfigId() {
+        final UserConfig userConfig = new UserConfig(100, "Name");
+        assertEquals(100, userConfig.getId());
     }
 
     @Test
     @DisplayName("Get a user config name")
     void getUserConfigName() {
-        final UserConfig userConfig = new UserConfig("Name", 100);
+        final UserConfig userConfig = new UserConfig(100, "Name");
         assertEquals("Name", userConfig.getName());
     }
 }

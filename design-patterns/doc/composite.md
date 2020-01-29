@@ -32,12 +32,12 @@ The task:
 
 > Let's consider we have a general config object that contains user configs and they should have a uniform way of the processing.
 
-Let's create a config interface:
+Let's re-use the existed interface from the adapter chapter:
 
 ```java
 public interface Config {
 
-    int getValue();
+    int getId();
 
     String getName();
 }
@@ -58,10 +58,10 @@ final class Configs implements Config {
     }
 
     @Override
-    public int getValue() {
+    public int getId() {
         int value = 0;
         for (final var config : configs) {
-            value += config.getValue();
+            value += config.getId();
         }
 
         return value;
@@ -84,17 +84,17 @@ The user config may look like:
 
 ```java
 final class UserConfig implements Config {
+    private final int id;
     private final String name;
-    private final int value;
 
-    public UserConfig(final String name, final int value) {
+    public UserConfig(final int id, final String name) {
+        this.id = id;
         this.name = name;
-        this.value = value;
     }
 
     @Override
-    public int getValue() {
-        return value;
+    public int getId() {
+        return id;
     }
 
     @Override
@@ -108,11 +108,10 @@ And finally it can be used as:
 
 ```java
 final var configs = new Configs();
-configs.add(new UserConfig("Name", 100));
+configs.add(new UserConfig(100, "Name"));
 // Additional code
+final var id = configs.getId();
 final var name = configs.getName();
-final var value = configs.getValue();
-// Additional code
 ```
 
 ## More Examples
