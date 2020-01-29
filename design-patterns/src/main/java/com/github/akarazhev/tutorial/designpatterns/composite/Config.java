@@ -1,24 +1,20 @@
 package com.github.akarazhev.tutorial.designpatterns.composite;
 
-import com.github.akarazhev.tutorial.designpatterns.builder.Validator;
+/**
+ * Provides the basic config abstraction.
+ */
+public interface Config {
+    /**
+     * Returns a value of the config.
+     *
+     * @return a value.
+     */
+    int getValue();
 
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.stream.Stream;
-
-public abstract class Config {
-
-    private final Collection<Config> configs = new LinkedList<>();
-
-    public void add(final Config config) {
-        configs.add(Validator.of(config).get());
-    }
-
-    public Stream<Config> getConfigs() {
-        return configs.stream();
-    }
-
-    public int size() {
-        return configs.size();
-    }
+    /**
+     * Returns a name of the config.
+     *
+     * @return a config name.
+     */
+    String getName();
 }
