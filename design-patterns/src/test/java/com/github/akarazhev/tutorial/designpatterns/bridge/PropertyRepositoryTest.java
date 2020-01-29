@@ -10,9 +10,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
- * Provides a the property bridge test.
+ * Provides the property bridge test.
  */
-@DisplayName("PropertyRepository test")
+@DisplayName("Property repository test")
 final class PropertyRepositoryTest {
     private final PropertyRepository repository = new InMemRepository(new LockTransaction());
 

@@ -15,7 +15,7 @@ public interface DbServer {
     DbServer start() throws SQLException;
 
     /**
-     * Stops a db server
+     * Stops a db server.
      */
     void stop();
 }

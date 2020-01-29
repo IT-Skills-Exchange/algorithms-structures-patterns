@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * Provides a test method to a view config.
  */
-@DisplayName("ConfigViewer test")
+@DisplayName("Config viewer test")
 final class ConfigViewerTest {
 
     @Test

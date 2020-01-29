@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * Provides a the property adapter test.
+ * Provides the property adapter test.
  */
-@DisplayName("PropConfig test")
+@DisplayName("Property config test")
 final class PropConfigTest {
 
     @Test

@@ -16,6 +16,11 @@ final class InMemRepository implements PropertyRepository {
     private final Transaction transaction;
     private final Map<String, Property> dataStorage = new HashMap<>();
 
+    /**
+     * Constructs an in memory repository based on the transaction.
+     *
+     * @param transaction the transaction.
+     */
     public InMemRepository(final Transaction transaction) {
         this.transaction = transaction;
     }
@@ -29,7 +34,7 @@ final class InMemRepository implements PropertyRepository {
         try {
             final Collection<Property> properties = new LinkedList<>();
             stream.forEach(name -> {
-                final Property property = dataStorage.get(name);
+                final var property = dataStorage.get(name);
                 if (property != null) {
                     properties.add(property);
                 }
@@ -75,7 +80,7 @@ final class InMemRepository implements PropertyRepository {
     public int delete(Stream<String> stream) {
         transaction.begin();
         try {
-            final int size = dataStorage.size();
+            final var size = dataStorage.size();
             stream.forEach(dataStorage::remove);
             return size - dataStorage.size();
         } finally {

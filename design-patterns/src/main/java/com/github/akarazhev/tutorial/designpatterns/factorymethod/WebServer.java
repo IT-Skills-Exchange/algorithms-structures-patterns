@@ -12,7 +12,7 @@ public interface WebServer {
     WebServer start();
 
     /**
-     * Stops a web server
+     * Stops a web server.
      */
     void stop();
 }
