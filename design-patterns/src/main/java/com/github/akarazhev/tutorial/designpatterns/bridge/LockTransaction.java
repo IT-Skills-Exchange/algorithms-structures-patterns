@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * Provides the basic transaction implementation.
  */
-final class LockTransaction implements Transaction {
+public final class LockTransaction implements Transaction {
     private final Lock lock = new ReentrantLock();
 
     /**

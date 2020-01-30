@@ -33,7 +33,7 @@ The task:
 Let's create a property repository interface:
 
 ```java
-interface PropertyRepository {
+public interface PropertyRepository {
 
     Stream<Property> findByNames(final Stream<String> stream);
 
@@ -59,7 +59,7 @@ public interface Transaction {
 So the in memory repository may look like:
 
 ```java
-final class InMemRepository implements PropertyRepository {
+public final class InMemRepository implements PropertyRepository {
     private final Transaction transaction;
     private final Map<String, Property> dataStorage = new HashMap<>();
 
@@ -123,7 +123,7 @@ final class InMemRepository implements PropertyRepository {
 So the lock transaction may look like:
 
 ```java
-final class LockTransaction implements Transaction {
+public final class LockTransaction implements Transaction {
     private final Lock lock = new ReentrantLock();
 
     @Override

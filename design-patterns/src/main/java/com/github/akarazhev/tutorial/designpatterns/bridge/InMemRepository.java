@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 /**
  * Provides the in-memory repository implementation to create, read, update and delete operations.
  */
-final class InMemRepository implements PropertyRepository {
+public final class InMemRepository implements PropertyRepository {
     private final Transaction transaction;
     private final Map<String, Property> dataStorage = new HashMap<>();
 

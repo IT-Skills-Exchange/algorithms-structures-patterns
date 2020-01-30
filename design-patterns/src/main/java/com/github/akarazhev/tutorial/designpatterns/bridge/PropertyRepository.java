@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 /**
  * Provides repository methods to create, read, update and delete operations.
  */
-interface PropertyRepository {
+public interface PropertyRepository {
     /**
      * Returns property models for property names.
      *
