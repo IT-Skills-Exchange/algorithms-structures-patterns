@@ -153,6 +153,7 @@ final var stream = repository.saveAndFlush(Stream.of(property));
 ```
 
 ## Applicability
+
 Use the bridge pattern when
 
 * you want to avoid a permanent binding between an abstraction and its implementation. This might be the case, 
