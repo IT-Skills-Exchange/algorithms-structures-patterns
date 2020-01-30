@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * Provides the сonfigs composite test.
+ * Provides the user сonfig composite test.
  */
 @DisplayName("User config test")
 final class UserConfigTest {
