@@ -18,7 +18,8 @@ In this tutorial the following design patterns will be described:
 [Singleton](design-patterns/doc/singleton.md "The singleton chapter"); 
 * Structural: [Adapter](design-patterns/doc/adapter.md "The adapter chapter"), 
 [Bridge](design-patterns/doc/bridge.md "The bridge chapter"), 
-[Composite](design-patterns/doc/composite.md "The composite chapter"), Decorator, Facade, Flyweight, Proxy; 
+[Composite](design-patterns/doc/composite.md "The composite chapter"), 
+[Decorator](design-patterns/doc/decorator.md "The decorator chapter"), Facade, Flyweight, Proxy; 
 * Behavioral: Chain Of Responsibility, Commander, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, 
 Template Method, Visitor.
 
