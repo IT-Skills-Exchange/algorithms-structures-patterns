@@ -21,7 +21,7 @@ public class UnitTest {
 
     protected void assertGetSchema() throws Exception {
         final var pool =
-                JdbcConnectionPool.create("jdbc:h2:tcp://localhost:8043/./etc/tutorial", "sa", "sa");
+                JdbcConnectionPool.create("jdbc:h2:tcp://localhost:8043/./db/tutorial", "sa", "sa");
         final var connection = pool.getConnection();
         assertEquals("PUBLIC", connection.getSchema());
         connection.close();
