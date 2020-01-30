@@ -131,4 +131,4 @@ final var appConfig = new AppConfig(1, new UserConfig(UUID.randomUUID(), new Sys
  
 ## Links
 
-* [Composite Pattern](https://en.wikipedia.org/wiki/Decorator_pattern)
+* [Decorator Pattern](https://en.wikipedia.org/wiki/Decorator_pattern)
