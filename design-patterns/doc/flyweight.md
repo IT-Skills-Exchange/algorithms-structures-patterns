@@ -107,7 +107,7 @@ final var webServer = webServers.newWebServer(ServerType.HTTP);
 
 ## More Examples
 
-* [java.lang.Integer#valueOf(int)](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#) 
+* [java.lang.Integer#valueOf(int)](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#valueOf(int)) 
 and similarly for Byte, Character and other wrapped types.
 
 ## Links

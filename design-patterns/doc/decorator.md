@@ -126,8 +126,8 @@ final var appConfig = new AppConfig(1, new UserConfig(UUID.randomUUID(), new Sys
  [java.io.Reader](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html) and 
  [java.io.Writer](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html)
 * [java.util.Collections#synchronizedXXX()](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedCollection(java.util.Collection))
-* [java.util.Collections#unmodifiableXXX()](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#)
-* [java.util.Collections#checkedXXX()](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#)
+* [java.util.Collections#unmodifiableXXX()](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableCollection(java.util.Collection))
+* [java.util.Collections#checkedXXX()](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedCollection(java.util.Collection,java.lang.Class))
  
 ## Links
 
