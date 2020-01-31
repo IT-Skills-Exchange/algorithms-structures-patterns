@@ -5,7 +5,7 @@ import java.net.InetSocketAddress;
 /**
  * Provides basic implementation for the http server.
  */
-final class HttpServer implements WebServer {
+public final class HttpServer implements WebServer {
     private final com.sun.net.httpserver.HttpServer httpServer;
 
     /**
@@ -13,7 +13,7 @@ final class HttpServer implements WebServer {
      *
      * @throws Exception when a http server encounters a problem.
      */
-    HttpServer() throws Exception {
+    public HttpServer() throws Exception {
         final var payload = "pong";
         httpServer = com.sun.net.httpserver.HttpServer.create();
         httpServer.bind(new InetSocketAddress(8080), 0);

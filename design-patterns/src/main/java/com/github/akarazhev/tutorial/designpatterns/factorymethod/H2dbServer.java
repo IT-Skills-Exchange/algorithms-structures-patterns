@@ -7,7 +7,7 @@ import java.sql.SQLException;
 /**
  * Provides basic implementation for the h2db server.
  */
-final class H2dbServer implements DbServer {
+public final class H2dbServer implements DbServer {
     private final Server server;
 
     /**
@@ -15,7 +15,7 @@ final class H2dbServer implements DbServer {
      *
      * @throws SQLException when a h2db server encounters a problem.
      */
-    H2dbServer() throws SQLException {
+    public H2dbServer() throws SQLException {
         this.server = Server.createTcpServer("-tcp", "-tcpPort", "8043", "-ifNotExists");
     }
 

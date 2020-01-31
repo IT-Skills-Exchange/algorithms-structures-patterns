@@ -48,10 +48,10 @@ public interface DbServer {
 and the implementation:
 
 ```java
-final class H2dbServer implements DbServer {
+public final class H2dbServer implements DbServer {
     private final Server server;
 
-    H2dbServer() throws SQLException {
+    public H2dbServer() throws SQLException {
         this.server = Server.createTcpServer("-tcp", "-tcpPort", "8043", "-ifNotExists");
     }
 
@@ -87,10 +87,10 @@ public interface WebServer {
 and the implementation:
 
 ```java
-final class HttpServer implements WebServer {
+public final class HttpServer implements WebServer {
     private final com.sun.net.httpserver.HttpServer httpServer;
 
-    HttpServer() throws Exception {
+    public HttpServer() throws Exception {
         final var payload = "pong";
         httpServer = com.sun.net.httpserver.HttpServer.create();
         httpServer.bind(new InetSocketAddress(8080), 0);
