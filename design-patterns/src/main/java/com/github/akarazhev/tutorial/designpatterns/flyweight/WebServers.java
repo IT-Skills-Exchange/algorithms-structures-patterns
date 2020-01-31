@@ -31,7 +31,7 @@ final class WebServers {
         if (server == null) {
             switch (type) {
                 case HTTP:
-                    server = new HttpServer();
+                    server = new HttpServer(8081);
                     servers.put(type, server);
                     break;
                 default:
