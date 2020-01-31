@@ -28,7 +28,7 @@ The class diagram will be:
 
 The task:
 
-> Let's consider we have a property repository and a transaction where it can be changed independently.
+> Let's consider we should have a property repository and a transaction where it can be changed independently.
 
 Let's create a property repository interface:
 

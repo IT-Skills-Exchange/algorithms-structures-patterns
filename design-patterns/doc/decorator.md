@@ -31,7 +31,7 @@ The class diagram will be:
 
 The task:
 
-> Let's consider we have various configs in an application. Each config adds its own information.
+> Let's consider we should have various configs in an application. Each config adds its own information.
 
 Let's re-use the existed interface from the adapter chapter:
 

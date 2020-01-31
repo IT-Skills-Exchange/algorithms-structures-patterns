@@ -27,7 +27,7 @@ The class diagram will be:
 
 The task:
 
-> Let's consider to have a key-value object that can be used as a prototype for new objects.
+> Let's consider to create a key-value object that can be used as a prototype for new objects.
 
 Let's create a key-value object:
 

@@ -29,7 +29,7 @@ The class diagram will be:
 
 The task:
 
-> Let's consider we have a property object, but a config viewer accepts only instances of a config interface with related methods. 
+> Let's consider that we should have a property object, but a config viewer accepts only instances of a config interface with related methods. 
 
 Let's create a config interface:
 

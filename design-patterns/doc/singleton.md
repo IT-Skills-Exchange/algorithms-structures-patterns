@@ -27,7 +27,7 @@ The class diagram will be:
 
 The task:
 
-> Let's consider to have a logger and runtime objects which must be instantiated only once.
+> Let's consider to create a logger and runtime objects which must be instantiated only once.
 
 Let's create a logger:
 
