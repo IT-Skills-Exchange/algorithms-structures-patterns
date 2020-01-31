@@ -18,6 +18,6 @@ public final class WebServers {
      * @throws IOException when the web server encounters a problem.
      */
     public static WebServer newHttpServer() throws Exception {
-        return new HttpServer();
+        return new HttpServer(8080);
     }
 }

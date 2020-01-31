@@ -9,14 +9,15 @@ public final class HttpServer implements WebServer {
     private final com.sun.net.httpserver.HttpServer httpServer;
 
     /**
-     * Constructs a default http server.
+     * Constructs a default http server with a certain port.
      *
+     * @param port a server port.
      * @throws Exception when a http server encounters a problem.
      */
-    public HttpServer() throws Exception {
+    public HttpServer(final int port) throws Exception {
         final var payload = "pong";
         httpServer = com.sun.net.httpserver.HttpServer.create();
-        httpServer.bind(new InetSocketAddress(8080), 0);
+        httpServer.bind(new InetSocketAddress(port), 0);
         httpServer.createContext("/ping", exchange -> {
             exchange.sendResponseHeaders(200, payload.getBytes().length);
 

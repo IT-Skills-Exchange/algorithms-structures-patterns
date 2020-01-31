@@ -90,10 +90,10 @@ and the implementation:
 public final class HttpServer implements WebServer {
     private final com.sun.net.httpserver.HttpServer httpServer;
 
-    public HttpServer() throws Exception {
+    public HttpServer(final int port) throws Exception {
         final var payload = "pong";
         httpServer = com.sun.net.httpserver.HttpServer.create();
-        httpServer.bind(new InetSocketAddress(8080), 0);
+        httpServer.bind(new InetSocketAddress(port), 0);
         httpServer.createContext("/ping", exchange -> {
             exchange.sendResponseHeaders(200, payload.getBytes().length);
 
