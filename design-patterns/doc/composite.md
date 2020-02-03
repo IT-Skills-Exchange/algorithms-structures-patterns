@@ -1,4 +1,4 @@
-# The Adapter Pattern
+# The Composite Pattern
 
 The pattern belongs to the structural category of the design patterns.
 
