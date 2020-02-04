@@ -23,8 +23,8 @@ In this tutorial the following design patterns will be described:
 [Composite](./doc/composite.md "The composite chapter"), [Decorator](./doc/decorator.md "The decorator chapter"), 
 [Facade](./doc/facade.md "The facade chapter"), [Flyweight](./doc/flyweight.md "The flyweight chapter"), 
 [Proxy](./doc/proxy.md "The proxy chapter"); 
-* Behavioral: Chain Of Responsibility, Commander, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, 
-Template Method, Visitor.
+* Behavioral: [Chain Of Responsibility](./doc/chainofresponsibility.md "The chain of responsibility chapter"), 
+Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor.
 
 ## Build Requirements
 
