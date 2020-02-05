@@ -28,7 +28,8 @@ In this tutorial the following design patterns will be described:
 [Facade](./doc/facade.md "The facade chapter"), [Flyweight](./doc/flyweight.md "The flyweight chapter"), 
 [Proxy](./doc/proxy.md "The proxy chapter"); 
 * Behavioral: [Chain Of Responsibility](./doc/chainofresponsibility.md "The chain of responsibility chapter"), 
-Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor.
+[Command](./doc/command.md "The command chapter"), 
+Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor.
 
 ## Build Requirements
 
