@@ -4,6 +4,9 @@ import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.function.Consumer;
 
+/**
+ * Provides basic methods for a security context.
+ */
 @FunctionalInterface
 public interface SecurityContext {
     /**

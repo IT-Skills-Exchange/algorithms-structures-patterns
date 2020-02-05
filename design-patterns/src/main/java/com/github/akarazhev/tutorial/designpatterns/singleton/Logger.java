@@ -7,7 +7,6 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public enum Logger {
     INSTANCE;
-
     private final AtomicInteger level = new AtomicInteger(0);
 
     /**

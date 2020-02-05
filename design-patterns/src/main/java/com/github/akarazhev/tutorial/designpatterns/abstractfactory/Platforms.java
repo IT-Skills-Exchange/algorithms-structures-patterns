@@ -4,7 +4,6 @@ package com.github.akarazhev.tutorial.designpatterns.abstractfactory;
  * Provides a factory method to create an appropriate platform.
  */
 public final class Platforms {
-
     public enum Type {
         EMBEDDED,
         STANDALONE
