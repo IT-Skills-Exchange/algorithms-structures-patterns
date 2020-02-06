@@ -5,7 +5,7 @@ can be used for better understanding ideas behind concepts of design patterns, d
 that you are already familiar with the language. Each topic has a small explanation of the problem or idea and the solution, 
 you can use it as you wish and you want.
 
-NOTE: The tutorial is not fully ready.
+As the start point, let's address to [Programming Principles](doc/programming-principles.md "Programming Principles").
 
 ## [Design Patterns](design-patterns/README.md "The design patterns chapter")
 
@@ -25,8 +25,8 @@ In this tutorial the following design patterns will be described:
 [Proxy](design-patterns/doc/proxy.md "The proxy chapter"); 
 * Behavioral: [Chain Of Responsibility](design-patterns/doc/chainofresponsibility.md "The chain of responsibility chapter"), 
 [Command](design-patterns/doc/command.md "The command chapter"), 
-Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, 
-Template Method, Visitor.
+[Interpreter](design-patterns/doc/interpreter.md "The interpreter chapter"), 
+Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor.
 
 ## [Data Structures](data-structures/README.md "The data structures chapter")
 

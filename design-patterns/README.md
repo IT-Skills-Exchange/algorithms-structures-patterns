@@ -29,7 +29,8 @@ In this tutorial the following design patterns will be described:
 [Proxy](./doc/proxy.md "The proxy chapter"); 
 * Behavioral: [Chain Of Responsibility](./doc/chainofresponsibility.md "The chain of responsibility chapter"), 
 [Command](./doc/command.md "The command chapter"), 
-Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor.
+[Interpreter](./doc/interpreter.md "The interpreter chapter"),
+Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor.
 
 ## Build Requirements
 
