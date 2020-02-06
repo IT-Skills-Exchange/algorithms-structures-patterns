@@ -12,10 +12,6 @@ All designs should be as simple as possible. You should start with KISS, YAGNI, 
 Could Possibly Work principles. Complexity and patterns should only be introduced when they are needed for 
 practical extensibility.
 
-## Principles
-
-TODO:
-
 ## Content
 
 In this tutorial the following design patterns will be described:
