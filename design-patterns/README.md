@@ -16,17 +16,21 @@ practical extensibility.
 
 In this tutorial the following design patterns will be described:
 
-* Creational: [Abstract Factory](./doc/abstract-factory.md "The abstract factory chapter"), 
+* Creational: 
+[Abstract Factory](./doc/abstract-factory.md "The abstract factory chapter"), 
 [Builder](./doc/builder.md "The builder chapter"), [Factory Method](./doc/factory-method.md "The factory method chapter"), 
 [Prototype](./doc/prototype.md "The prototype chapter"), [Singleton](./doc/singleton.md "The singleton chapter");
-* Structural: [Adapter](./doc/adapter.md "The adapter chapter"), [Bridge](./doc/bridge.md "The bridge chapter"), 
+* Structural: 
+[Adapter](./doc/adapter.md "The adapter chapter"), [Bridge](./doc/bridge.md "The bridge chapter"), 
 [Composite](./doc/composite.md "The composite chapter"), [Decorator](./doc/decorator.md "The decorator chapter"), 
 [Facade](./doc/facade.md "The facade chapter"), [Flyweight](./doc/flyweight.md "The flyweight chapter"), 
 [Proxy](./doc/proxy.md "The proxy chapter"); 
-* Behavioral: [Chain Of Responsibility](./doc/chainofresponsibility.md "The chain of responsibility chapter"), 
+* Behavioral: 
+[Chain Of Responsibility](./doc/chainofresponsibility.md "The chain of responsibility chapter"), 
 [Command](./doc/command.md "The command chapter"), 
 [Interpreter](./doc/interpreter.md "The interpreter chapter"),
-Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor.
+[Iterator](./doc/iterator.md "The iterator chapter"), 
+Mediator, Memento, Observer, State, Strategy, Template Method, Visitor.
 
 ## Build Requirements
 

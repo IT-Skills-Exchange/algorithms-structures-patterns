@@ -46,8 +46,8 @@ public interface Config {
 And the general config object will be:
 
 ```java
-final class Configs implements Config {
-    private final Collection<Config> configs = new LinkedList<>();
+public final class Configs implements Config {
+    private final List<Config> configs = new LinkedList<>();
 
     public void add(final Config config) {
         configs.add(config);
@@ -83,7 +83,7 @@ final class Configs implements Config {
 The user config may look like:
 
 ```java
-final class UserConfig implements Config {
+public final class UserConfig implements Config {
     private final int id;
     private final String name;
 

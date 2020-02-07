@@ -11,22 +11,26 @@ As the start point, let's address to [Programming Principles](doc/programming-pr
 
 In this tutorial the following design patterns will be described:
 
-* Creational: [Abstract Factory](design-patterns/doc/abstract-factory.md "The abstract factory chapter"), 
+* Creational: 
+[Abstract Factory](design-patterns/doc/abstract-factory.md "The abstract factory chapter"), 
 [Builder](design-patterns/doc/builder.md "The builder chapter"), 
 [Factory Method](design-patterns/doc/factory-method.md "The factory method chapter"), 
 [Prototype](design-patterns/doc/prototype.md "The prototype chapter"), 
 [Singleton](design-patterns/doc/singleton.md "The singleton chapter"); 
-* Structural: [Adapter](design-patterns/doc/adapter.md "The adapter chapter"), 
+* Structural: 
+[Adapter](design-patterns/doc/adapter.md "The adapter chapter"), 
 [Bridge](design-patterns/doc/bridge.md "The bridge chapter"), 
 [Composite](design-patterns/doc/composite.md "The composite chapter"), 
 [Decorator](design-patterns/doc/decorator.md "The decorator chapter"), 
 [Facade](design-patterns/doc/facade.md "The facade chapter"), 
 [Flyweight](design-patterns/doc/flyweight.md "The flyweight chapter"), 
 [Proxy](design-patterns/doc/proxy.md "The proxy chapter"); 
-* Behavioral: [Chain Of Responsibility](design-patterns/doc/chainofresponsibility.md "The chain of responsibility chapter"), 
+* Behavioral: 
+[Chain Of Responsibility](design-patterns/doc/chainofresponsibility.md "The chain of responsibility chapter"), 
 [Command](design-patterns/doc/command.md "The command chapter"), 
 [Interpreter](design-patterns/doc/interpreter.md "The interpreter chapter"), 
-Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor.
+[Iterator](design-patterns/doc/iterator.md "The iterator chapter"), 
+Mediator, Memento, Observer, State, Strategy, Template Method, Visitor.
 
 ## [Data Structures](data-structures/README.md "The data structures chapter")
 

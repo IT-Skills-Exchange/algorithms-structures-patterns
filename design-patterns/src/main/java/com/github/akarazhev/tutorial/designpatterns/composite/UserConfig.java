@@ -5,7 +5,7 @@ import com.github.akarazhev.tutorial.designpatterns.adapter.Config;
 /**
  * The user config model that contains parameters.
  */
-final class UserConfig implements Config {
+public final class UserConfig implements Config {
     private final int id;
     private final String name;
 

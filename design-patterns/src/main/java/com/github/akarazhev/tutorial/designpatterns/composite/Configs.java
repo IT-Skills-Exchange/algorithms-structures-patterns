@@ -2,14 +2,17 @@ package com.github.akarazhev.tutorial.designpatterns.composite;
 
 import com.github.akarazhev.tutorial.designpatterns.adapter.Config;
 
-import java.util.Collection;
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
+import java.util.NoSuchElementException;
 
 /**
  * The configs model that provides the application logic that allows to work with the collection of configs as a config.
  */
-final class Configs implements Config {
-    private final Collection<Config> configs = new LinkedList<>();
+public final class Configs implements Config, Iterator<Config> {
+    private int position = 0;
+    private final List<Config> configs = new LinkedList<>();
 
     /**
      * Adds a new config.
@@ -54,5 +57,25 @@ final class Configs implements Config {
 
         name.deleteCharAt(name.indexOf(";"));
         return name.toString();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean hasNext() {
+        return position < configs.size() - 1;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Config next() {
+        if (!hasNext()) {
+            throw new NoSuchElementException();
+        }
+
+        return configs.get(position++);
     }
 }
