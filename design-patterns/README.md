@@ -30,7 +30,8 @@ In this tutorial the following design patterns will be described:
 [Command](./doc/command.md "The command chapter"), 
 [Interpreter](./doc/interpreter.md "The interpreter chapter"),
 [Iterator](./doc/iterator.md "The iterator chapter"), 
-Mediator, Memento, Observer, State, Strategy, Template Method, Visitor.
+[Mediator](./doc/mediator.md "The mediator chapter"), 
+Memento, Observer, State, Strategy, Template Method, Visitor.
 
 ## Build Requirements
 
