@@ -31,7 +31,8 @@ In this tutorial the following design patterns will be described:
 [Interpreter](design-patterns/doc/interpreter.md "The interpreter chapter"), 
 [Iterator](design-patterns/doc/iterator.md "The iterator chapter"), 
 [Mediator](design-patterns/doc/mediator.md "The mediator chapter"),
-Memento, Observer, State, Strategy, Template Method, Visitor.
+[Memento](design-patterns/doc/memento.md "The memento chapter"), 
+Observer, State, Strategy, Template Method, Visitor.
 
 ## [Data Structures](data-structures/README.md "The data structures chapter")
 
