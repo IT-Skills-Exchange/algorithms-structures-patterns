@@ -32,7 +32,8 @@ In this tutorial the following design patterns will be described:
 [Iterator](./doc/iterator.md "The iterator chapter"), 
 [Mediator](./doc/mediator.md "The mediator chapter"), 
 [Memento](./doc/memento.md "The memento chapter"), 
-Observer, State, Strategy, Template Method, Visitor.
+[Observer](./doc/observer.md "The observer chapter"), 
+State, Strategy, Template Method, Visitor.
 
 ## Build Requirements
 
