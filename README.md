@@ -33,7 +33,8 @@ In this tutorial the following design patterns will be described:
 [Mediator](design-patterns/doc/mediator.md "The mediator chapter"),
 [Memento](design-patterns/doc/memento.md "The memento chapter"), 
 [Observer](design-patterns/doc/observer.md "The observer chapter"), 
-State, Strategy, Template Method, Visitor.
+[State](design-patterns/doc/state.md "The state chapter"),
+Strategy, Template Method, Visitor.
 
 ## [Data Structures](data-structures/README.md "The data structures chapter")
 
