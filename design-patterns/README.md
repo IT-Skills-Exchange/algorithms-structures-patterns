@@ -34,7 +34,8 @@ In this tutorial the following design patterns will be described:
 [Memento](./doc/memento.md "The memento chapter"), 
 [Observer](./doc/observer.md "The observer chapter"), 
 [State](./doc/state.md "The state chapter"), 
-Strategy, Template Method, Visitor.
+[Strategy](./doc/strategy.md "The strategy chapter"), 
+Template Method, Visitor.
 
 ## Build Requirements
 
