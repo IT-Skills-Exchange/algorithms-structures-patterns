@@ -1,4 +1,4 @@
-# The Strategy pattern
+# The Strategy Pattern
 
 The pattern belongs to the behavioral category of the design patterns.
 
