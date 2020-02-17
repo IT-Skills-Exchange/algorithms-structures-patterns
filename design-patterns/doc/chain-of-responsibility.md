@@ -24,7 +24,7 @@ finds the suitable handler.
 
 The class diagram will be:
 
-![alt text](../etc/chainofresponsibility.png "Chain of responsibility class diagram")
+![alt text](../etc/chain-of-responsibility.png "Chain of responsibility class diagram")
 
 ## Example
 

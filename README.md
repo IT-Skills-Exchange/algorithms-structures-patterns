@@ -26,7 +26,7 @@ In this tutorial the following design patterns will be described:
 [Flyweight](design-patterns/doc/flyweight.md "The flyweight chapter"), 
 [Proxy](design-patterns/doc/proxy.md "The proxy chapter"); 
 * Behavioral: 
-[Chain Of Responsibility](design-patterns/doc/chainofresponsibility.md "The chain of responsibility chapter"), 
+[Chain Of Responsibility](design-patterns/doc/chain-of-responsibility.md "The chain of responsibility chapter"), 
 [Command](design-patterns/doc/command.md "The command chapter"), 
 [Interpreter](design-patterns/doc/interpreter.md "The interpreter chapter"), 
 [Iterator](design-patterns/doc/iterator.md "The iterator chapter"), 
