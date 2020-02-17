@@ -35,7 +35,7 @@ In this tutorial the following design patterns will be described:
 [Observer](./doc/observer.md "The observer chapter"), 
 [State](./doc/state.md "The state chapter"), 
 [Strategy](./doc/strategy.md "The strategy chapter"), 
-[Template Method](./doc/template-method.md, "The template method chapter"), 
+[Template Method](./doc/template-method.md "The template method chapter"), 
 Visitor.
 
 ## Build Requirements

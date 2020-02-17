@@ -1,4 +1,4 @@
-## The Template Method Pattern
+# The Template Method Pattern
 
 The pattern belongs to the behavioral category of the design patterns.
 
