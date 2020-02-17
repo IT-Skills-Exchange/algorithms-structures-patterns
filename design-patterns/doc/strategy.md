@@ -16,7 +16,7 @@ pattern that enables selecting an algorithm at runtime.
 
 In plain words:
 
-> Using the proxy pattern, it lets the algorithm vary independently from clients that use it.
+> Using the strategy pattern, it lets the algorithm vary independently from clients that use it.
 
 ## Class Diagram
 

@@ -15,7 +15,7 @@ internal state changes.
 
 In plain words:
 
-> With the observer pattern, it's possible for an object to change its behavior at runtime without resorting 
+> With the state pattern, it's possible for an object to change its behavior at runtime without resorting 
 to conditional statements and thus improve maintainability.
 
 ## Class Diagram

@@ -35,7 +35,8 @@ In this tutorial the following design patterns will be described:
 [Observer](design-patterns/doc/observer.md "The observer chapter"), 
 [State](design-patterns/doc/state.md "The state chapter"),
 [Strategy](design-patterns/doc/strategy.md "The strategy chapter"), 
-Template Method, Visitor.
+[Template Method](design-patterns/doc/template-method.md "The template method chapter"), 
+Visitor.
 
 ## [Data Structures](data-structures/README.md "The data structures chapter")
 
