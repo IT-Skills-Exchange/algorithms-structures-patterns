@@ -36,7 +36,7 @@ In this tutorial the following design patterns will be described:
 [State](./doc/state.md "The state chapter"), 
 [Strategy](./doc/strategy.md "The strategy chapter"), 
 [Template Method](./doc/template-method.md "The template method chapter"), 
-Visitor.
+[Visitor](./doc/visitor.md "The visitor chapter").
 
 ## Build Requirements
 

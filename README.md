@@ -36,7 +36,7 @@ In this tutorial the following design patterns will be described:
 [State](design-patterns/doc/state.md "The state chapter"),
 [Strategy](design-patterns/doc/strategy.md "The strategy chapter"), 
 [Template Method](design-patterns/doc/template-method.md "The template method chapter"), 
-Visitor.
+[Visitor](design-patterns/doc/visitor.md "The visitor chapter").
 
 ## [Data Structures](data-structures/README.md "The data structures chapter")
 
