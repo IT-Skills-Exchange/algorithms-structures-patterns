@@ -59,7 +59,7 @@ final class IndexService {
 }
 ```
 
-Let's different strategies:
+Let's create different strategies:
 
 ```java
 final class BubbleSort implements Strategy {

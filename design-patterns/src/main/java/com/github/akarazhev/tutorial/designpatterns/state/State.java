@@ -1,7 +1,7 @@
 package com.github.akarazhev.tutorial.designpatterns.state;
 
 /**
- * The specification of state.
+ * The specification of the state.
  */
 public interface State {
     /**

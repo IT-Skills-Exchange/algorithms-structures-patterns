@@ -28,7 +28,7 @@ The class diagram will be:
 
 The task:
 
-> Let's extend configs class by adding implementation for iteration logic.
+> Let's extend configs class by adding implementation for the iteration logic.
 
 Let's implement the iterator interface:
 

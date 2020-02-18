@@ -1,7 +1,7 @@
 package com.github.akarazhev.tutorial.designpatterns.state;
 
 /**
- * Provides the implementation for a online state.
+ * Provides the implementation for an online state.
  */
 final class Online implements State {
     /**

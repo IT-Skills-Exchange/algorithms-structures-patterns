@@ -1,7 +1,7 @@
 package com.github.akarazhev.tutorial.designpatterns.strategy;
 
 /**
- * Provides the implementation for the insertion sort.
+ * Provides the implementation for insertion sort.
  */
 final class InsertionSort implements Strategy {
     /**

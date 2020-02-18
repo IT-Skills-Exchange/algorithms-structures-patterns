@@ -1,7 +1,7 @@
 package com.github.akarazhev.tutorial.designpatterns.strategy;
 
 /**
- * Provides the implementation for the bubble sort.
+ * Provides the implementation for bubble sort.
  */
 final class BubbleSort implements Strategy {
     /**

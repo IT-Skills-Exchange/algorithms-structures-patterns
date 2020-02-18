@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Provides the implementation for dispatcher.
+ * Provides the implementation for a dispatcher.
  */
 final class Dispatcher implements Observer<String> {
     private final List<String> data = new LinkedList<>();

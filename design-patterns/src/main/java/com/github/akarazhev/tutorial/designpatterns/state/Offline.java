@@ -1,7 +1,7 @@
 package com.github.akarazhev.tutorial.designpatterns.state;
 
 /**
- * Provides the implementation for a offline state.
+ * Provides the implementation for an offline state.
  */
 final class Offline implements State {
     /**

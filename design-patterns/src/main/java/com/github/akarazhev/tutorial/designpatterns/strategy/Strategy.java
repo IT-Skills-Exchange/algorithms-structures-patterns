@@ -1,7 +1,7 @@
 package com.github.akarazhev.tutorial.designpatterns.strategy;
 
 /**
- * The specification of strategy.
+ * The specification of the strategy.
  */
 public interface Strategy {
     /**
