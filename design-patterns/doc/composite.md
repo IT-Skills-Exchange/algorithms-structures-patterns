@@ -81,7 +81,7 @@ public final class Configs implements Config {
 }
 ```
 
-The user config may look like:
+The user config will be:
 
 ```java
 public final class UserConfig implements Config {
