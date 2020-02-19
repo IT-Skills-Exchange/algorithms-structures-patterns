@@ -27,7 +27,7 @@ The class diagram will be:
 
 The task:
 
-> Let's consider we should have an application that has and runs the web and data base server. 
+> Let's consider we should have an application that has and runs the web and database server. 
 
 Let's create an application:
 
