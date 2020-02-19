@@ -8,7 +8,7 @@ import com.github.akarazhev.tutorial.designpatterns.factorymethod.WebServers;
 /**
  * Provides basic methods for a embedded platform.
  */
-public final class EmbeddedPlatform implements Platform {
+final class EmbeddedPlatform implements Platform {
     /**
      * {@inheritDoc}
      */

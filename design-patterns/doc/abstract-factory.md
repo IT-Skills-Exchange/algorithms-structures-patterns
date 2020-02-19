@@ -28,12 +28,12 @@ The class diagram will be:
 
 The task:
 
-> Let's consider to create an embedded and standalone platforms with appropriate a web and database servers. 
+> Let's consider to create an embedded and standalone platforms with an appropriate web and database servers. 
 
 Let's create an embedded platform:
 
 ```java
-public final class EmbeddedPlatform implements Platform {
+final class EmbeddedPlatform implements Platform {
 
     @Override
     public DbServer newDbServer() throws Exception {
@@ -50,7 +50,7 @@ public final class EmbeddedPlatform implements Platform {
 Let's create an standalone platform:
 
 ```java
-public final class StandAlonePlatform implements Platform {
+final class StandAlonePlatform implements Platform {
 
     @Override
     public DbServer newDbServer() throws Exception {
@@ -67,7 +67,7 @@ public final class StandAlonePlatform implements Platform {
 Let's create an interface and implementation of platforms:
 
 ```java
-public interface Platform {
+interface Platform {
 
     DbServer newDbServer() throws Exception;
 
@@ -75,10 +75,8 @@ public interface Platform {
 }
 ```
 
-and the implementation:
-
 ```java
-public final class Platforms {
+final class Platforms {
 
     public enum Type {
         EMBEDDED,

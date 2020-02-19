@@ -8,7 +8,7 @@ import com.github.akarazhev.tutorial.designpatterns.factorymethod.WebServers;
 /**
  * Provides basic methods for a Stand alone platform.
  */
-public final class StandAlonePlatform implements Platform {
+final class StandAlonePlatform implements Platform {
     /**
      * {@inheritDoc}
      */

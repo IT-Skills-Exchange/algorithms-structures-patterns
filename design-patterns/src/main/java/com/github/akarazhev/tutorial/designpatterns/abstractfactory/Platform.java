@@ -6,7 +6,7 @@ import com.github.akarazhev.tutorial.designpatterns.factorymethod.WebServer;
 /**
  * Provides basic methods for a platform.
  */
-public interface Platform {
+interface Platform {
     /**
      * Creates a new db server.
      *
