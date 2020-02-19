@@ -8,7 +8,7 @@ import java.util.function.Consumer;
  * Provides basic methods for a security context.
  */
 @FunctionalInterface
-public interface SecurityContext {
+interface SecurityContext {
     /**
      * All available access levels.
      */

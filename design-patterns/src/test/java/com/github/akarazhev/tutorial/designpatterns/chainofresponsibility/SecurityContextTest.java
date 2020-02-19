@@ -12,7 +12,7 @@ final class SecurityContextTest {
     @Test
     @DisplayName("Filter requests")
     void filterRequest() {
-        final SecurityContext context = SecurityContext.defaultContext(SecurityContext.AccessLevel.all()).
+        final var context = SecurityContext.defaultContext(SecurityContext.AccessLevel.all()).
                 next(SecurityContext.userContext(SecurityContext.AccessLevel.USER)).
                 next(SecurityContext.systemContext(SecurityContext.AccessLevel.SYSTEM, SecurityContext.AccessLevel.USER));
 

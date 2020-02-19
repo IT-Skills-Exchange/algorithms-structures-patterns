@@ -33,11 +33,11 @@ The task:
 > Let's consider to create a security context with different access levels that should also treat a chain of 
 security contexts.
 
-Let's create a security access:
+Let's create a security context:
 
 ```java
 @FunctionalInterface
-public interface SecurityContext {
+interface SecurityContext {
     enum AccessLevel {
         SYSTEM, APPLICATION, USER;
 
@@ -78,10 +78,10 @@ public interface SecurityContext {
 }
 ```
 
-And then it can be used as:
+So it can be used as:
 
 ```java
-final SecurityContext context = SecurityContext.defaultContext(SecurityContext.AccessLevel.all()).
+final var context = SecurityContext.defaultContext(SecurityContext.AccessLevel.all()).
         next(SecurityContext.userContext(SecurityContext.AccessLevel.USER)).
         next(SecurityContext.systemContext(SecurityContext.AccessLevel.SYSTEM, SecurityContext.AccessLevel.USER));
 
