@@ -7,6 +7,9 @@ import java.util.Collections;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * Provides basic tests
+ */
 public class UnitTest {
 
     protected Property getProperty() {
