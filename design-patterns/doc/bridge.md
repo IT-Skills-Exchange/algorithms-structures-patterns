@@ -48,7 +48,7 @@ public interface PropertyRepository {
 And then let's create a transaction interface:
 
 ```java
-public interface Transaction {
+interface Transaction {
 
     void begin();
 
@@ -56,7 +56,7 @@ public interface Transaction {
 }
 ```
 
-So the in memory repository may look like:
+So the in-memory repository will be:
 
 ```java
 public final class InMemRepository implements PropertyRepository {
@@ -68,7 +68,7 @@ public final class InMemRepository implements PropertyRepository {
     }
 
     @Override
-    public Stream<Property> findByNames(Stream<String> stream) {
+    public Stream<Property> findByNames(final Stream<String> stream) {
         transaction.begin();
         try {
             final Collection<Property> properties = new LinkedList<>();
@@ -96,7 +96,7 @@ public final class InMemRepository implements PropertyRepository {
     }
 
     @Override
-    public Stream<Property> saveAndFlush(Stream<Property> stream) {
+    public Stream<Property> saveAndFlush(final Stream<Property> stream) {
         transaction.begin();
         try {
             stream.forEach(property -> dataStorage.put(property.getName(), property));
@@ -107,7 +107,7 @@ public final class InMemRepository implements PropertyRepository {
     }
 
     @Override
-    public int delete(Stream<String> stream) {
+    public int delete(final Stream<String> stream) {
         transaction.begin();
         try {
             final var size = dataStorage.size();
@@ -120,7 +120,7 @@ public final class InMemRepository implements PropertyRepository {
 }
 ```
 
-So the lock transaction may look like:
+And the lock transaction will be:
 
 ```java
 public final class LockTransaction implements Transaction {

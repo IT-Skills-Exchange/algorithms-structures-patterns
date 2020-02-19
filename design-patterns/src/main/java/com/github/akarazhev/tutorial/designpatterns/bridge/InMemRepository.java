@@ -17,7 +17,7 @@ public final class InMemRepository implements PropertyRepository {
     private final Map<String, Property> dataStorage = new HashMap<>();
 
     /**
-     * Constructs an in memory repository based on the transaction.
+     * Constructs an in-memory repository based on the transaction.
      *
      * @param transaction the transaction.
      */
@@ -29,7 +29,7 @@ public final class InMemRepository implements PropertyRepository {
      * {@inheritDoc}
      */
     @Override
-    public Stream<Property> findByNames(Stream<String> stream) {
+    public Stream<Property> findByNames(final Stream<String> stream) {
         transaction.begin();
         try {
             final Collection<Property> properties = new LinkedList<>();
@@ -63,7 +63,7 @@ public final class InMemRepository implements PropertyRepository {
      * {@inheritDoc}
      */
     @Override
-    public Stream<Property> saveAndFlush(Stream<Property> stream) {
+    public Stream<Property> saveAndFlush(final Stream<Property> stream) {
         transaction.begin();
         try {
             stream.forEach(property -> dataStorage.put(property.getName(), property));
@@ -77,7 +77,7 @@ public final class InMemRepository implements PropertyRepository {
      * {@inheritDoc}
      */
     @Override
-    public int delete(Stream<String> stream) {
+    public int delete(final Stream<String> stream) {
         transaction.begin();
         try {
             final var size = dataStorage.size();

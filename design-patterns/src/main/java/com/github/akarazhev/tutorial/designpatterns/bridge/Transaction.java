@@ -3,7 +3,7 @@ package com.github.akarazhev.tutorial.designpatterns.bridge;
 /**
  * Provides basic transaction methods.
  */
-public interface Transaction {
+interface Transaction {
     /**
      * Starts the transaction.
      */
