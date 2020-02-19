@@ -1,5 +1,8 @@
 package com.github.akarazhev.tutorial.designpatterns.command;
 
+/**
+ * Provides a pop action.
+ */
 final class PopAction implements Action {
     private final Storage storage;
 

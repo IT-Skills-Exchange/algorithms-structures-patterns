@@ -1,5 +1,8 @@
 package com.github.akarazhev.tutorial.designpatterns.command;
 
+/**
+ * Provides a push action.
+ */
 final class PushAction implements Action {
     private final Storage storage;
 

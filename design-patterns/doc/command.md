@@ -69,7 +69,7 @@ final class ActionExecutor {
     }
 
     public int execute(final String actionName) {
-        final Action action = actions.get(actionName);
+        final var action = actions.get(actionName);
         if (action == null) {
             throw new IllegalStateException("No action registered: " + actionName);
         }
