@@ -156,7 +156,7 @@ public final static class Builder extends ConfigBuilder {
 }
 ```
 
-And then it can be used as:
+So it can be used as:
 
 ```java
 final var firstSubProperty = new Property.Builder("Sub-Property-1", "Sub-Value-1").build();
