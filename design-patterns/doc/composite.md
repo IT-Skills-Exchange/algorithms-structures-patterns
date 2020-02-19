@@ -30,7 +30,8 @@ The class diagram will be:
 
 The task:
 
-> Let's consider we should have a general config object that contains user configs and they should have a uniform way of the processing.
+> Let's consider we should have a general config object that contains user configs and they should have a uniform way of 
+the processing.
 
 Let's re-use the existed interface from the adapter chapter:
 
@@ -59,7 +60,7 @@ public final class Configs implements Config {
 
     @Override
     public int getId() {
-        int value = 0;
+        var value = 0;
         for (final var config : configs) {
             value += config.getId();
         }

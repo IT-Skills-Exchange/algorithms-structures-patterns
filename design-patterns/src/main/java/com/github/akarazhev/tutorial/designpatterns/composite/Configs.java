@@ -37,7 +37,7 @@ public final class Configs implements Config, Iterator<Config> {
      */
     @Override
     public int getId() {
-        int value = 0;
+        var value = 0;
         for (final var config : configs) {
             value += config.getId();
         }
