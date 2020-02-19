@@ -5,7 +5,7 @@ import com.github.akarazhev.tutorial.designpatterns.builder.Property;
 /**
  * The property adapter that contains parameters.
  */
-public final class PropConfig implements Config {
+final class PropConfig implements Config {
     private final Property property = new Property.Builder("Property", 1).build();
 
     /**

@@ -58,10 +58,10 @@ final class ConfigViewer {
 }
 ```
 
-So the adapter may look like:
+So the adapter will be:
 
 ```java
-public final class PropConfig implements Config {
+final class PropConfig implements Config {
     private final Property property = new Property.Builder("Property", 1).build();
 
     @Override
