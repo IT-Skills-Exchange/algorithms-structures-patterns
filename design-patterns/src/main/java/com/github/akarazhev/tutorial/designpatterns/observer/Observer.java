@@ -5,7 +5,7 @@ package com.github.akarazhev.tutorial.designpatterns.observer;
  *
  * @param <T> a type of a data.
  */
-public interface Observer<T> {
+interface Observer<T> {
     /**
      * Updates a state with a new data.
      *

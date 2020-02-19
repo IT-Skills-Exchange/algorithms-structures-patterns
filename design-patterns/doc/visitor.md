@@ -95,7 +95,7 @@ final class Application implements Service {
 }
 ```
 
-We need to implement visitors:
+We need to implement a visitor:
 
 ```java
 final class PerformVisitor implements ServiceVisitor {

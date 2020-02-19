@@ -29,7 +29,7 @@ The class diagram will be:
 The task:
 
 > Let's consider to create a db and web servers without showing the implementation and to delegate instantiation 
-  to child classes but in addition we need to cache created objects to simplify memory usage.
+to child classes but in addition we need to cache created objects to simplify memory usage.
 
 Let's create an enum of server types which we are going to support:
 

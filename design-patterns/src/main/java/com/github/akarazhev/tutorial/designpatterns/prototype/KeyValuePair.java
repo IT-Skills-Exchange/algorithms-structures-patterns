@@ -7,7 +7,7 @@ import java.util.Objects;
 /**
  * Simple key-value util object.
  */
-public final class KeyValuePair<T> implements Cloneable {
+final class KeyValuePair<T> implements Cloneable {
     private final String key;
     private final T value;
 

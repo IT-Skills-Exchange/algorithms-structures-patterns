@@ -33,7 +33,7 @@ The task:
 Let's define an observer:
 
 ```java
-public interface Observer<T> {
+interface Observer<T> {
 
     void update(final T data);
 }
@@ -42,7 +42,7 @@ public interface Observer<T> {
 We need to define an observable specification:
 
 ```java
-public interface Observable<T> {
+interface Observable<T> {
 
     void registerObserver(final Observer<T> o);
 

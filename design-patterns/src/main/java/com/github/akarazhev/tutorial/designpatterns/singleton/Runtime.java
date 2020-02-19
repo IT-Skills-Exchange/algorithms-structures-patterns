@@ -3,7 +3,7 @@ package com.github.akarazhev.tutorial.designpatterns.singleton;
 /**
  * The Runtime singleton instance.
  */
-public final class Runtime {
+final class Runtime {
 
     private Runtime() {
         // Empty constructor

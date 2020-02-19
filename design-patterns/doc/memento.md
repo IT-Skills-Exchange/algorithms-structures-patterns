@@ -30,7 +30,7 @@ The task:
 
 > Let's consider to create a snapshot with the current version and restore it later.  
 
-Let's implement the snapshot class:
+Let's implement a snapshot class:
 
 ```java
 final class Snapshot {

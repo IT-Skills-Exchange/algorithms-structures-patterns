@@ -62,7 +62,7 @@ final var logger = Logger.INSTANCE;
 Let's create a Runtime:
 
 ```java
-public final class Runtime {
+final class Runtime {
 
     private Runtime() {
     }

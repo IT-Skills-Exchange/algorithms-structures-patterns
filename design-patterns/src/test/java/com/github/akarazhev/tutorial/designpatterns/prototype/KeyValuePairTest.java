@@ -18,6 +18,7 @@ final class KeyValuePairTest {
         // Check test results
         assertEquals("key", pair.getKey());
         assertEquals("value", pair.getValue());
+
         final var clonedPair = pair.clone();
         assertEquals("key", clonedPair.getKey());
         assertEquals("value", clonedPair.getValue());

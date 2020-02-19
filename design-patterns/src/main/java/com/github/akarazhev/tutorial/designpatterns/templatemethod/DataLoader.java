@@ -19,7 +19,7 @@ abstract class DataLoader {
      * @return an encoded data.
      */
     final String getEncoded() {
-        final StringBuilder encoded = new StringBuilder();
+        final var encoded = new StringBuilder();
         getData().forEach(val -> encoded.append(":").append(val));
         return encoded.length() > 0 ? encoded.deleteCharAt(0).toString() : encoded.toString();
     }

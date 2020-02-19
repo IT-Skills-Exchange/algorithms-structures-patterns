@@ -32,7 +32,7 @@ The task:
 Let's create a key-value object:
 
 ```java
-public final class KeyValuePair<T> implements Cloneable {
+final class KeyValuePair<T> implements Cloneable {
     private final String key;
     private final T value;
 

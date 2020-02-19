@@ -63,13 +63,13 @@ final class Context {
 }
 ```
 
-Let's create different states:
+Let's create different states (i.e. online, offline, Paused):
 
 ```java
 final class Online implements State {
 
     @Override
-    public void execute(Context context, String command) {
+    public void execute(final Context context, final String command) {
         if ("pause".equals(command)) {
             context.setState(new Paused());
         } else if ("stop".equals(command)) {
@@ -83,7 +83,7 @@ final class Online implements State {
 final class Offline implements State {
 
     @Override
-    public void execute(Context context, String command) {
+    public void execute(final Context context, final String command) {
         if ("start".equals(command)) {
             context.setState(new Online());
         }
@@ -95,7 +95,7 @@ final class Offline implements State {
 public class Paused implements State {
 
     @Override
-    public void execute(Context context, String command) {
+    public void execute(final Context context, final String command) {
         if ("start".equals(command)) {
             context.setState(new Online());
         } else if ("stop".equals(command)) {

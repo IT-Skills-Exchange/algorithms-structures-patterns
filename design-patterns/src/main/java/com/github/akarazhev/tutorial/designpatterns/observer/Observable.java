@@ -5,7 +5,7 @@ package com.github.akarazhev.tutorial.designpatterns.observer;
  *
  * @param <T> a type of a data.
  */
-public interface Observable<T> {
+interface Observable<T> {
     /**
      * Registers a new observer.
      *

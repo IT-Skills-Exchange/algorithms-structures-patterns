@@ -5,7 +5,7 @@ The pattern belongs to the creational category of the design patterns.
 ## Idea 
 
 Define an interface for creating an object, but let subclasses decide which class to instantiate. 
-Factory Method lets a class defer instantiation to subclasses.
+Factory method lets a class defer instantiation to subclasses.
 
 ## Explanation
 
@@ -34,7 +34,7 @@ The task:
 > Let's consider to create a db and web servers without showing the implementation and to delegate instantiation 
 to child classes.
 
-Let's create an interface and database server:
+Let's create an interface and a database server:
 
 ```java
 public interface DbServer {
@@ -45,7 +45,7 @@ public interface DbServer {
 }
 ```
 
-and the implementation:
+and the implementation will be:
 
 ```java
 public final class H2dbServer implements DbServer {
@@ -73,7 +73,7 @@ public final class H2dbServer implements DbServer {
 }
 ```
 
-Let's create an interface and web server:
+Let's create an interface and a web server:
 
 ```java
 public interface WebServer {
@@ -84,7 +84,7 @@ public interface WebServer {
 }
 ```
 
-and the implementation:
+and the implementation will be:
 
 ```java
 public final class HttpServer implements WebServer {

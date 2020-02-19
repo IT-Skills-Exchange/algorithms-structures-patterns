@@ -8,7 +8,7 @@ public class Paused implements State {
      * {@inheritDoc}
      */
     @Override
-    public void execute(Context context, String command) {
+    public void execute(final Context context, final String command) {
         if ("start".equals(command)) {
             context.setState(new Online());
         } else if ("stop".equals(command)) {

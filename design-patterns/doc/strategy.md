@@ -67,8 +67,8 @@ final class BubbleSort implements Strategy {
     @Override
     public int[] sort(int[] indices) {
         int index;
-        for (int i = 0; i < indices.length; i++) {
-            for (int j = 0; j < indices.length - 1 - i; j++) {
+        for (var i = 0; i < indices.length; i++) {
+            for (var j = 0; j < indices.length - 1 - i; j++) {
                 if (indices[j] > indices[j + 1]) {
                     index = indices[j];
                     indices[j] = indices[j + 1];
@@ -88,7 +88,7 @@ final class InsertionSort implements Strategy {
     @Override
     public int[] sort(int[] indices) {
         int j, index;
-        for (int i = 1; i < indices.length; i++) {
+        for (var i = 1; i < indices.length; i++) {
             index = indices[i];
             for (j = i; j > 0 && indices[j - 1] > index; j--) {
                 indices[j] = indices[j - 1];

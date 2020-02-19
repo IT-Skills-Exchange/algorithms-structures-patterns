@@ -10,7 +10,7 @@ final class InsertionSort implements Strategy {
     @Override
     public int[] sort(int[] indices) {
         int j, index;
-        for (int i = 1; i < indices.length; i++) {
+        for (var i = 1; i < indices.length; i++) {
             index = indices[i];
             for (j = i; j > 0 && indices[j - 1] > index; j--) {
                 indices[j] = indices[j - 1];

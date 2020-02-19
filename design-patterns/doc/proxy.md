@@ -61,7 +61,7 @@ final class ServiceConfig implements Config {
 }
 ```
 
-The runtime config may look like:
+The runtime config will be:
 
 ```java
 final class RuntimeConfig implements Config {

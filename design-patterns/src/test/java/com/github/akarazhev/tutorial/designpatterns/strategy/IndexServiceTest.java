@@ -14,9 +14,9 @@ final class IndexServiceTest {
     @Test
     @DisplayName("Bubble sort")
     void bubbleSort() {
-        int i = 0;
+        var i = 0;
         final var service = new IndexService(new BubbleSort());
-        for (final int index : service.sort(new int[]{10, 9, 8, 7, 6, 5, 4, 3, 2, 1})) {
+        for (final var index : service.sort(new int[]{10, 9, 8, 7, 6, 5, 4, 3, 2, 1})) {
             assertEquals(++i, index);
         }
     }
@@ -24,9 +24,9 @@ final class IndexServiceTest {
     @Test
     @DisplayName("Insertion sort")
     void insertionSort() {
-        int i = 0;
+        var i = 0;
         final var service = new IndexService(new InsertionSort());
-        for (final int index : service.sort(new int[]{10, 9, 8, 7, 6, 5, 4, 3, 2, 1})) {
+        for (final var index : service.sort(new int[]{10, 9, 8, 7, 6, 5, 4, 3, 2, 1})) {
             assertEquals(++i, index);
         }
     }
