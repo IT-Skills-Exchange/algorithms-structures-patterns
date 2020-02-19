@@ -66,7 +66,7 @@ class SystemConfig implements Config {
 }
 ```
 
-The user config may look like:
+The user config will be:
 
 ```java
 final class UserConfig extends SystemConfig {
@@ -83,7 +83,7 @@ final class UserConfig extends SystemConfig {
 }
 ```
 
-The application config may look like:
+The application config will be:
 
 ```java
 final class AppConfig extends SystemConfig {
