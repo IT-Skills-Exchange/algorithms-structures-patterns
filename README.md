@@ -1,23 +1,25 @@
 # Java Tutorial
 
-This java tutorial is not a tutorial that will teach you the language itself, it's the collection of code samples which 
-can be used for better understanding ideas behind concepts of design patterns, data structures, algorithms. It assumes 
-that you are already familiar with the language. Each topic has a small explanation of the problem or idea and the solution, 
-you can use it as you wish and you want.
+This tutorial is not a tutorial that intents teach you the language itself, it's a collection of code samples which 
+can be used for better understanding ideas behind the concepts of design patterns, data structures and algorithms. 
 
-As the start point, let's address to [Programming Principles](doc/programming-principles.md "Programming Principles").
+It assumes that you are familiar with the language. 
+
+Each topic has small explanation of a problem or an idea and the solution, you can use it as you wish and as you want.
+
+As a start point, let's address to [Programming Principles](doc/programming-principles.md "Programming Principles").
 
 ## [Design Patterns](design-patterns/README.md "The design patterns chapter")
 
-In this tutorial the following design patterns will be described:
+In the tutorial the following design patterns will be described:
 
-* Creational: 
+* Creational Patterns: 
 [Abstract Factory](design-patterns/doc/abstract-factory.md "The abstract factory chapter"), 
 [Builder](design-patterns/doc/builder.md "The builder chapter"), 
 [Factory Method](design-patterns/doc/factory-method.md "The factory method chapter"), 
 [Prototype](design-patterns/doc/prototype.md "The prototype chapter"), 
 [Singleton](design-patterns/doc/singleton.md "The singleton chapter"); 
-* Structural: 
+* Structural Patterns: 
 [Adapter](design-patterns/doc/adapter.md "The adapter chapter"), 
 [Bridge](design-patterns/doc/bridge.md "The bridge chapter"), 
 [Composite](design-patterns/doc/composite.md "The composite chapter"), 
@@ -25,7 +27,7 @@ In this tutorial the following design patterns will be described:
 [Facade](design-patterns/doc/facade.md "The facade chapter"), 
 [Flyweight](design-patterns/doc/flyweight.md "The flyweight chapter"), 
 [Proxy](design-patterns/doc/proxy.md "The proxy chapter"); 
-* Behavioral: 
+* Behavioral Patterns: 
 [Chain Of Responsibility](design-patterns/doc/chain-of-responsibility.md "The chain of responsibility chapter"), 
 [Command](design-patterns/doc/command.md "The command chapter"), 
 [Interpreter](design-patterns/doc/interpreter.md "The interpreter chapter"), 
@@ -40,13 +42,13 @@ In this tutorial the following design patterns will be described:
 
 ## [Data Structures](data-structures/README.md "The data structures chapter")
 
-In this tutorial the following data structures will be described:
+In the tutorial the following data structures will be described:
 
 TODO:
 
 ## [Algorithms](algorithms/README.md "The algorithms chapter")
 
-In this tutorial the following algorithms will be described:
+In the tutorial the following algorithms will be described:
 
 TODO:
 
