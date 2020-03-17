@@ -44,7 +44,7 @@ In the tutorial the following design patterns will be described:
 
 In the tutorial the following data structures will be described:
 
-TODO:
+* [Array](data-structures/doc/array.md "The array chapter")
 
 ## [Algorithms](algorithms/README.md "The algorithms chapter")
 
