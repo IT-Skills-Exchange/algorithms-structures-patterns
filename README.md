@@ -51,6 +51,7 @@ In the tutorial the following data structures will be described:
 In the tutorial the following algorithms will be described:
 
 * [Bubble Sort](algorithms/doc/bubble-sort.md "The bubble sort chapter")
+* [Selection Sort](algorithms/doc/selection-sort.md "The selection sort chapter")
 
 ## Build Requirements
 

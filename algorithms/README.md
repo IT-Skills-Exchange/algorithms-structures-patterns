@@ -9,6 +9,7 @@ are used as specifications for performing calculations, data processing, automat
 In the tutorial the following algorithms will be described:
 
 * [Bubble Sort](./doc/bubble-sort.md "The bubble sort chapter")
+* [Selection Sort](./doc/selection-sort.md "The selection sort chapter")
 
 ## Build Requirements
 
