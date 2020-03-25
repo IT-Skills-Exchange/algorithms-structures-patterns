@@ -10,6 +10,7 @@ In the tutorial the following algorithms will be described:
 
 * [Bubble Sort](./doc/bubble-sort.md "The bubble sort chapter")
 * [Selection Sort](./doc/selection-sort.md "The selection sort chapter")
+* [Insertion Sort](./doc/insertion-sort.md "The insertion sort chapter")
 
 ## Build Requirements
 
