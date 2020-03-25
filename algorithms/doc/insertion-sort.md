@@ -6,13 +6,15 @@ and inserts it there. It repeats until no input elements remain.
 
 # Characteristics
 
-* In-place algorithm
-* It will take 100 steps to sort 10 items, 10000 steps to sort 100 items, 1000000 steps to sort 1000 items
-* Stable algorithm
+- In-place algorithm
+- It will take 100 steps to sort 10 items, 10000 steps to sort 100 items, 1000000 steps to sort 1000 items
+- Stable algorithm
 
 # Time complexity
 
 Quadratic: O(n^2) 
+
+# Implementation
 
 ```java
 static int[] sort(final int[] in) {

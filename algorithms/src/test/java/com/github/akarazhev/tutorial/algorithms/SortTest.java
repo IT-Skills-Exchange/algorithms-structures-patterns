@@ -32,6 +32,13 @@ final class SortTest {
         assertArray(InsertionSort.sort(in));
     }
 
+    @Test
+    @DisplayName("Sorts an array with the shell sort algorithm")
+    void shellSort() {
+        final int[] in = {20, 35, -15, 7, 55, 1, -22};
+        assertArray(ShellSort.sort(in));
+    }
+
     private void assertArray(final int[] out) {
         assertEquals(-22, out[0]);
         assertEquals(-15, out[1]);

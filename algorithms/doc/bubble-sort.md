@@ -11,14 +11,16 @@ programming languages such as Python and Java.
 
 # Characteristics
 
-* In-place algorithm
-* It will take 100 steps to sort 10 items, 10000 steps to sort 100 items, 1000000 steps to sort 1000 items
-* Algorithm degrades quickly 
-* Stable algorithm
+- In-place algorithm
+- It will take 100 steps to sort 10 items, 10000 steps to sort 100 items, 1000000 steps to sort 1000 items
+- Algorithm degrades quickly 
+- Stable algorithm
 
 # Time complexity
 
 Quadratic: O(n^2) 
+
+# Implementation
 
 ```java
 static int[] sort(final int[] in) {
