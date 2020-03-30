@@ -53,6 +53,23 @@ final class SortTest {
         assertArray(QuickSort.sort(in));
     }
 
+    @Test
+    @DisplayName("Sorts an array with the counting sort algorithm")
+    void countingSort() {
+        final int[] in = { 2, 5, 9, 8, 2, 8, 7, 10, 4, 3 };
+        final int[] out = CountingSort.sort(in);
+        assertEquals(2, out[0]);
+        assertEquals(2, out[1]);
+        assertEquals(3, out[2]);
+        assertEquals(4, out[3]);
+        assertEquals(5, out[4]);
+        assertEquals(7, out[5]);
+        assertEquals(8, out[6]);
+        assertEquals(8, out[7]);
+        assertEquals(9, out[8]);
+        assertEquals(10, out[9]);
+    }
+
     private void assertArray(final int[] out) {
         assertEquals(-22, out[0]);
         assertEquals(-15, out[1]);

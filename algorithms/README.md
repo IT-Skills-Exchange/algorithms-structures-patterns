@@ -15,6 +15,7 @@ In the tutorial the following algorithms will be described:
 * [Factorial](./doc/factorial.md "The factorial chapter")
 * [Merge Sort](./doc/merge-sort.md "The merge sort chapter")
 * [Quick Sort](./doc/quick-sort.md "The quick sort chapter")
+* [Counting Sort](./doc/counting-sort.md "The counting sort chapter")
 
 ## Build Requirements
 
