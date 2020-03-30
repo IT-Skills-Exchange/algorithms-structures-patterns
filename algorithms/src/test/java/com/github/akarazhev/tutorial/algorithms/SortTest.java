@@ -39,6 +39,13 @@ final class SortTest {
         assertArray(ShellSort.sort(in));
     }
 
+    @Test
+    @DisplayName("")
+    void mergeSort() {
+        final int[] in = {20, 35, -15, 7, 55, 1, -22};
+        assertArray(MergeSort.sort(in));
+    }
+
     private void assertArray(final int[] out) {
         assertEquals(-22, out[0]);
         assertEquals(-15, out[1]);

@@ -13,6 +13,7 @@ In the tutorial the following algorithms will be described:
 * [Insertion Sort](./doc/insertion-sort.md "The insertion sort chapter")
 * [Shell Sort](./doc/shell-sort.md "The shell sort chapter")
 * [Factorial](./doc/factorial.md "The factorial chapter")
+* [Merge Sort](./doc/merge-sort.md "The merge sort chapter")
 
 ## Build Requirements
 

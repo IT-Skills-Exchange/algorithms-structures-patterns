@@ -55,6 +55,7 @@ In the tutorial the following algorithms will be described:
 * [Insertion Sort](algorithms/doc/insertion-sort.md "The insertion sort chapter")
 * [Shell Sort](algorithms/doc/shell-sort.md "The shell sort chapter")
 * [Factorial](algorithms/doc/factorial.md "The factorial chapter")
+* [Merge Sort](algorithms/doc/merge-sort.md "The merge sort chapter")
 
 ## Build Requirements
 
