@@ -14,6 +14,7 @@ In the tutorial the following algorithms will be described:
 * [Shell Sort](./doc/shell-sort.md "The shell sort chapter")
 * [Factorial](./doc/factorial.md "The factorial chapter")
 * [Merge Sort](./doc/merge-sort.md "The merge sort chapter")
+* [Quick Sort](./doc/quick-sort.md "The quick sort chapter")
 
 ## Build Requirements
 

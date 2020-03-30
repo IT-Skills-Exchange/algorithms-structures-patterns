@@ -40,10 +40,17 @@ final class SortTest {
     }
 
     @Test
-    @DisplayName("")
+    @DisplayName("Sorts an array with the merge sort algorithm")
     void mergeSort() {
         final int[] in = {20, 35, -15, 7, 55, 1, -22};
         assertArray(MergeSort.sort(in));
+    }
+
+    @Test
+    @DisplayName("Sorts an array with the quick sort algorithm")
+    void quickSort() {
+        final int[] in = {20, 35, -15, 7, 55, 1, -22};
+        assertArray(QuickSort.sort(in));
     }
 
     private void assertArray(final int[] out) {
