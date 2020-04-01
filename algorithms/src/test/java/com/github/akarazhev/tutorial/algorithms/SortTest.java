@@ -70,6 +70,19 @@ final class SortTest {
         assertEquals(10, out[9]);
     }
 
+    @Test
+    @DisplayName("Sorts an array with the radix sort algorithm")
+    void radixSort() {
+        final int[] in = { 4725, 4586, 1330, 8792, 1594, 5729 };
+        final int[] out = RadixSort.sort(in);
+        assertEquals(1330, out[0]);
+        assertEquals(1594, out[1]);
+        assertEquals(4586, out[2]);
+        assertEquals(4725, out[3]);
+        assertEquals(5729, out[4]);
+        assertEquals(8792, out[5]);
+    }
+
     private void assertArray(final int[] out) {
         assertEquals(-22, out[0]);
         assertEquals(-15, out[1]);
