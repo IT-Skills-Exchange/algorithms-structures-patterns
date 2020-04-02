@@ -33,9 +33,11 @@ final class DoublyLinkedListTest {
         list.addToEnd(billEnd);
         System.out.println(list.toString());
         assertEquals(5, list.getSize());
+
         list.removeFromFront();
         System.out.println(list.toString());
         assertEquals(4, list.getSize());
+
         list.removeFromEnd();
         System.out.println(list.toString());
         assertEquals(3, list.getSize());
