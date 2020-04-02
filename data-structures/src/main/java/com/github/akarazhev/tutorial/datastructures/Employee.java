@@ -3,7 +3,7 @@ package com.github.akarazhev.tutorial.datastructures;
 import java.util.Objects;
 
 /**
- * It's a basic employee model.
+ * It's a simple employee model.
  */
 public final class Employee {
     private final int id;

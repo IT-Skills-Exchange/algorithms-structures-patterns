@@ -1,4 +1,4 @@
-# The List, ArrayList, Vector Data Structures
+# The List, Array List, Vector Data Structures
 
 ## List 
 
