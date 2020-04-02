@@ -45,6 +45,7 @@ In the tutorial the following design patterns will be described:
 In the tutorial the following data structures will be described:
 
 * [Array](data-structures/doc/array.md "The array chapter")
+* [List, ArrayList, Vector](data-structures/doc/list-arraylist-vector.md "The list, arraylist, vector chapter")
 
 ## [Algorithms](algorithms/README.md "The algorithms chapter")
 

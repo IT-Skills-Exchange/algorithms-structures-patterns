@@ -16,6 +16,7 @@ and the functions or operations that can be applied to the data.
 In the tutorial the following data structures will be described:
 
 * [Array](./doc/array.md "The array chapter")
+* [List, ArrayList, Vector](./doc/list-arraylist-vector.md "The list, arraylist, vector chapter")
 
 ## Build Requirements
 
