@@ -10,7 +10,7 @@ memory addresses 2000, 2004, 2008, …, 2036, so that the element with index i h
 
 The memory address of the first element of an array is called first address, foundation address, or base address.
 
-# Characteristics
+## Characteristics
 
 * Contiguous block in memory 
 * Every element occupies the same amount of space in memory
@@ -19,7 +19,7 @@ the memory address of the ith element by using the following expression: x + y *
 * If we know the index of an element, the time to retrieve the element will be the same, no matter where it is in 
 the array
 
-# Operation and time complexity
+## Operation and time complexity
 
 Retrieve with an index: O(1)
 

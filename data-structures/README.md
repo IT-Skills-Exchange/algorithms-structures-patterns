@@ -4,6 +4,13 @@ In computer science, a data structure is a data organization, management, and st
 access and modification. More precisely, a data structure is a collection of data values, the relationships among them, 
 and the functions or operations that can be applied to the data.
 
+## Abstract Data Type
+
+- Does not dictate how the data is organized
+- Dictates the operations you can perform
+- Concrete data structure is usually a concrete class
+- Abstract data type is usually an interface
+
 ## Content
 
 In the tutorial the following data structures will be described:
