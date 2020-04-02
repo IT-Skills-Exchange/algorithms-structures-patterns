@@ -31,11 +31,11 @@ final class LinkedList {
             return null;
         }
 
-        final var removedNode = head;
+        final var node = head;
         head = head.getNext();
         size--;
-        removedNode.setNext(null);
-        return removedNode;
+        node.setNext(null);
+        return node;
     }
 
     /**
@@ -61,8 +61,8 @@ final class LinkedList {
      */
     @Override
     public String toString() {
-        final var builder = new StringBuilder();
         var current = head;
+        final var builder = new StringBuilder();
         builder.append("HEAD -> ");
         while (current != null) {
             builder.append(current);

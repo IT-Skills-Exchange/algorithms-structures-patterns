@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 final class LinkedListTest {
 
     @Test
-    @DisplayName("Tests an employee linked list implementation")
+    @DisplayName("Tests an employee linked list")
     void testEmployeeLinkedList() {
         final var janeJones = new Employee(123, "Jane", "Jones");
         final var johnDoe = new Employee(4567, "John", "Doe");
@@ -34,56 +34,5 @@ final class LinkedListTest {
         list.removeFromFront();
         System.out.println(list.toString());
         assertEquals(3, list.getSize());
-    }
-
-    @Test
-    @DisplayName("Tests a linked list")
-    void testLinkedList() {
-        final var janeJones = new Employee(123, "Jane", "Jones");
-        final var johnDoe = new Employee(4567, "John", "Doe");
-        final var marySmith = new Employee(22, "Mary", "Smith");
-        final var mikeWilson = new Employee(3245, "Mike", "Wilson");
-        final var billEnd = new Employee(78, "Bill", "End");
-
-        final var list = new java.util.LinkedList<>();
-        list.addFirst(janeJones);
-        list.addFirst(johnDoe);
-        list.addFirst(marySmith);
-        list.addFirst(mikeWilson);
-
-        var iterator = list.iterator();
-        System.out.print("HEAD -> ");
-        while (iterator.hasNext()) {
-            System.out.print(iterator.next());
-            System.out.print("<=>");
-        }
-        System.out.println("null");
-
-        list.addLast(billEnd);
-        iterator = list.iterator();
-        System.out.print("HEAD -> ");
-        while (iterator.hasNext()) {
-            System.out.print(iterator.next());
-            System.out.print("<=>");
-        }
-        System.out.println("null");
-
-        list.removeFirst();
-        iterator = list.iterator();
-        System.out.print("HEAD -> ");
-        while (iterator.hasNext()) {
-            System.out.print(iterator.next());
-            System.out.print("<=>");
-        }
-        System.out.println("null");
-
-        list.removeLast();
-        iterator = list.iterator();
-        System.out.print("HEAD -> ");
-        while (iterator.hasNext()) {
-            System.out.print(iterator.next());
-            System.out.print("<=>");
-        }
-        System.out.println("null");
     }
 }
