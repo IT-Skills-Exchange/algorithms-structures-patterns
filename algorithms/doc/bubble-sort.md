@@ -9,18 +9,18 @@ This simple algorithm performs poorly in real world use and is used primarily as
 More efficient algorithms such as timsort, or merge sort are used by the sorting libraries built into popular 
 programming languages such as Python and Java.
 
-# Characteristics
+## Characteristics
 
 - In-place algorithm
 - It will take 100 steps to sort 10 items, 10000 steps to sort 100 items, 1000000 steps to sort 1000 items
 - Algorithm degrades quickly 
 - Stable algorithm
 
-# Time complexity
+## Time complexity
 
 Quadratic: O(n^2) 
 
-# Implementation
+## Implementation
 
 ```java
 static int[] sort(final int[] in) {

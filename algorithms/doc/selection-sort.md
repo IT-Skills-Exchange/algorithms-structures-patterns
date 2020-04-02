@@ -7,7 +7,7 @@ finding the smallest (or largest, depending on sorting order) element in the uns
 it with the leftmost unsorted element (putting it in sorted order), and moving the sublist boundaries one element 
 to the right.
 
-# Characteristics
+## Characteristics
 
 - In-place algorithm
 - It will take 100 steps to sort 10 items, 10000 steps to sort 100 items, 1000000 steps to sort 1000 items
@@ -15,11 +15,11 @@ to the right.
 - Does not require as much swapping as bubble sort
 - Unstable algorithm
 
-# Time complexity
+## Time complexity
 
 Quadratic: O(n^2) 
 
-# Implementation
+## Implementation
 
 ```java
 static int[] sort(final int[] in) {

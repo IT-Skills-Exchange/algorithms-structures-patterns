@@ -8,7 +8,7 @@ so it is only suitable for direct use in situations where the variation in keys 
 the number of items. However, it is often used as a subroutine in another sorting algorithm, radix sort, that can handle 
 larger keys more efficiently.
 
-# Characteristics
+## Characteristics
 
 - Makes assumptions about the data
 - Does not use comparisons
@@ -18,11 +18,11 @@ larger keys more efficiently.
 - Not an in-place algorithm
 - If we want the sort to be stable, we have to do some extra steps
 
-# Time complexity
+## Time complexity
 
 O(n) - can achieve this because we are making assumptions about the data we are sorting
 
-# Implementation
+## Implementation
 
 ```java
 static int[] sort(final int[] in) {

@@ -5,7 +5,7 @@ distributing elements into buckets according to their radix. For elements with m
 this bucketing process is repeated for each digit, while preserving the ordering of the prior step, 
 until all digits have been considered. For this reason, radix sort has also been called bucket sort and digital sort.
 
-# Characteristics
+## Characteristics
 
 - Makes assumptions about the data
 - Data must have same radix and width
@@ -16,12 +16,12 @@ until all digits have been considered. For this reason, radix sort has also been
 - In-place depends on which sort algorithm you use
 - Stable algorithm
 
-# Time complexity
+## Time complexity
 
 O(n) - can achieve, this because we are making assumptions about the data we are sorting.
 Even so, it often runs slower than O(nlogn) algorithms because of the overhead involved
 
-# Implementation
+## Implementation
 
 ```java
 static int[] sort(final int[] in) {

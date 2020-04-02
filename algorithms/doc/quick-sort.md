@@ -5,7 +5,7 @@ the other elements into two sub-arrays, according to whether they are less than 
 The sub-arrays are then sorted recursively. This can be done in-place, requiring small additional amounts of memory 
 to perform the sorting.
 
-# Characteristics
+## Characteristics
 
 - Divide and conquer algorithm
 - Recursive algorithm
@@ -19,11 +19,11 @@ to perform the sorting.
 - In-place algorithm
 - Unstable algorithm
 
-# Time complexity
+## Time complexity
 
 O(nlogn) - base 2. We are repeatedly partitioning the array into two halves
 
-# Implementation
+## Implementation
 
 ```java
 static int[] sort(final int[] in) {

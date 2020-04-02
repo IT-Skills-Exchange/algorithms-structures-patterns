@@ -10,7 +10,7 @@ Conceptually, a merge sort works as follows:
 2. Repeatedly merge sublists to produce new sorted sublists until there is only one sublist remaining. 
 This will be the sorted list.
 
-# Characteristics
+## Characteristics
 
 - Divide and conquer algorithm
 - Recursive algorithm
@@ -20,11 +20,11 @@ This will be the sorted list.
 - Not an in-place algorithm
 - Stable algorithm
 
-# Time complexity
+## Time complexity
 
 O(nlogn) - base 2. We are repeatedly dividing the array in half during the splitting phase
 
-# Implementation
+## Implementation
 
 Merge Sort - Splitting Phase:
 

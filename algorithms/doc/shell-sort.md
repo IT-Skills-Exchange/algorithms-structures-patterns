@@ -6,18 +6,18 @@ The method starts by sorting pairs of elements far apart from each other, then p
 elements to be compared. Starting with far apart elements, it can move some out-of-place elements into position faster 
 than a simple nearest neighbor exchange.
 
-# Characteristics
+## Characteristics
 
 - In-place algorithm
 - Does not require as much shifting as insertion sort, so it usually performs better
 - Unstable algorithm
 
-# Time complexity
+## Time complexity
 
 Difficult to nail down the time complexity because it will depend on the gap. Worst case: O(n^2), but it can perform 
 much better than that
 
-# Implementation
+## Implementation
 
 * Variation of Insertion Sort
 * Insertion sort chooses which element to insert using a gap of 1

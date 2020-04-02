@@ -4,7 +4,7 @@ In mathematics, the factorial of a positive integer n, denoted by n!, is the pro
 or equal to n: n!=. For example: 5! = 5 * 4 * 3 * 2 * 1 = 120. The value of 0! is 1, according to the convention for 
 an empty product.
 
-# Implementation
+## Implementation
 
 * If num is equal to 0, The factorial is 1. Stop. We have the result. Otherwise...
 * Set multiplier to 1
