@@ -19,6 +19,7 @@ In the tutorial the following data structures will be described:
 * [List, Array List, Vector](doc/list-array-list-vector.md "The list, array list, vector chapter")
 * [Linked List](doc/linked-list.md "The linked list chapter")
 * [Double Linked List](doc/double-linked-list.md "The double linked list chapter")
+* [Stack](doc/stack.md "The stack chapter")
 
 ## Build Requirements
 

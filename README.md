@@ -48,6 +48,7 @@ In the tutorial the following data structures will be described:
 * [List, Array List, Vector](data-structures/doc/list-array-list-vector.md "The list, array list, vector chapter")
 * [Linked List](data-structures/doc/linked-list.md "The linked list chapter")
 * [Double Linked List](data-structures/doc/double-linked-list.md "The double linked list chapter")
+* [Stack](data-structures/doc/stack.md "The stack chapter")
 
 ## [Algorithms](algorithms/README.md "The algorithms chapter")
 
