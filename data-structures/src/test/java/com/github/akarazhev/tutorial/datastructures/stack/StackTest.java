@@ -35,6 +35,23 @@ final class StackTest {
     @Test
     @DisplayName("Test linked list stack")
     void testLinkedListStack() {
+        final var janeJones = new Employee(123, "Jane", "Jones");
+        final var johnDoe = new Employee(4567, "John", "Doe");
+        final var marySmith = new Employee(22, "Mary", "Smith");
+        final var mikeWilson = new Employee(3245, "Mike", "Wilson");
+        final var billEnd = new Employee(78, "Bill", "End");
 
+        final LinkedStack stack = new LinkedStack();
+        stack.push(janeJones);
+        stack.push(johnDoe);
+        stack.push(marySmith);
+        stack.push(mikeWilson);
+        stack.push(billEnd);
+        System.out.println(stack);
+
+        assertEquals("Bill", stack.peek().getFirstName());
+
+        assertEquals("Bill", stack.pop().getFirstName());
+        assertEquals("Mike", stack.peek().getFirstName());
     }
 }

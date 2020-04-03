@@ -87,7 +87,7 @@ final class ArrayStack {
      */
     @Override
     public String toString() {
-        final StringBuilder builder = new StringBuilder();
+        final var builder = new StringBuilder();
         for (int i = top - 1; i >= 0; i--) {
             builder.append("=>").append(stack[i]);
         }

@@ -82,11 +82,63 @@ public final class Employee {
 Let's create a simple linked list stack:
 
 ```java
+final class LinkedStack {
+    private final LinkedList<Employee> stack;
+
+    LinkedStack() {
+        stack = new LinkedList<>();
+    }
+
+    void push(final Employee employee) {
+        stack.push(employee);
+    }
+
+    Employee pop() {
+        return stack.pop();
+    }
+
+    Employee peek() {
+        return stack.peek();
+    }
+
+    boolean isEmpty() {
+        return stack.isEmpty();
+    }
+
+    @Override
+    public String toString() {
+        final var builder = new StringBuilder();
+        final var iterator = stack.listIterator();
+        while (iterator.hasNext()) {
+            builder.append("=>").append(iterator.next());
+        }
+
+        return builder.toString();
+    }
+}
 ```
 
 It can be used as follow:
 
 ```java
+final var janeJones = new Employee(123, "Jane", "Jones");
+final var johnDoe = new Employee(4567, "John", "Doe");
+final var marySmith = new Employee(22, "Mary", "Smith");
+final var mikeWilson = new Employee(3245, "Mike", "Wilson");
+final var billEnd = new Employee(78, "Bill", "End");
+
+final LinkedStack stack = new LinkedStack();
+stack.push(janeJones);
+stack.push(johnDoe);
+stack.push(marySmith);
+stack.push(mikeWilson);
+stack.push(billEnd);
+System.out.println(stack);
+
+var name = stack.peek().getFirstName();
+
+var name = stack.pop().getFirstName();
+var name = stack.peek().getFirstName();
 ```
 
 If you use an array, then push is O(n), because the array may have to be resized.
@@ -141,7 +193,7 @@ final class ArrayStack {
 
     @Override
     public String toString() {
-        final StringBuilder builder = new StringBuilder();
+        final var builder = new StringBuilder();
         for (int i = top - 1; i >= 0; i--) {
             builder.append("=>").append(stack[i]);
         }
