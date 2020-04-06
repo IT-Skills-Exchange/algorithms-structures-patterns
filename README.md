@@ -49,6 +49,7 @@ In the tutorial the following data structures will be described:
 * [Linked List](data-structures/doc/linked-list.md "The linked list chapter")
 * [Double Linked List](data-structures/doc/double-linked-list.md "The double linked list chapter")
 * [Stack](data-structures/doc/stack.md "The stack chapter")
+* [Queue](data-structures/doc/queue.md "The queue chapter")
 
 ## [Algorithms](algorithms/README.md "The algorithms chapter")
 

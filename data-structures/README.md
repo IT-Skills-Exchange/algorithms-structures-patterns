@@ -20,6 +20,7 @@ In the tutorial the following data structures will be described:
 * [Linked List](doc/linked-list.md "The linked list chapter")
 * [Double Linked List](doc/double-linked-list.md "The double linked list chapter")
 * [Stack](doc/stack.md "The stack chapter")
+* [Queue](doc/queue.md "The queue chapter")
 
 ## Build Requirements
 
