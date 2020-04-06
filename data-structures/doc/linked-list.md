@@ -168,8 +168,8 @@ list.addToFront(janeJones);
 list.addToFront(johnDoe);
 list.addToFront(marySmith);
 list.addToFront(mikeWilson);
-System.out.println(list.toString());
+System.out.println(list);
 
 list.removeFromFront();
-System.out.println(list.toString());
+System.out.println(list);
 ```

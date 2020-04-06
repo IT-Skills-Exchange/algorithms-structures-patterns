@@ -220,15 +220,15 @@ list.addToFront(johnDoe);
 list.addToFront(marySmith);
 list.addToFront(mikeWilson);
 
-System.out.println(list.toString());
+System.out.println(list);
 
 final var billEnd = new Employee(78, "Bill", "End");
 list.addToEnd(billEnd);
-System.out.println(list.toString());
+System.out.println(list);
 
 list.removeFromFront();
-System.out.println(list.toString());
+System.out.println(list);
 
 list.removeFromEnd();
-System.out.println(list.toString());
+System.out.println(list);
 ```

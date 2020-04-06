@@ -28,11 +28,11 @@ final class LinkedListTest {
         list.addToFront(johnDoe);
         list.addToFront(marySmith);
         list.addToFront(mikeWilson);
-        System.out.println(list.toString());
+        System.out.println(list);
         assertEquals(4, list.getSize());
 
         list.removeFromFront();
-        System.out.println(list.toString());
+        System.out.println(list);
         assertEquals(3, list.getSize());
     }
 }
