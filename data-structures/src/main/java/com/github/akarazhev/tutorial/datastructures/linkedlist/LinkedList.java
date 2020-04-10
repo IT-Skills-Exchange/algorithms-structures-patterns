@@ -73,4 +73,34 @@ final class LinkedList {
         builder.append("null");
         return builder.toString();
     }
+
+    private final static class Node {
+        private Employee employee;
+        private Node next;
+
+        Node(final Employee employee) {
+            this.employee = employee;
+        }
+
+        Employee getEmployee() {
+            return employee;
+        }
+
+        void setEmployee(final Employee employee) {
+            this.employee = employee;
+        }
+
+        Node getNext() {
+            return next;
+        }
+
+        void setNext(final Node next) {
+            this.next = next;
+        }
+
+        @Override
+        public String toString() {
+            return employee.toString();
+        }
+    }
 }

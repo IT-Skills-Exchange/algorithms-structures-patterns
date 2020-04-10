@@ -70,39 +70,6 @@ public final class Employee {
 }
 ```
 
-Let's create a simple node model:
-
-```java
-final class Node {
-    private Employee employee;
-    private Node next;
-
-    Node(final Employee employee) {
-        this.employee = employee;
-    }
-
-    Employee getEmployee() {
-        return employee;
-    }
-
-    void setEmployee(final Employee employee) {
-        this.employee = employee;
-    }
-
-    Node getNext() {
-        return next;
-    }
-
-    void setNext(final Node next) {
-        this.next = next;
-    }
-
-    public String toString() {
-        return employee.toString();
-    }
-}
-```
-
 Let's create a simple linked list model:
 
 ```java
@@ -122,11 +89,11 @@ final class LinkedList {
             return null;
         }
 
-        final var removedNode = head;
+        final var node = head;
         head = head.getNext();
         size--;
-        removedNode.setNext(null);
-        return removedNode;
+        node.setNext(null);
+        return node;
     }
 
     int getSize() {
@@ -139,8 +106,8 @@ final class LinkedList {
 
     @Override
     public String toString() {
-        final var builder = new StringBuilder();
         var current = head;
+        final var builder = new StringBuilder();
         builder.append("HEAD -> ");
         while (current != null) {
             builder.append(current);
@@ -150,6 +117,36 @@ final class LinkedList {
 
         builder.append("null");
         return builder.toString();
+    }
+
+    private final static class Node {
+        private Employee employee;
+        private Node next;
+
+        Node(final Employee employee) {
+            this.employee = employee;
+        }
+
+        Employee getEmployee() {
+            return employee;
+        }
+
+        void setEmployee(final Employee employee) {
+            this.employee = employee;
+        }
+
+        Node getNext() {
+            return next;
+        }
+
+        void setNext(final Node next) {
+            this.next = next;
+        }
+
+        @Override
+        public String toString() {
+            return employee.toString();
+        }
     }
 }
 ```

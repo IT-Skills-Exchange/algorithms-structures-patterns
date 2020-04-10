@@ -127,4 +127,43 @@ final class DoublyLinkedList {
         builder.append("null");
         return builder.toString();
     }
+
+    private final static class Node {
+        private Employee employee;
+        private Node next;
+        private Node previous;
+
+        Node(final Employee employee) {
+            this.employee = employee;
+        }
+
+        Employee getEmployee() {
+            return employee;
+        }
+
+        void setEmployee(final Employee employee) {
+            this.employee = employee;
+        }
+
+        Node getNext() {
+            return next;
+        }
+
+        void setNext(final Node next) {
+            this.next = next;
+        }
+
+        Node getPrevious() {
+            return previous;
+        }
+
+        void setPrevious(final Node previous) {
+            this.previous = previous;
+        }
+
+        @Override
+        public String toString() {
+            return employee.toString();
+        }
+    }
 }
