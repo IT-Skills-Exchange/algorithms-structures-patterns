@@ -12,11 +12,11 @@ The memory address of the first element of an array is called first address, fou
 
 ## Characteristics
 
-* Contiguous block in memory 
-* Every element occupies the same amount of space in memory
-* If an array starts at memory address x, and the size if each element in the array is y, we can calculate 
+- Contiguous block in memory 
+- Every element occupies the same amount of space in memory
+- If an array starts at memory address x, and the size if each element in the array is y, we can calculate 
 the memory address of the ith element by using the following expression: x + y * y
-* If we know the index of an element, the time to retrieve the element will be the same, no matter where it is in 
+- If we know the index of an element, the time to retrieve the element will be the same, no matter where it is in 
 the array
 
 ## Operation and time complexity
