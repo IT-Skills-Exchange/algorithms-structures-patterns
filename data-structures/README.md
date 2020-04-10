@@ -21,6 +21,7 @@ In the tutorial the following data structures will be described:
 * [Double Linked List](doc/double-linked-list.md "The double linked list chapter")
 * [Stack](doc/stack.md "The stack chapter")
 * [Queue](doc/queue.md "The queue chapter")
+* [Hashtable](doc/hashtable.md "The hashtable chapter")
 
 ## Build Requirements
 
