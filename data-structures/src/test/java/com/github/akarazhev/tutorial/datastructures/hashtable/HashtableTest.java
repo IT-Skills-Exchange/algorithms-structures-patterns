@@ -47,4 +47,10 @@ final class HashtableTest {
         assertNotNull(value);
         assertEquals("Mary", value.getFirstName());
     }
+
+    @Test
+    @DisplayName("")
+    void testChainedHashtable() {
+
+    }
 }

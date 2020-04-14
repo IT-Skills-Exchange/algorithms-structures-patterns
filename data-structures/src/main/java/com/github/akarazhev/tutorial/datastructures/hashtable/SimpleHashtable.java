@@ -88,12 +88,12 @@ final class SimpleHashtable {
     }
 
     private int findKey(final String key) {
-        int hashedKey = hashKey(key);
+        var hashedKey = hashKey(key);
         if (hashtable[hashedKey] != null && hashtable[hashedKey].getKey().equals(key)) {
             return hashedKey;
         }
 
-        int stopIndex = hashedKey;
+        final var stopIndex = hashedKey;
         if (hashedKey == hashtable.length - 1) {
             hashedKey = 0;
         } else {
