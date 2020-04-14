@@ -108,17 +108,46 @@ final class SimpleHashtable {
         return value;
     }
 
+    int size() {
+        var size = 0;
+        for (final var keyValuePair : hashtable) {
+            if (keyValuePair != null) {
+                size++;
+            }
+        }
+
+        return size;
+    }
+
+    @Override
+    public String toString() {
+        final var builder = new StringBuilder();
+        for (var i = 0; i < hashtable.length; i++) {
+            if (hashtable[i] == null) {
+                builder.append("Empty");
+            } else {
+                builder.append("Position ").append(i).append(": ").append(hashtable[i].getValue());
+            }
+        }
+
+        return builder.toString();
+    }
+
+    private boolean occupied(final int index) {
+        return hashtable[index] != null;
+    }
+
     private int hashKey(final String key) {
         return key.length() % hashtable.length;
     }
 
     private int findKey(final String key) {
-        int hashedKey = hashKey(key);
+        var hashedKey = hashKey(key);
         if (hashtable[hashedKey] != null && hashtable[hashedKey].getKey().equals(key)) {
             return hashedKey;
         }
 
-        int stopIndex = hashedKey;
+        final var stopIndex = hashedKey;
         if (hashedKey == hashtable.length - 1) {
             hashedKey = 0;
         } else {
@@ -135,35 +164,6 @@ final class SimpleHashtable {
             return -1;
         }
 
-    }
-
-    int size() {
-        var size = 0;
-        for (final var keyValuePair : hashtable) {
-            if (keyValuePair != null) {
-                size++;
-            }
-        }
-
-        return size;
-    }
-
-    private boolean occupied(final int index) {
-        return hashtable[index] != null;
-    }
-
-    @Override
-    public String toString() {
-        final var builder = new StringBuilder();
-        for (var i = 0; i < hashtable.length; i++) {
-            if (hashtable[i] == null) {
-                builder.append("Empty");
-            } else {
-                builder.append("Position ").append(i).append(": ").append(hashtable[i].getValue());
-            }
-        }
-
-        return builder.toString();
     }
 
     private final static class KeyValuePair {
@@ -213,4 +213,134 @@ System.out.println(hashtable);
 size = hashtable.size();
 
 value = hashtable.get("Smith");
+```
+
+Chaining implementation:
+
+```java
+final class ChainedHashtable {
+    private LinkedList<KeyValuePair>[] hashtable;
+
+    ChainedHashtable() {
+        hashtable = new LinkedList[10];
+        for (var i = 0; i < hashtable.length; i++) {
+            hashtable[i] = new LinkedList<>();
+        }
+    }
+
+    void put(final String key, final Employee value) {
+        int hashedKey = hashKey(key);
+        hashtable[hashedKey].add(new KeyValuePair(key, value));
+    }
+
+    Employee get(final String key) {
+        KeyValuePair employee;
+        final var hashedKey = hashKey(key);
+        for (final var keyValuePair : hashtable[hashedKey]) {
+            employee = keyValuePair;
+            if (employee.key.equals(key)) {
+                return employee.getValue();
+            }
+        }
+
+        return null;
+    }
+
+    Employee remove(final String key) {
+        var index = -1;
+        KeyValuePair employee = null;
+        final var hashedKey = hashKey(key);
+        for (final var keyValuePair : hashtable[hashedKey]) {
+            employee = keyValuePair;
+            index++;
+            if (employee.key.equals(key)) {
+                break;
+            }
+        }
+
+        if (employee == null) {
+            return null;
+        } else {
+            hashtable[hashedKey].remove(index);
+            return employee.getValue();
+        }
+    }
+
+    int size() {
+        var size = 0;
+        for (final var keyValuePairs : hashtable) {
+            if (keyValuePairs != null) {
+                size += keyValuePairs.size();
+            }
+        }
+
+        return size;
+    }
+
+    @Override
+    public String toString() {
+        final var builder = new StringBuilder();
+        for (var i = 0; i < hashtable.length; i++) {
+            if (hashtable[i].isEmpty()) {
+                builder.append("Position ").append(i).append(": Empty");
+            } else {
+                builder.append("Position ").append(i).append(": ");
+                for (final var keyValuePair : hashtable[i]) {
+                    builder.append(keyValuePair.getValue()).append("->");
+                }
+
+                builder.append("null");
+            }
+        }
+
+        return builder.toString();
+    }
+
+    private int hashKey(final String key) {
+        // return key.length() % hashtable.length;
+        return Math.abs(key.hashCode() % hashtable.length);
+    }
+
+    private final static class KeyValuePair {
+        private final String key;
+        private final Employee value;
+
+        KeyValuePair(final String key, final Employee value) {
+            this.key = key;
+            this.value = value;
+        }
+
+        String getKey() {
+            return key;
+        }
+
+        Employee getValue() {
+            return value;
+        }
+    }
+}
+```
+
+It can be used as follow:
+
+```java
+final var janeJones = new Employee(123, "Jane", "Jones");
+final var johnDoe = new Employee(4567, "John", "Doe");
+final var marySmith = new Employee(22, "Mary", "Smith");
+final var mikeWilson = new Employee(3245, "Mike", "Wilson");
+
+final var hashtable = new ChainedHashtable();
+hashtable.put("Jones", janeJones);
+hashtable.put("Doe", johnDoe);
+hashtable.put("Wilson", mikeWilson);
+hashtable.put("Smith", marySmith);
+System.out.println(hashtable);
+var size = hashtable.size();
+
+var value = hashtable.get("Smith");
+
+hashtable.remove("Doe");
+hashtable.remove("Jones");
+System.out.println(hashtable);
+var size = hashtable.size();
 ```

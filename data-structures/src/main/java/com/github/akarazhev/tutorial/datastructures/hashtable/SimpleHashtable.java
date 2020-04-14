@@ -83,6 +83,43 @@ final class SimpleHashtable {
         return value;
     }
 
+    /**
+     * Returns a size of the hashtable.
+     *
+     * @return a size.
+     */
+    int size() {
+        var size = 0;
+        for (final var keyValuePair : hashtable) {
+            if (keyValuePair != null) {
+                size++;
+            }
+        }
+
+        return size;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String toString() {
+        final var builder = new StringBuilder();
+        for (var i = 0; i < hashtable.length; i++) {
+            if (hashtable[i] == null) {
+                builder.append("Empty");
+            } else {
+                builder.append("Position ").append(i).append(": ").append(hashtable[i].getValue());
+            }
+        }
+
+        return builder.toString();
+    }
+
+    private boolean occupied(final int index) {
+        return hashtable[index] != null;
+    }
+
     private int hashKey(final String key) {
         return key.length() % hashtable.length;
     }
@@ -110,43 +147,6 @@ final class SimpleHashtable {
             return -1;
         }
 
-    }
-
-    /**
-     * Returns a size of the hashtable.
-     *
-     * @return a size.
-     */
-    int size() {
-        var size = 0;
-        for (final var keyValuePair : hashtable) {
-            if (keyValuePair != null) {
-                size++;
-            }
-        }
-
-        return size;
-    }
-
-    private boolean occupied(final int index) {
-        return hashtable[index] != null;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public String toString() {
-        final var builder = new StringBuilder();
-        for (var i = 0; i < hashtable.length; i++) {
-            if (hashtable[i] == null) {
-                builder.append("Empty");
-            } else {
-                builder.append("Position ").append(i).append(": ").append(hashtable[i].getValue());
-            }
-        }
-
-        return builder.toString();
     }
 
     private final static class KeyValuePair {

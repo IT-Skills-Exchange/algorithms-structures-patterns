@@ -49,8 +49,28 @@ final class HashtableTest {
     }
 
     @Test
-    @DisplayName("")
+    @DisplayName("Tests a chained hashtable")
     void testChainedHashtable() {
+        final var janeJones = new Employee(123, "Jane", "Jones");
+        final var johnDoe = new Employee(4567, "John", "Doe");
+        final var marySmith = new Employee(22, "Mary", "Smith");
+        final var mikeWilson = new Employee(3245, "Mike", "Wilson");
 
+        final var hashtable = new ChainedHashtable();
+        hashtable.put("Jones", janeJones);
+        hashtable.put("Doe", johnDoe);
+        hashtable.put("Wilson", mikeWilson);
+        hashtable.put("Smith", marySmith);
+        System.out.println(hashtable);
+        assertEquals(4, hashtable.size());
+
+        var value = hashtable.get("Smith");
+        assertNotNull(value);
+        assertEquals("Mary", value.getFirstName());
+
+        hashtable.remove("Doe");
+        hashtable.remove("Jones");
+        System.out.println(hashtable);
+        assertEquals(2, hashtable.size());
     }
 }

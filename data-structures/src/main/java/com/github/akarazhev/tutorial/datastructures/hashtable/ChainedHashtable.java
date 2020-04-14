@@ -4,9 +4,15 @@ import com.github.akarazhev.tutorial.datastructures.Employee;
 
 import java.util.LinkedList;
 
+/**
+ * Provides a chained hashtable implementation.
+ */
 final class ChainedHashtable {
     private LinkedList<KeyValuePair>[] hashtable;
 
+    /**
+     * Constructs a hashtable model.
+     */
     ChainedHashtable() {
         hashtable = new LinkedList[10];
         for (var i = 0; i < hashtable.length; i++) {
@@ -14,15 +20,27 @@ final class ChainedHashtable {
         }
     }
 
-    void put(final String key, final Employee employee) {
+    /**
+     *  Puts a new key-value pair into the hashtable.
+     *
+     * @param key a key.
+     * @param value a value.
+     */
+    void put(final String key, final Employee value) {
         int hashedKey = hashKey(key);
-        hashtable[hashedKey].add(new KeyValuePair(key, employee));
+        hashtable[hashedKey].add(new KeyValuePair(key, value));
     }
 
+    /**
+     * Gets a value by a key from the hashtable.
+     *
+     * @param key a key.
+     * @return a value.
+     */
     Employee get(final String key) {
         KeyValuePair employee;
         final var hashedKey = hashKey(key);
-        for (KeyValuePair keyValuePair : hashtable[hashedKey]) {
+        for (final var keyValuePair : hashtable[hashedKey]) {
             employee = keyValuePair;
             if (employee.key.equals(key)) {
                 return employee.getValue();
@@ -32,7 +50,12 @@ final class ChainedHashtable {
         return null;
     }
 
-    public Employee remove(final String key) {
+    /**
+     * Removes a value from the hashtable.
+     *
+     * @return a value.
+     */
+    Employee remove(final String key) {
         var index = -1;
         KeyValuePair employee = null;
         final var hashedKey = hashKey(key);
@@ -52,9 +75,20 @@ final class ChainedHashtable {
         }
     }
 
-    private int hashKey(final String key) {
-        // return key.length() % hashtable.length;
-        return Math.abs(key.hashCode() % hashtable.length);
+    /**
+     * Returns a size of the hashtable.
+     *
+     * @return a size.
+     */
+    int size() {
+        var size = 0;
+        for (final var keyValuePairs : hashtable) {
+            if (keyValuePairs != null) {
+                size += keyValuePairs.size();
+            }
+        }
+
+        return size;
     }
 
     /**
@@ -77,6 +111,11 @@ final class ChainedHashtable {
         }
 
         return builder.toString();
+    }
+
+    private int hashKey(final String key) {
+        // return key.length() % hashtable.length;
+        return Math.abs(key.hashCode() % hashtable.length);
     }
 
     private final static class KeyValuePair {
