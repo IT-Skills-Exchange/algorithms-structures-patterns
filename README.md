@@ -50,7 +50,7 @@ In the tutorial the following data structures will be described:
 * [Double Linked List](data-structures/doc/double-linked-list.md "The double linked list chapter")
 * [Stack](data-structures/doc/stack.md "The stack chapter")
 * [Queue](data-structures/doc/queue.md "The queue chapter")
-* [Queue](data-structures/doc/hashtable.md "The hashtable chapter")
+* [Hashtable](data-structures/doc/hashtable.md "The hashtable chapter")
 
 ## [Algorithms](algorithms/README.md "The algorithms chapter")
 
@@ -65,6 +65,7 @@ In the tutorial the following algorithms will be described:
 * [Quick Sort](algorithms/doc/quick-sort.md "The quick sort chapter")
 * [Counting Sort](algorithms/doc/counting-sort.md "The counting sort chapter")
 * [Radix Sort](algorithms/doc/radix-sort.md "The radix sort chapter")
+* [Bucket Sort](algorithms/doc/bucket-sort.md "The bucket sort chapter")
 
 ## Build Requirements
 

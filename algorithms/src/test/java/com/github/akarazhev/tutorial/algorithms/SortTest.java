@@ -83,6 +83,20 @@ final class SortTest {
         assertEquals(8792, out[5]);
     }
 
+    @Test
+    @DisplayName("Sorts an array with the bucket sort algorithm")
+    void bucketSort() {
+        final int[] in = { 54, 46, 83, 66, 95, 92, 43 };
+        final int[] out = BucketSort.sort(in);
+        assertEquals(43, out[0]);
+        assertEquals(46, out[1]);
+        assertEquals(54, out[2]);
+        assertEquals(66, out[3]);
+        assertEquals(83, out[4]);
+        assertEquals(92, out[5]);
+        assertEquals(95, out[6]);
+    }
+
     private void assertArray(final int[] out) {
         assertEquals(-22, out[0]);
         assertEquals(-15, out[1]);
