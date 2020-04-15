@@ -16,12 +16,15 @@ and the functions or operations that can be applied to the data.
 In the tutorial the following data structures will be described:
 
 * [Array](./doc/array.md "The array chapter")
-* [List, Array List, Vector](doc/list-array-list-vector.md "The list, array list, vector chapter")
-* [Linked List](doc/linked-list.md "The linked list chapter")
-* [Double Linked List](doc/double-linked-list.md "The double linked list chapter")
-* [Stack](doc/stack.md "The stack chapter")
-* [Queue](doc/queue.md "The queue chapter")
-* [Hashtable](doc/hashtable.md "The hashtable chapter")
+* [List, Array List, Vector](./doc/list-array-list-vector.md "The list, array list, vector chapter")
+* [Linked List](./doc/linked-list.md "The linked list chapter")
+* [Double Linked List](./doc/double-linked-list.md "The double linked list chapter")
+* [Stack](./doc/stack.md "The stack chapter")
+* [Queue](./doc/queue.md "The queue chapter")
+* [Hash Table](./doc/hash-table.md "The hash table chapter")
+* [Tree, Binary Search Tree](./doc/tree-binary-search-tree.md "The tree, binary search tree chapter")
+* [Heap](./doc/heap.md "The heap chapter")
+* [Set](./doc/set.md "The set chapter")
 
 ## Build Requirements
 

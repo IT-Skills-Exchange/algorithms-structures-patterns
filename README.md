@@ -50,7 +50,10 @@ In the tutorial the following data structures will be described:
 * [Double Linked List](data-structures/doc/double-linked-list.md "The double linked list chapter")
 * [Stack](data-structures/doc/stack.md "The stack chapter")
 * [Queue](data-structures/doc/queue.md "The queue chapter")
-* [Hashtable](data-structures/doc/hashtable.md "The hashtable chapter")
+* [Hash Table](data-structures/doc/hash-table.md "The hash table chapter")
+* [Tree, Binary Search Tree](data-structures/doc/tree-binary-search-tree.md "The tree, binary search tree chapter")
+* [Heap](data-structures/doc/heap.md "The heap chapter")
+* [Set](data-structures/doc/set.md "The set chapter")
 
 ## [Algorithms](algorithms/README.md "The algorithms chapter")
 
