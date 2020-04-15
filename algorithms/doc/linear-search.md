@@ -9,9 +9,9 @@ It sequentially checks each element of the list until a match is found or the wh
 
 ## Time complexity
 
-Worst-case performance:	O(n)
-Best-case performance: O(1)
-Average performance: O(n)
+Worst-case performance:	O(n)<br>
+Best-case performance: O(1)<br>
+Average performance: O(n)<br>
 Worst-case space complexity: O(1) iterative
 
 ## Implementation

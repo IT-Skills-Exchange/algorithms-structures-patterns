@@ -19,6 +19,7 @@ In the tutorial the following algorithms will be described:
 * [Radix Sort](./doc/radix-sort.md "The radix sort chapter")
 * [Bucket Sort](./doc/bucket-sort.md "The bucket sort chapter")
 * [Linear Search](./doc/linear-search.md "The linear search chapter")
+* [Binary Search](./doc/binary-search.md "The binary search chapter")
 
 ## Build Requirements
 

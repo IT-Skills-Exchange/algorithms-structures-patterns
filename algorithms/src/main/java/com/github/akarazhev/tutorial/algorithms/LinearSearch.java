@@ -7,7 +7,7 @@ final class LinearSearch {
     /**
      * Search a position in an array.
      *
-     * @param in in an input array.
+     * @param in an input array.
      * @param value a value to find.
      * @return a found position.
      */

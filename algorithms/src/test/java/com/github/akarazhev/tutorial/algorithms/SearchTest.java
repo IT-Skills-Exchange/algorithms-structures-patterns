@@ -20,4 +20,19 @@ final class SearchTest {
         assertEquals(-1, LinearSearch.search(in, 8888));
         assertEquals(6, LinearSearch.search(in, -22));
     }
+
+    @Test
+    @DisplayName("Searches an array with the binary search algorithm")
+    void binarySort() {
+        final int[] in = { -22, -15, 1, 7, 20, 35, 55 };
+        assertEquals(1, BinarySearch.iterative(in, -15));
+        assertEquals(2, BinarySearch.iterative(in, 1));
+        assertEquals(-1, BinarySearch.iterative(in, 8888));
+        assertEquals(0, BinarySearch.iterative(in, -22));
+
+        assertEquals(1, BinarySearch.recursive(in, -15));
+        assertEquals(2, BinarySearch.recursive(in, 1));
+        assertEquals(-1, BinarySearch.recursive(in, 8888));
+        assertEquals(0, BinarySearch.recursive(in, -22));
+    }
 }
