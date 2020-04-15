@@ -18,6 +18,7 @@ In the tutorial the following algorithms will be described:
 * [Counting Sort](./doc/counting-sort.md "The counting sort chapter")
 * [Radix Sort](./doc/radix-sort.md "The radix sort chapter")
 * [Bucket Sort](./doc/bucket-sort.md "The bucket sort chapter")
+* [Linear Search](./doc/linear-search.md "The linear search chapter")
 
 ## Build Requirements
 

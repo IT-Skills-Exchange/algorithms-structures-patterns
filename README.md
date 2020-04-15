@@ -66,6 +66,7 @@ In the tutorial the following algorithms will be described:
 * [Counting Sort](algorithms/doc/counting-sort.md "The counting sort chapter")
 * [Radix Sort](algorithms/doc/radix-sort.md "The radix sort chapter")
 * [Bucket Sort](algorithms/doc/bucket-sort.md "The bucket sort chapter")
+* [Linear Search](algorithms/doc/linear-search.md "The linear search chapter")
 
 ## Build Requirements
 
