@@ -35,8 +35,6 @@ static int[] sort(final int[] in) {
     return in;
 }
 
-// Some code
-
 static void swap(final int[] in, final int i, final int j) {
     if (i == j) {
         return;

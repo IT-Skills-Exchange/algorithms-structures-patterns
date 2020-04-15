@@ -59,8 +59,6 @@ static int[] sort(final int[] in) {
     return in;
 }
 
-// Some code
-
 private static int hash(final int value) {
     return value / 10;
 }

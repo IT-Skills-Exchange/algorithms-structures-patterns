@@ -29,8 +29,6 @@ static int[] sort(final int[] in) {
     return sort(in, 1, 10);
 }
 
-// Some code
-
 private static int[] sort(final int[] in, final int min, final int max) {
     final var count = new int[(max - min) + 1];
     for (var i = 0; i < in.length; i++) {

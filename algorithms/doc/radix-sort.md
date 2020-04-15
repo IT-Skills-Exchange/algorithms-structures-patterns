@@ -32,8 +32,6 @@ static int[] sort(final int[] in) {
     return in;
 }
 
-// Some code
-
 private static void sort(final int[] in, final int position, final int radix) {
     final var length = in.length;
     final var counter = new int[radix];
@@ -53,8 +51,6 @@ private static void sort(final int[] in, final int position, final int radix) {
 
     System.arraycopy(buffer, 0, in, 0, length);
 }
-
-// Some code
 
 private static int getDigit(final int position, final int value, final int radix) {
     return value / (int) Math.pow(radix, position) % radix;

@@ -61,8 +61,6 @@ static int[] sort(final int[] in) {
     return sort(in, 0, in.length);
 }
 
-// Some code
-
 private static int[] sort(final int[] in, final int start, final int end) {
     if (end - start < 2) {
         return in;
@@ -74,8 +72,6 @@ private static int[] sort(final int[] in, final int start, final int end) {
     merge(in, start, mid, end);
     return in;
 }
-
-// Some code
 
 private static void merge(final int[] in, final int start, final int mid, final int end) {
     if (in[mid - 1] <= in[mid]) {

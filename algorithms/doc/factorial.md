@@ -1,8 +1,8 @@
 # The Factorial Algorithm
 
 In mathematics, the factorial of a positive integer n, denoted by n!, is the product of all positive integers less than 
-or equal to n: n!=. For example: 5! = 5 * 4 * 3 * 2 * 1 = 120. The value of 0! is 1, according to the convention for 
-an empty product.
+or equal to n: n!=n*(n-1)*(n-2)*... For example: 5! = 5 * 4 * 3 * 2 * 1 = 120. The value of 0! is 1, according to 
+the convention for an empty product.
 
 ## Implementation
 

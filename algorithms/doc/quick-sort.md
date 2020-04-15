@@ -30,8 +30,6 @@ static int[] sort(final int[] in) {
     return sort(in, 0, in.length);
 }
 
-// Some code
-
 private static int[] sort(final int[] in, final int start, final int end) {
     if (end - start < 2) {
         return in;
@@ -42,8 +40,6 @@ private static int[] sort(final int[] in, final int start, final int end) {
     sort(in, pivot + 1, end);
     return in;
 }
-
-// Some code
 
 private static int partition(int[] in, int start, int end) {
     // This is using the first element as the pivot
