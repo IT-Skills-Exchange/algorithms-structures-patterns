@@ -3,20 +3,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.akarazhev</groupId>
-    <artifactId>java-tutorial</artifactId>
+    <artifactId>algorithms-structures-patterns</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
-    <name>java-tutorial</name>
-    <description>Java Tutorial</description>
-    <url>http://akarazhev.github.io/java-tutorial</url>
+    <name>algorithms-structures-patterns</name>
+    <description>Algorithms Structures Patterns</description>
+    <url>http://akarazhev.github.io/algorithms-structures-patterns</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
         <maven.compiler.plugin>3.8.1</maven.compiler.plugin>
         <maven.surefire.plugin>2.22.2</maven.surefire.plugin>
-        <junit.version>5.5.2</junit.version>
+        <junit.version>5.6.2</junit.version>
         <h2db.version>1.4.200</h2db.version>
     </properties>
 
@@ -34,9 +34,9 @@
     </developers>
 
     <scm>
-        <url>https://github.com/akarazhev/java-tutorial</url>
-        <connection>scm:git:git://github.com/akarazhev/java-tutorial.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:akarazhev/java-tutorial.git</developerConnection>
+        <url>https://github.com/akarazhev/algorithms-structures-patterns</url>
+        <connection>scm:git:git://github.com/akarazhev/algorithms-structures-patterns.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:akarazhev/algorithms-structures-patterns.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
@@ -53,6 +53,7 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>${h2db.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

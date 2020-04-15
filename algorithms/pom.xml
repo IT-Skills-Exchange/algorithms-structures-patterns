@@ -4,15 +4,15 @@
 
     <artifactId>algorithms</artifactId>
     <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <name>algorithms</name>
     <description>Algorithms</description>
 
     <parent>
         <groupId>com.github.akarazhev</groupId>
-        <artifactId>java-tutorial</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <artifactId>algorithms-structures-patterns</artifactId>
+        <version>1.0</version>
     </parent>
 
     <properties>
