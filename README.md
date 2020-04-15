@@ -56,18 +56,21 @@ In the tutorial the following data structures will be described:
 
 In the tutorial the following algorithms will be described:
 
-* [Bubble Sort](algorithms/doc/bubble-sort.md "The bubble sort chapter")
-* [Selection Sort](algorithms/doc/selection-sort.md "The selection sort chapter")
-* [Insertion Sort](algorithms/doc/insertion-sort.md "The insertion sort chapter")
-* [Shell Sort](algorithms/doc/shell-sort.md "The shell sort chapter")
-* [Factorial](algorithms/doc/factorial.md "The factorial chapter")
-* [Merge Sort](algorithms/doc/merge-sort.md "The merge sort chapter")
-* [Quick Sort](algorithms/doc/quick-sort.md "The quick sort chapter")
-* [Counting Sort](algorithms/doc/counting-sort.md "The counting sort chapter")
-* [Radix Sort](algorithms/doc/radix-sort.md "The radix sort chapter")
-* [Bucket Sort](algorithms/doc/bucket-sort.md "The bucket sort chapter")
-* [Linear Search](algorithms/doc/linear-search.md "The linear search chapter")
-* [Binary Search](algorithms/doc/binary-search.md "The binary search chapter")
+* Sort Algorithms: 
+[Bubble Sort](algorithms/doc/bubble-sort.md "The bubble sort chapter"),
+[Selection Sort](algorithms/doc/selection-sort.md "The selection sort chapter"),
+[Insertion Sort](algorithms/doc/insertion-sort.md "The insertion sort chapter"),
+[Shell Sort](algorithms/doc/shell-sort.md "The shell sort chapter"),
+[Merge Sort](algorithms/doc/merge-sort.md "The merge sort chapter"),
+[Quick Sort](algorithms/doc/quick-sort.md "The quick sort chapter"),
+[Counting Sort](algorithms/doc/counting-sort.md "The counting sort chapter"),
+[Radix Sort](algorithms/doc/radix-sort.md "The radix sort chapter"),
+[Bucket Sort](algorithms/doc/bucket-sort.md "The bucket sort chapter");
+* Search Algorithms:
+[Linear Search](algorithms/doc/linear-search.md "The linear search chapter").
+[Binary Search](algorithms/doc/binary-search.md "The binary search chapter");
+* Other Algorithms:
+[Factorial](algorithms/doc/factorial.md "The factorial chapter").
 
 ## Build Requirements
 
