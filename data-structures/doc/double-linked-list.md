@@ -69,7 +69,7 @@ public final class Employee {
 }
 ```
 
-Let's create a simple doubly linked list model:
+Let's create a simple doubly linked list implementation:
 
 ```java
 final class DoublyLinkedList {
