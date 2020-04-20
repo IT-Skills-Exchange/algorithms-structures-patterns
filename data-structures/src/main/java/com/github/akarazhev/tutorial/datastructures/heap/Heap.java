@@ -1,62 +1,26 @@
-# The Heap Data Structure
+package com.github.akarazhev.tutorial.datastructures.heap;
 
-In computer science, a heap is a specialized tree-based data structure which is essentially an almost complete tree that 
-satisfies the heap property: in a max heap, for any given node C, if P is a parent node of C, then the key (the value) of 
-P is greater than or equal to the key of C. In a min heap, the key of P is less than or equal to the key of C. 
-The node at the "top" of the heap (with no parents) is called the root node.
-
-## Characteristics
-
-- A complete binary tree
-- Must satisfy the heap property
-- Max heap: Every parent is greater than or equal to its children 
-- Min heap: Every parent is less than or equal to its children
-- A binary heap must be a complete tree
-- Children are added at each level from left to right
-- Usually implemented as arrays 
-- The maximum or minimum value will always be at the root of the tree - the advantage of using a heap
-- Heapify: process of converting a binary tree into a heap - this often has to be done after an insertion or deletion
-- No required ordering between siblings   
-
-## Operation and time complexity
-
-Heaps as Arrays
-
-* We can store binary heaps as arrays
-* We put the root at array[0]
-* We then traverse each level from left to right, and so the left child of the root would go into array[1], 
-its right child would to into array[2], etc.
-
-Insert into Heap
-
-* Always add new items to the end of the array
-* Then we have to fix the heap (heapify)
-* We compare the new item against its parent
-* If the item is greater than its parent, we swap it with its parent
-* We then then rinse and repeat 
-
-Heaps - Delete
-
-* Must choose a replacement value
-* Will take the rightmost value, so that the tree remains complete
-* Then we must heapify the heap
-* When replacement value is greater than parent, fix heap above. Otherwise, fix heap below
-* Fix heap above - same as insert. Swap replacement value with parent
-* Fix heap below - swap the replacement value with the larger of its two children
-* Rinse and repeat in both cases until the replacement value is in its correct position
-* Will only need to fox up or down, not both 
-
-Let's create a simple heap:
-
-```java
+/**
+ * Provides a simple heap implementation.
+ */
 final class Heap {
     private final int[] heap;
     private int size;
 
+    /**
+     * Constructs a heap model.
+     *
+     * @param capacity a capacity
+     */
     public Heap(final int capacity) {
         heap = new int[capacity];
     }
 
+    /**
+     * Inserts a value into a heap.
+     *
+     * @param value a value.
+     */
     void insert(final int value) {
         if (isFull()) {
             throw new IndexOutOfBoundsException("Heap is full");
@@ -67,6 +31,11 @@ final class Heap {
         size++;
     }
 
+    /**
+     * Peeks a value from a heap.
+     *
+     * @return a value.
+     */
     int peek() {
         if (isEmpty()) {
             throw new IndexOutOfBoundsException("Heap is empty");
@@ -75,6 +44,12 @@ final class Heap {
         return heap[0];
     }
 
+    /**
+     * Deletes a value from a heap.
+     *
+     * @param index an index.
+     * @return a deleted value.
+     */
     int delete(final int index) {
         if (isEmpty()) {
             throw new IndexOutOfBoundsException("Heap is empty");
@@ -159,25 +134,3 @@ final class Heap {
         return 2 * index + (left ? 1 : 2);
     }
 }
-```
-
-It can be used as follow:
-
-```java
-final var heap = new Heap(10);
-heap.insert(80);
-heap.insert(75);
-heap.insert(60);
-heap.insert(68);
-heap.insert(55);
-heap.insert(40);
-heap.insert(52);
-heap.insert(67);
-
-var string = heap.toString());
-var value = heap.peek();
-
-heap.delete(0);
-var string = heap.toString();
-var value = heap.peek();
-```
