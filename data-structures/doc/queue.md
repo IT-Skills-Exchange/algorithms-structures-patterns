@@ -14,7 +14,7 @@ to wait for goods or services.
 - remove - also called dequeue - remove the item at the front of the queue
 - peek - get the item at the front of the queue, but don't remove it
 
-## Operation and time complexity
+## Operations and time complexity
 
 Insert, Delete: O(1)
 

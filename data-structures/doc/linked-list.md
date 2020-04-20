@@ -14,7 +14,7 @@ Faster access, such as random access, is not feasible. Arrays have better cache 
 - Each item in the list is called a node
 - The first item in the list is the head of the list
 
-## Operation and time complexity
+## Operations and time complexity
 
 Insert, Delete: O(1)
 

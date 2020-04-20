@@ -13,7 +13,7 @@ including null. In addition to implementing the List interface, this class provi
 the array that is used internally to store the list. (This class is roughly equivalent to Vector, except that it is 
 unsynchronized.)
 
-### Operation
+### Operations
 
 ```java
 final List<Employee> employeeList = new ArrayList<>();
@@ -40,7 +40,7 @@ The Vector class implements a growable array of objects. Like an array, it conta
 using an integer index. However, the size of a Vector can grow or shrink as needed to accommodate adding and removing 
 items after the Vector has been created.
 
-### Operation
+### Operations
 
 ```java
 final List<Employee> employeeList = new Vector<>();

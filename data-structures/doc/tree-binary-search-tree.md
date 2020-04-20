@@ -33,7 +33,7 @@ allow finding an item by its key (e.g., finding the phone number of a person by 
 greater than tha value of the root
 - Because of that, we can do a binary search    
 
-### Operation and time complexity
+### Operations and time complexity
 
 Can perform insertions, deletions, and retrievals in O(long n) time
 

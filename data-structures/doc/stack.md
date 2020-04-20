@@ -23,7 +23,7 @@ first.
 - If memory is tight, an array might be a good choice
 - ideal backing data structure: linked list 
 
-## Operation and time complexity
+## Operations and time complexity
 
 O(1) for push, pop, and peek, when using a linked list. 
 

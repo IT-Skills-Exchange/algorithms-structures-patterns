@@ -10,7 +10,7 @@ While priority queues are often implemented with heaps, they are conceptually di
 a concept like "a list" or "a map"; just as a list can be implemented with a linked list or an array, a priority queue 
 can be implemented with a heap or a variety of other methods such as an unordered array.
 
-## Operation
+## Operations
 
 ```java
 final var priorityQueue = new PriorityQueue<Integer>();

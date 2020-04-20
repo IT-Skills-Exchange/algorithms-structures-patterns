@@ -17,7 +17,7 @@ Such collisions are always accommodated in some way.
 - Optimized for retrieval (when you know the key)
 - Associative array is one type of hash table
 
-## Operation and time complexity
+## Operations and time complexity
 
 Hashing 
 

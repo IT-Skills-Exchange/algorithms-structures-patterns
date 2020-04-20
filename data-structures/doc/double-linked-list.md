@@ -12,7 +12,7 @@ as two singly linked lists formed from the same data items, but in opposite sequ
 - Each item in the list has next and previous fields
 - The list has a head and a tail
 
-## Operation and time complexity
+## Operations and time complexity
 
 Insert at head, Insert at tail, Delete from head, Delete from tail: O(1)
 Insert between nodes, Remove between nodes: O(1) time complexity, but have to find a node first, so it's actually O(n)

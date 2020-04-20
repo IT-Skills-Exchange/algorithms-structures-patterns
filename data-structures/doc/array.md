@@ -19,7 +19,7 @@ the memory address of the ith element by using the following expression: x + y *
 - If we know the index of an element, the time to retrieve the element will be the same, no matter where it is in 
 the array
 
-## Operation and time complexity
+## Operations and time complexity
 
 Retrieve with an index: O(1)
 
