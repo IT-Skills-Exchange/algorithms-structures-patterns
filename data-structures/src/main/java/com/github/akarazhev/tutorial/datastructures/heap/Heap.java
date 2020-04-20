@@ -68,6 +68,23 @@ final class Heap {
         return deletedValue;
     }
 
+    /**
+     * Sorts a heap.
+     */
+    void sort() {
+        final var lastIndex = size - 1;
+        for (var i = 0; i < lastIndex; i++) {
+            final var tmp = heap[0];
+            heap[0] = heap[lastIndex - i];
+            heap[lastIndex - i] = tmp;
+
+            fixHeapBelow(0, lastIndex - i - 1);
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String toString() {
         final var builder = new StringBuilder();

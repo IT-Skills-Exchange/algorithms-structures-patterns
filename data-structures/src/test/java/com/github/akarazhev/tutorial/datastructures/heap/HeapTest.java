@@ -30,5 +30,8 @@ final class HeapTest {
         heap.delete(0);
         assertEquals("75, 68, 60, 67, 55, 40, 52", heap.toString());
         assertEquals(75, heap.peek());
+
+        heap.sort();
+        assertEquals("40, 52, 55, 60, 67, 68, 75", heap.toString());
     }
 }

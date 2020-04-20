@@ -46,6 +46,14 @@ Heaps - Delete
 * Rinse and repeat in both cases until the replacement value is in its correct position
 * Will only need to fox up or down, not both 
 
+Heap Sort
+
+* We know the root has the largest value
+* Swap root with last element in the array
+* Heapify the tree, but exclude the last node
+* After heapify, second largest element is at the root
+* Rinse and repeat
+
 Let's create a simple heap:
 
 ```java
@@ -91,6 +99,17 @@ final class Heap {
 
         size--;
         return deletedValue;
+    }
+
+    void sort() {
+        final var lastIndex = size - 1;
+        for (var i = 0; i < lastIndex; i++) {
+            final var tmp = heap[0];
+            heap[0] = heap[lastIndex - i];
+            heap[lastIndex - i] = tmp;
+
+            fixHeapBelow(0, lastIndex - i - 1);
+        }
     }
 
     @Override
