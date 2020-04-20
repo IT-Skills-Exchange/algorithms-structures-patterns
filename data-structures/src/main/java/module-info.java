@@ -1,2 +1,2 @@
-module com.github.akarazhev.tutorial.datastructures {
+open module com.github.akarazhev.tutorial.datastructures {
 }

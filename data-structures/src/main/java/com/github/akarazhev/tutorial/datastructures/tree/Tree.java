@@ -3,7 +3,7 @@ package com.github.akarazhev.tutorial.datastructures.tree;
 /**
  * Provides a simple tree implementation.
  */
-public class Tree {
+final class Tree {
     private Node root;
 
     /**
@@ -11,7 +11,7 @@ public class Tree {
      *
      * @param value a value.
      */
-    public void insert(final int value) {
+    void insert(final int value) {
         if (root == null) {
             root = new Node(value);
         } else {
@@ -25,7 +25,7 @@ public class Tree {
      * @param value a value.
      * @return a node.
      */
-    public Node get(final int value) {
+    Node get(final int value) {
         if (root != null) {
             return root.get(value);
         }
@@ -38,7 +38,7 @@ public class Tree {
      *
      * @param value a value.
      */
-    public void delete(final int value) {
+    void delete(final int value) {
         root = delete(root, value);
     }
 
@@ -47,7 +47,7 @@ public class Tree {
      *
      * @return a value.
      */
-    public int min() {
+    int min() {
         if (root == null) {
             return Integer.MIN_VALUE;
         } else {
@@ -60,7 +60,7 @@ public class Tree {
      *
      * @return a value.
      */
-    public int max() {
+    int max() {
         if (root == null) {
             return Integer.MAX_VALUE;
         } else {
@@ -71,7 +71,7 @@ public class Tree {
     /**
      * Performs traverse.
      */
-    public void traverse() {
+    void traverse() {
         if (root != null) {
             root.traverse();
             System.out.println();
@@ -113,11 +113,11 @@ public class Tree {
         private Node leftChild;
         private Node rightChild;
 
-        public Node(final int data) {
+        Node(final int data) {
             this.data = data;
         }
 
-        public void insert(final int value) {
+        void insert(final int value) {
             if (value == data) {
                 return;
             }
@@ -137,7 +137,7 @@ public class Tree {
             }
         }
 
-        public Node get(final int value) {
+        Node get(final int value) {
             if (value == data) {
                 return this;
             }
@@ -155,7 +155,7 @@ public class Tree {
             return null;
         }
 
-        public int min() {
+        int min() {
             if (leftChild == null) {
                 return data;
             } else {
@@ -163,7 +163,7 @@ public class Tree {
             }
         }
 
-        public int max() {
+        int max() {
             if (rightChild == null) {
                 return data;
             } else {
@@ -171,7 +171,7 @@ public class Tree {
             }
         }
 
-        public void traverse() {
+        void traverse() {
             if (leftChild != null) {
                 leftChild.traverse();
             }
@@ -182,27 +182,27 @@ public class Tree {
             }
         }
 
-        public int getData() {
+        int getData() {
             return data;
         }
 
-        public void setData(final int data) {
+        void setData(final int data) {
             this.data = data;
         }
 
-        public Node getLeftChild() {
+        Node getLeftChild() {
             return leftChild;
         }
 
-        public void setLeftChild(final Node leftChild) {
+        void setLeftChild(final Node leftChild) {
             this.leftChild = leftChild;
         }
 
-        public Node getRightChild() {
+        Node getRightChild() {
             return rightChild;
         }
 
-        public void setRightChild(final Node rightChild) {
+        void setRightChild(final Node rightChild) {
             this.rightChild = rightChild;
         }
 
