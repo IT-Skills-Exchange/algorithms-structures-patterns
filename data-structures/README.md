@@ -24,6 +24,7 @@ In the tutorial the following data structures will be described:
 * [Hash Table](./doc/hash-table.md "The hash table chapter")
 * [Tree, Binary Search Tree](./doc/tree-binary-search-tree.md "The tree, binary search tree chapter")
 * [Heap](./doc/heap.md "The heap chapter")
+* [Priority Queue](./doc/priority-queue.md "The priority queue chapter")
 * [Set](./doc/set.md "The set chapter")
 
 ## Build Requirements

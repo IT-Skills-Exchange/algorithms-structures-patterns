@@ -53,6 +53,7 @@ In the tutorial the following data structures will be described:
 * [Hash Table](data-structures/doc/hash-table.md "The hash table chapter")
 * [Tree, Binary Search Tree](data-structures/doc/tree-binary-search-tree.md "The tree, binary search tree chapter")
 * [Heap](data-structures/doc/heap.md "The heap chapter")
+* [Priority Queue](data-structures/doc/priority-queue.md "The priority queue chapter")
 * [Set](data-structures/doc/set.md "The set chapter")
 
 ## [Algorithms](algorithms/README.md "The algorithms chapter")
