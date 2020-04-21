@@ -58,6 +58,8 @@ In the tutorial the following data structures will be described:
 
 ## [Algorithms](algorithms/README.md "The algorithms chapter")
 
+As a start point, let's address to [Big-O Notation](algorithms/doc/big-o-notation.md "Big-O Notation").
+
 In the tutorial the following algorithms will be described:
 
 * Sort Algorithms: 
