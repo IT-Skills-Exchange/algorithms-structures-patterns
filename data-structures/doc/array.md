@@ -32,6 +32,7 @@ Retrieve with an index: O(1)
 ```java
 final var numbers = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 final var value = numbers[5];
+
 assertEquals(5, value);
 ```
 
@@ -61,10 +62,11 @@ final var newNumbers = new int[numbers.length + 1];
 System.arraycopy(numbers, 0, newNumbers, 0, numbers.length);
 
 newNumbers[newNumbers.length - 1] = 11;
+
 assertEquals(11, newNumbers[newNumbers.length - 1]);
 ```
 
-Add an element to the end of an array: O(1) 
+Add an element to the end of an array (has space): O(1) 
 
 ```java
 final var numbers = new int[4];
@@ -73,6 +75,7 @@ numbers[1] = 1;
 numbers[2] = 2;
 
 numbers[numbers.length - 1] = 3;
+
 assertEquals(3, numbers[numbers.length - 1]);
 ```
 
