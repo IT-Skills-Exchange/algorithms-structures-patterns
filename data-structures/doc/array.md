@@ -21,11 +21,18 @@ the array
 
 ## Operations and time complexity
 
+Retrieve an element from an array
+
+* Multiply the size of the element by its index
+* Get the start address of the array
+* Add the start address to the result of the multiplication
+
 Retrieve with an index: O(1)
 
 ```java
 final var numbers = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 final var value = numbers[5];
+assertEquals(5, value);
 ```
 
 Retrieve without an index: O(n)
@@ -41,6 +48,8 @@ for (var i = 0; i < numbers.length; i++) {
         break;
     }
 }
+
+assertEquals(10, index);
 ```
 
 Add an index to a full array: O(n)
@@ -52,6 +61,7 @@ final var newNumbers = new int[numbers.length + 1];
 System.arraycopy(numbers, 0, newNumbers, 0, numbers.length);
 
 newNumbers[newNumbers.length - 1] = 11;
+assertEquals(11, newNumbers[newNumbers.length - 1]);
 ```
 
 Add an element to the end of an array: O(1) 
@@ -62,7 +72,8 @@ numbers[0] = 0;
 numbers[1] = 1;
 numbers[2] = 2;
 
-numbers[numbers.length - 1] = 3;   
+numbers[numbers.length - 1] = 3;
+assertEquals(3, numbers[numbers.length - 1]);
 ```
 
 Insert or update an element at a specific index: O(1) 
@@ -70,6 +81,8 @@ Insert or update an element at a specific index: O(1)
 ```java
 final var numbers = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 numbers[4] = 14;
+
+assertEquals(14, numbers[4]);
 ```
 
 Delete an element by setting it to null: O(1)
@@ -77,6 +90,8 @@ Delete an element by setting it to null: O(1)
  ```java
 final var numbers = new Integer[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 numbers[4] = null;
+
+assertNull(numbers[4]);
  ```
  
 Delete an element by shifting elements: O(n) 
@@ -86,4 +101,6 @@ final var numbers = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 final var newNumbers = new int[numbers.length - 1];
 
 System.arraycopy(numbers, 0, newNumbers, 0, newNumbers.length);
+
+assertEquals(9, newNumbers[newNumbers.length - 1]);
 ```
