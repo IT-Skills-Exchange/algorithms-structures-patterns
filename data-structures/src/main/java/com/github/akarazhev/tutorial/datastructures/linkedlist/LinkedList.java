@@ -14,7 +14,7 @@ final class LinkedList {
      *
      * @param employee an employee.
      */
-    void addToFront(final Employee employee) {
+    void add(final Employee employee) {
         final var node = new Node(employee);
         node.setNext(head);
         head = node;
@@ -26,7 +26,7 @@ final class LinkedList {
      *
      * @return a node.
      */
-    Node removeFromFront() {
+    Node remove() {
         if (isEmpty()) {
             return null;
         }

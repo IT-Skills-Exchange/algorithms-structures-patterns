@@ -24,14 +24,14 @@ final class LinkedListTest {
         final var list = new LinkedList();
         assertTrue(list.isEmpty());
 
-        list.addToFront(janeJones);
-        list.addToFront(johnDoe);
-        list.addToFront(marySmith);
-        list.addToFront(mikeWilson);
+        list.add(janeJones);
+        list.add(johnDoe);
+        list.add(marySmith);
+        list.add(mikeWilson);
         System.out.println(list);
         assertEquals(4, list.getSize());
 
-        list.removeFromFront();
+        list.remove();
         System.out.println(list);
         assertEquals(3, list.getSize());
     }

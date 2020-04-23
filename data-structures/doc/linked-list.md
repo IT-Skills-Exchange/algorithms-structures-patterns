@@ -77,14 +77,14 @@ final class LinkedList {
     private Node head;
     private int size;
 
-    void addToFront(final Employee employee) {
+    void add(final Employee employee) {
         final var node = new Node(employee);
         node.setNext(head);
         head = node;
         size++;
     }
 
-    Node removeFromFront() {
+    Node remove() {
         if (isEmpty()) {
             return null;
         }
@@ -160,13 +160,16 @@ final var marySmith = new Employee(22, "Mary", "Smith");
 final var mikeWilson = new Employee(3245, "Mike", "Wilson");
 
 final var list = new LinkedList();
+assertTrue(list.isEmpty());
 
-list.addToFront(janeJones);
-list.addToFront(johnDoe);
-list.addToFront(marySmith);
-list.addToFront(mikeWilson);
+list.add(janeJones);
+list.add(johnDoe);
+list.add(marySmith);
+list.add(mikeWilson);
 System.out.println(list);
+assertEquals(4, list.getSize());
 
-list.removeFromFront();
+list.remove();
 System.out.println(list);
+assertEquals(3, list.getSize());
 ```
