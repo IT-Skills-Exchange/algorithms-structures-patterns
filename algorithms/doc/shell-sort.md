@@ -14,8 +14,8 @@ than a simple nearest neighbor exchange.
 
 ## Time complexity
 
-Difficult to nail down the time complexity because it will depend on the gap. Worst case: O(n^2), but it can perform 
-much better than that
+Difficult to nail down the time complexity because it will depend on the gap. <br>
+Worst case: O(n^2), but it can perform much better than that
 
 ## Implementation
 
