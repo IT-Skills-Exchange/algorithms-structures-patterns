@@ -14,7 +14,7 @@ as two singly linked lists formed from the same data items, but in opposite sequ
 
 ## Operations and time complexity
 
-Insert at head, Insert at tail, Delete from head, Delete from tail: O(1)
+Insert at head, Insert at tail, Delete from head, Delete from tail: O(1) <br>
 Insert between nodes, Remove between nodes: O(1) time complexity, but have to find a node first, so it's actually O(n)
 
 Let's create a simple employee model:
@@ -218,14 +218,18 @@ list.addToFront(marySmith);
 list.addToFront(mikeWilson);
 
 System.out.println(list);
+assertEquals(4, list.getSize());
 
 final var billEnd = new Employee(78, "Bill", "End");
 list.addToEnd(billEnd);
 System.out.println(list);
+assertEquals(5, list.getSize());
 
 list.removeFromFront();
 System.out.println(list);
+assertEquals(4, list.getSize());
 
 list.removeFromEnd();
 System.out.println(list);
+assertEquals(3, list.getSize());
 ```
