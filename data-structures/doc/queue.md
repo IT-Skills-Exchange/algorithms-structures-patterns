@@ -176,20 +176,19 @@ queue.add(marySmith);
 queue.add(mikeWilson);
 queue.add(billEnd);
 System.out.println(queue);
-var size = queue.size();
+assertEquals(5, queue.size());
 
 queue.remove();
 queue.remove();
 System.out.println(queue);
-var size = queue.size();
+assertEquals(3, queue.size());
 
-var size = queue.peek().getFirstName();
+assertEquals("Mary", queue.peek().getFirstName());
 queue.remove();
 queue.remove();
 queue.remove();
-var size = queue.size();
-
+assertEquals(0, queue.size());
 queue.add(mikeWilson);
 System.out.println(queue);
-var size = queue.size();
+assertEquals(1, queue.size());
 ```
