@@ -59,9 +59,8 @@ final class LinkedStack {
     @Override
     public String toString() {
         final var builder = new StringBuilder();
-        final var iterator = stack.listIterator();
-        while (iterator.hasNext()) {
-            builder.append("=>").append(iterator.next());
+        for (Employee employee : stack) {
+            builder.append("=>").append(employee);
         }
 
         return builder.toString();

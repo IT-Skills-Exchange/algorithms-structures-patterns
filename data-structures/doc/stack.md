@@ -109,8 +109,8 @@ final class LinkedStack {
     public String toString() {
         final var builder = new StringBuilder();
         final var iterator = stack.listIterator();
-        while (iterator.hasNext()) {
-            builder.append("=>").append(iterator.next());
+        for (Employee employee : stack) {
+            builder.append("=>").append(employee);
         }
 
         return builder.toString();
@@ -135,10 +135,10 @@ stack.push(mikeWilson);
 stack.push(billEnd);
 System.out.println(stack);
 
-var name = stack.peek().getFirstName();
+assertEquals("Bill", stack.peek().getFirstName());
 
-var name = stack.pop().getFirstName();
-var name = stack.peek().getFirstName();
+assertEquals("Bill", stack.pop().getFirstName());
+assertEquals("Mike", stack.peek().getFirstName());
 ```
 
 If you use an array, then push is O(n), because the array may have to be resized.
@@ -216,9 +216,9 @@ System.out.println(stack);
 
 assertEquals(5, stack.size());
 
-var name = stack.peek().getFirstName();
-var size = stack.size();
+assertEquals("Bill", stack.peek().getFirstName());
+assertEquals(5, stack.size());
 
-bame = stack.pop().getFirstName();
-bame = stack.peek().getFirstName();
+assertEquals("Bill", stack.pop().getFirstName());
+assertEquals("Mike", stack.peek().getFirstName());
 ```
