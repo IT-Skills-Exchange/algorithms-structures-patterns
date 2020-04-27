@@ -49,6 +49,8 @@ Retrieve a value from a hash table
 
 Linear Probing implementation:
 
+O(1), if you have to use probes: O(n)
+
 ```java
 final class SimpleHashtable {
     private KeyValuePair[] hashtable;
@@ -222,6 +224,8 @@ assertEquals("Mary", value.getFirstName());
 ```
 
 Chaining implementation:
+
+O(1), k - is an average length of a linked list. O(1 + k).
 
 ```java
 final class ChainedHashtable {
