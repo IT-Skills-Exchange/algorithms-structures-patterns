@@ -201,18 +201,24 @@ hashtable.put("Doe", johnDoe);
 hashtable.put("Wilson", mikeWilson);
 hashtable.put("Smith", marySmith);
 System.out.println(hashtable);
-var size = hashtable.size();
+assertEquals(4, hashtable.size());
 
 var value = hashtable.get("Wilson");
+assertNotNull(value);
+assertEquals("Mike", value.getFirstName());
 
 value = hashtable.get("Smith");
+assertNotNull(value);
+assertEquals("Mary", value.getFirstName());
 
 hashtable.remove("Wilson");
 hashtable.remove("Jones");
 System.out.println(hashtable);
-size = hashtable.size();
+assertEquals(2, hashtable.size());
 
 value = hashtable.get("Smith");
+assertNotNull(value);
+assertEquals("Mary", value.getFirstName());
 ```
 
 Chaining implementation:
@@ -335,12 +341,14 @@ hashtable.put("Doe", johnDoe);
 hashtable.put("Wilson", mikeWilson);
 hashtable.put("Smith", marySmith);
 System.out.println(hashtable);
-var size = hashtable.size();
+assertEquals(4, hashtable.size());
 
 var value = hashtable.get("Smith");
+assertNotNull(value);
+assertEquals("Mary", value.getFirstName());
 
 hashtable.remove("Doe");
 hashtable.remove("Jones");
 System.out.println(hashtable);
-var size = hashtable.size();
+assertEquals(2, hashtable.size());
 ```
