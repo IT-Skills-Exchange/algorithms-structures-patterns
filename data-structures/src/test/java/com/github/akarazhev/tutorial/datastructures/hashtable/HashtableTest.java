@@ -4,8 +4,12 @@ import com.github.akarazhev.tutorial.datastructures.Employee;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.HashMap;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Provides a test methods for a hashtable.
@@ -72,5 +76,35 @@ final class HashtableTest {
         hashtable.remove("Jones");
         System.out.println(hashtable);
         assertEquals(2, hashtable.size());
+    }
+
+    @Test
+    @DisplayName("Tests a hash map")
+    void testHashMap() {
+        final var janeJones = new Employee(123, "Jane", "Jones");
+        final var johnDoe = new Employee(4567, "John", "Doe");
+        final var marySmith = new Employee(22, "Mary", "Smith");
+        final var mikeWilson = new Employee(3245, "Mike", "Wilson");
+
+        final var hashMap = new HashMap<String, Employee>();
+        hashMap.put("Jones", janeJones);
+        hashMap.put("Doe", johnDoe);
+        hashMap.put("Smith", marySmith);
+        // final var employee = hashMap.put("Doe", mikeWilson);
+        final var employee = hashMap.putIfAbsent("Doe", mikeWilson);
+        assertNotNull(employee);
+        assertEquals(4567, employee.getId());
+
+        assertEquals(3245, hashMap.getOrDefault("someone", mikeWilson).getId());
+        assertEquals(123, hashMap.remove("Jones").getId());
+
+        assertTrue(hashMap.containsKey("Doe"));
+        assertFalse(hashMap.containsValue(janeJones));
+
+        for (Employee value : hashMap.values()) {
+            System.out.println(value);
+        }
+
+        hashMap.forEach((k, v) -> System.out.println("Key = " + k + ", Employee = " + v));
     }
 }

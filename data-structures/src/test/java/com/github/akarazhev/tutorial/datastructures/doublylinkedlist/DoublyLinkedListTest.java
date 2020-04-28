@@ -4,6 +4,8 @@ import com.github.akarazhev.tutorial.datastructures.Employee;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.LinkedList;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
@@ -52,7 +54,7 @@ final class DoublyLinkedListTest {
         final var mikeWilson = new Employee(3245, "Mike", "Wilson");
         final var billEnd = new Employee(78, "Bill", "End");
 
-        final var list = new java.util.LinkedList<>();
+        final var list = new LinkedList<>();
         list.addFirst(janeJones);
         list.addFirst(johnDoe);
         list.addFirst(marySmith);
