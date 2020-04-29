@@ -171,6 +171,9 @@ final class Tree {
             }
         }
 
+        /**
+         * Performs an in order traverse
+         */
         void traverse() {
             if (leftChild != null) {
                 leftChild.traverse();

@@ -33,7 +33,7 @@ Insert into Heap
 * Then we have to fix the heap (heapify)
 * We compare the new item against its parent
 * If the item is greater than its parent, we swap it with its parent
-* We then then rinse and repeat 
+* We then rinse and repeat 
 
 Heaps - Delete
 
