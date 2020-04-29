@@ -146,7 +146,6 @@ final class SimpleHashtable {
         } else {
             return -1;
         }
-
     }
 
     private final static class KeyValuePair {
