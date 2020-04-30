@@ -8,7 +8,7 @@ and search for elements in the list.
 
 ## Links
 
-* [List Data Structure](https://en.wikipedia.org/wiki/List_(abstract_data_type))
+* [List Data Structure](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html)
 
 ## Array List
 
@@ -40,7 +40,7 @@ assertEquals(4, employeeList.size());
 
 ## Links
 
-* [Array List Data Structure](https://en.wikipedia.org/wiki/Dynamic_array)
+* [Array List Data Structure](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html)
 
 ## Vector
 
