@@ -16,10 +16,10 @@ an open problem.
 
 ## Time complexity
 
-Worst-case performance: O(n^2) (worst known worst case gap sequence) O(nlog^2n) (best known worst case gap sequence)<br>
-Best-case performance: O(1)<br>
-Average performance: O(log n)<br>
-Worst-case space complexity: O(1)
+Worst-case performance: O(n^2) (worst known worst case gap sequence) O(n log^2 n) (best known worst case gap sequence)<br>
+Best-case performance: O(n log n) (most gap sequences) O(n log^2 n) (best known worst-case gap sequence)<br>
+Average performance: depends on gap sequence<br>
+Worst-case space complexity: О(n) total, O(1) auxiliary
 
 ## Implementation
 
