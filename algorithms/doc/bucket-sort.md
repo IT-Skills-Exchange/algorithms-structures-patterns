@@ -16,7 +16,9 @@ recursively applying the bucket sorting algorithm.
 
 ## Time complexity
 
-To achieve O(n), must have only one item per bucket
+Worst-case performance: O(n^2)<br>
+Average performance: O(n + n^2 / k + k), where k is the number of buckets. O(n), when k ~ n<br>
+Worst-case space complexity: O(n * k)
 
 ## Implementation
 
@@ -63,3 +65,7 @@ private static int hash(final int value) {
     return value / 10;
 }
 ```
+
+## Links
+
+* [Bucket Sort Algorithm](https://en.wikipedia.org/wiki/Bucket_sort)
