@@ -233,3 +233,7 @@ list.removeFromEnd();
 System.out.println(list);
 assertEquals(3, list.getSize());
 ```
+
+## Links
+
+* [Double Linked List Data Structure](https://en.wikipedia.org/wiki/Doubly_linked_list)

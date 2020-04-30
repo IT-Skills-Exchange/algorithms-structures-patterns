@@ -222,3 +222,7 @@ assertEquals(5, stack.size());
 assertEquals("Bill", stack.pop().getFirstName());
 assertEquals("Mike", stack.peek().getFirstName());
 ```
+
+## Links
+
+* [Stack Data Structure](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))

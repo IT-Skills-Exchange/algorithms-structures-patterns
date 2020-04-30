@@ -14,7 +14,12 @@ to wait for goods or services.
 - remove - also called dequeue - remove the item at the front of the queue
 - peek - get the item at the front of the queue, but don't remove it
 
-## Operations and time complexity
+## Time complexity
+
+Average: Space O(n), Search O(n), Insert O(1), Delete O(1) <br>
+Worst case: Space O(n), Search O(n), Insert O(1), Delete O(1)
+
+## Operations
 
 Insert, Delete: O(1)
 
@@ -192,3 +197,7 @@ queue.add(mikeWilson);
 System.out.println(queue);
 assertEquals(1, queue.size());
 ```
+
+## Links
+
+* [Queue Data Structure](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))

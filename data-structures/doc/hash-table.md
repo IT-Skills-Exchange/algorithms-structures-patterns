@@ -17,7 +17,12 @@ Such collisions are always accommodated in some way.
 - Optimized for retrieval (when you know the key)
 - Associative array is one type of hash table
 
-## Operations and time complexity
+## Time complexity
+
+Average: Space O(n), Search O(1), Insert O(1), Delete O(1) <br>
+Worst case: Space O(n), Search O(n), Insert O(n), Delete O(n)
+
+## Operations
 
 Hashing 
 
@@ -355,3 +360,7 @@ hashtable.remove("Jones");
 System.out.println(hashtable);
 assertEquals(2, hashtable.size());
 ```
+
+## Links
+
+* [Hash Table Data Structure](https://en.wikipedia.org/wiki/Hash_table)

@@ -109,3 +109,5 @@ assertEquals(9, newNumbers[newNumbers.length - 1]);
 ```
 
 ## Links
+
+* [Array Data Structure](https://en.wikipedia.org/wiki/Array_data_structure)

@@ -18,7 +18,7 @@ The node at the "top" of the heap (with no parents) is called the root node.
 - Heapify: process of converting a binary tree into a heap - this often has to be done after an insertion or deletion
 - No required ordering between siblings   
 
-## Operations and time complexity
+## Operations
 
 Heaps as Arrays
 
@@ -200,3 +200,7 @@ heap.delete(0);
 var string = heap.toString();
 var value = heap.peek();
 ```
+
+## Links
+
+* [Heap Data Structure](https://en.wikipedia.org/wiki/Heap_(data_structure))

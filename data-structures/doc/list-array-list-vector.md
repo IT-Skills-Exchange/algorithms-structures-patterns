@@ -6,6 +6,10 @@ An ordered collection (also known as a sequence). The user of this interface has
 each element is inserted. The user can access elements by their integer index (position in the list), 
 and search for elements in the list.
 
+## Links
+
+* [List Data Structure](https://en.wikipedia.org/wiki/List_(abstract_data_type))
+
 ## Array List
 
 Resizable-array implementation of the List interface. Implements all optional list operations, and permits all elements, 
@@ -34,6 +38,10 @@ employeeList.remove(2);
 assertEquals(4, employeeList.size());
 ```
 
+## Links
+
+* [Array List Data Structure](https://en.wikipedia.org/wiki/Dynamic_array)
+
 ## Vector
 
 The Vector class implements a growable array of objects. Like an array, it contains components that can be accessed 
@@ -50,5 +58,7 @@ employeeList.add(new Employee(22, "Mary", "Smith"));
 employeeList.add(new Employee(3245, "Mike", "Wilson"));
 assertEquals(4, employeeList.size());
 ```
+## Links
 
+* [Vector Data Structure](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html)
 

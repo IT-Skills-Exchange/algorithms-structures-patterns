@@ -10,3 +10,7 @@ or enumerating the values in some arbitrary order. Other variants, called dynami
 allow also the insertion and deletion of elements from the set.
 
 A multiset is a special kind of set in which an element can figure several times.
+
+## Links
+
+* [Set Data Structure](https://en.wikipedia.org/wiki/Set_(abstract_data_type))

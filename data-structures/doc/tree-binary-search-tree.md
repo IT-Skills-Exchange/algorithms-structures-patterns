@@ -15,6 +15,10 @@ the constraints that no reference is duplicated, and none points to the root.
 - A leaf node has no children
 - A singleton tree has only one node - the root
 
+## Links
+
+* [Tree Data Structure](https://en.wikipedia.org/wiki/Tree_(data_structure))
+
 ## Binary Search Tree
 
 In computer science, binary search trees (BST), sometimes called ordered or sorted binary trees, are a particular type 
@@ -33,7 +37,12 @@ allow finding an item by its key (e.g., finding the phone number of a person by 
 greater than tha value of the root
 - Because of that, we can do a binary search    
 
-### Operations and time complexity
+### Time complexity
+
+Average: Space O(n), Search O(log n), Insert O(log n), Delete O(log n) <br>
+Worst case: Space O(n), Search O(n), Insert O(n), Delete O(n)
+
+### Operations
 
 Can perform insertions, deletions, and retrievals in O(log n) time
 
@@ -270,3 +279,7 @@ var max = tree.max();
 tree.delete(8888);
 tree.traverse();
 ```
+
+## Links
+
+* [Binary Search Tree Data Structure](https://en.wikipedia.org/wiki/Binary_search_tree)

@@ -173,3 +173,7 @@ list.remove();
 System.out.println(list);
 assertEquals(3, list.getSize());
 ```
+
+## Links
+
+* [Linked List Data Structure](https://en.wikipedia.org/wiki/Linked_list)

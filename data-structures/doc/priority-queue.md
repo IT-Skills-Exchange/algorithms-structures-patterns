@@ -38,3 +38,7 @@ assertEquals(0, priorityQueue.peek());
 priorityQueue.add(-1);
 assertEquals(-1, priorityQueue.peek());
 ```
+
+## Links
+
+* [Priority Queue Data Structure](https://en.wikipedia.org/wiki/Priority_queue)
