@@ -16,13 +16,13 @@ the target is not in the array.
 - If the element is less than the value, search the right half of the array
 - At some point, there will be only one element in the partition you're checking, but it does not have to get to that point
 - Can be implemented recursively
-- O(logn) - keeps dividing the array in half
+- O(log n) - keeps dividing the array in half
 
 ## Time complexity
 
-Worst-case performance: O(logn)<br>
+Worst-case performance: O(log n)<br>
 Best-case performance: O(1)<br>
-Average performance: O(logn)<br>
+Average performance: O(log n)<br>
 Worst-case space complexity: O(1)
 
 ## Implementation

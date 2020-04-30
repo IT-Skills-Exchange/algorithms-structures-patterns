@@ -35,7 +35,7 @@ greater than tha value of the root
 
 ### Operations and time complexity
 
-Can perform insertions, deletions, and retrievals in O(logn) time
+Can perform insertions, deletions, and retrievals in O(log n) time
 
 Traversal
 

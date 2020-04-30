@@ -12,7 +12,10 @@ and inserts it there. It repeats until no input elements remain.
 
 ## Time complexity
 
-Quadratic: O(n^2) 
+Worst-case performance: О(n^2) comparisons and swaps<br>
+Best-case performance: O(n) comparisons, O(1) swaps<br>
+Average performance: О(n^2) comparisons and swaps<br>
+Worst-case space complexity: О(n) total, O(1) auxiliary
 
 ## Implementation
 
@@ -31,3 +34,7 @@ static int[] sort(final int[] in) {
     return in;
 }
 ```
+
+## Links
+
+* [Insertion Sort Algorithm](https://en.wikipedia.org/wiki/Insertion_sort)

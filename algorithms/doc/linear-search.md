@@ -30,3 +30,7 @@ final class LinearSearch {
     }
 }
 ```
+
+## Links
+
+* [Linear Search Algorithm](https://en.wikipedia.org/wiki/Linear_search)

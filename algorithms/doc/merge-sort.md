@@ -22,7 +22,10 @@ This will be the sorted list.
 
 ## Time complexity
 
-O(nlogn) - base 2. We are repeatedly dividing the array in half during the splitting phase
+Worst-case performance:	O(n log n)<br>
+Best-case performance: O(n log n) typical, O(n) natural variant<br>
+Average performance: O(n log n)<br>
+Worst-case space complexity: О(n) total with O(n) auxiliary, O(1) auxiliary with linked lists
 
 ## Implementation
 
@@ -91,3 +94,7 @@ private static void merge(final int[] in, final int start, final int mid, final 
     System.arraycopy(temp, 0, in, start, tempIndex);
 }
 ```
+
+## Links
+
+* [Merge Sort Algorithm](https://en.wikipedia.org/wiki/Merge_sort)

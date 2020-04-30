@@ -5,6 +5,9 @@ distributing elements into buckets according to their radix. For elements with m
 this bucketing process is repeated for each digit, while preserving the ordering of the prior step, 
 until all digits have been considered. For this reason, radix sort has also been called bucket sort and digital sort.
 
+Radix sort can be applied to data that can be sorted lexicographically, be they integers, words, punch cards, 
+playing cards, or the mail.
+
 ## Characteristics
 
 - Makes assumptions about the data
@@ -18,8 +21,8 @@ until all digits have been considered. For this reason, radix sort has also been
 
 ## Time complexity
 
-O(n) - can achieve, this because we are making assumptions about the data we are sorting.
-Even so, it often runs slower than O(nlogn) algorithms because of the overhead involved
+Worst-case performance:	O(w * n), where w is the number of bits required to store each key.<br>
+Worst-case space complexity: O(w + n)
 
 ## Implementation
 
@@ -56,3 +59,7 @@ private static int getDigit(final int position, final int value, final int radix
     return value / (int) Math.pow(radix, position) % radix;
 }
 ```
+
+## Links
+
+* [Radix Sort Algorithm](https://en.wikipedia.org/wiki/Radix_sort)

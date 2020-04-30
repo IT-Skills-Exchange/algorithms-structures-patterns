@@ -40,3 +40,7 @@ static int iterative(final int num) {
     return value;
 }
 ```
+
+## Links
+
+* [Factorial Algorithm](https://en.wikipedia.org/wiki/Factorial)

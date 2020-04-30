@@ -20,7 +20,8 @@ larger keys more efficiently.
 
 ## Time complexity
 
-O(n) - can achieve this because we are making assumptions about the data we are sorting
+Worst-case performance: O(n + k), where k is the range of the non-negative key values.<br>
+Worst-case space complexity: O(n + k)
 
 ## Implementation
 
@@ -46,3 +47,7 @@ private static int[] sort(final int[] in, final int min, final int max) {
     return in;
 }
 ```
+
+## Links
+
+* [Counting Sort Algorithm](https://en.wikipedia.org/wiki/Counting_sort)

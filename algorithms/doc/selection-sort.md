@@ -17,7 +17,10 @@ to the right.
 
 ## Time complexity
 
-Quadratic: O(n^2) 
+Worst-case performance:	О(n^2) comparisons, О(n) swaps<br>
+Best-case performance: О(n^2) comparisons, О(n) swaps<br>
+Average performance: О(n^2) comparisons, О(n) swaps<br>
+Worst-case space complexity: O(1) auxiliary
 
 ## Implementation
 
@@ -47,3 +50,7 @@ static void swap(final int[] in, final int i, final int j) {
     in[j] = temp;
 }
 ```
+
+## Links
+
+* [Selection Sort Algorithm](https://en.wikipedia.org/wiki/Selection_sort)

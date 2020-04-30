@@ -5,15 +5,12 @@ grow as the input size grows. In analytic number theory, big O notation is often
 the difference between an arithmetical function and a better understood approximation; a famous example of such 
 a difference is the remainder term in the prime number theorem.
 
-Big O notation characterizes functions according to their growth rates: different functions with the same growth rate 
-may be represented using the same O notation.
-
 ## Characteristics
 
 - O(1) - Constant
-- O(logn) - Logarithmic
+- O(log n) - Logarithmic
 - O(n) - Linear
-- O(nlogn) - n log-star n
+- O(n log n) - n log-star n
 - O(n^2) - Quadratic
 
 ## Links

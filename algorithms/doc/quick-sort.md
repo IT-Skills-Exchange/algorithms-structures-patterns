@@ -21,7 +21,10 @@ to perform the sorting.
 
 ## Time complexity
 
-O(nlogn) - base 2. We are repeatedly partitioning the array into two halves
+Worst-case performance:	O(n^2)<br>
+Best-case performance: O(n log n) (simple partition) or O(n) (three-way partition and equal keys)<br>
+Average performance: O(n log n)<br>
+Worst-case space complexity: O(n) auxiliary (naive) O(log n) auxiliary (Sedgewick 1978)
 
 ## Implementation
 
@@ -63,3 +66,7 @@ private static int partition(int[] in, int start, int end) {
     return j;
 }
 ```
+
+## Links
+
+* [Quick Sort Algorithm](https://en.wikipedia.org/wiki/Quicksort)

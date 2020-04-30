@@ -1,10 +1,12 @@
 # The Shell Sort Algorithm
 
 Shellsort, also known as Shell sort or Shell's method, is an in-place comparison sort. It can be seen as either 
-a generalization of sorting by exchange (bubble sort) or sorting by insertion (insertion sort). 
-The method starts by sorting pairs of elements far apart from each other, then progressively reducing the gap between 
-elements to be compared. Starting with far apart elements, it can move some out-of-place elements into position faster 
-than a simple nearest neighbor exchange.
+a generalization of sorting by exchange (bubble sort) or sorting by insertion (insertion sort). The method starts by 
+sorting pairs of elements far apart from each other, then progressively reducing the gap between elements to be compared. 
+Starting with far apart elements, it can move some out-of-place elements into position faster than a simple nearest 
+neighbor exchange. Donald Shell published the first version of this sort in 1959. The running time of Shellsort is 
+heavily dependent on the gap sequence it uses. For many practical variants, determining their time complexity remains 
+an open problem.
 
 ## Characteristics
 
@@ -14,8 +16,10 @@ than a simple nearest neighbor exchange.
 
 ## Time complexity
 
-Difficult to nail down the time complexity because it will depend on the gap. <br>
-Worst case: O(n^2), but it can perform much better than that
+Worst-case performance: O(n^2) (worst known worst case gap sequence) O(nlog^2n) (best known worst case gap sequence)<br>
+Best-case performance: O(1)<br>
+Average performance: O(log n)<br>
+Worst-case space complexity: O(1)
 
 ## Implementation
 
@@ -57,3 +61,7 @@ static int[] sort(final int[] in) {
     return in;
 }
 ```
+
+## Links
+
+* [Shell Sort Algorithm](https://en.wikipedia.org/wiki/Shellsort)
