@@ -67,3 +67,7 @@ final class BinarySearch {
     }
 }
 ```
+
+## Links
+
+* [Binary Search Algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
