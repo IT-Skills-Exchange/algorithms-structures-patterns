@@ -105,11 +105,17 @@ final class InsertionSort implements Strategy {
 And then it can be used as:
 
 ```java
+var i = 0;
 final var service = new IndexService(new BubbleSort());
-final var first = service.sort(new int[]{10, 9, 8, 7, 6, 5, 4, 3, 2, 1});
-service.setStrategy(new InsertionSort());
-final var second = service.sort(new int[]{10, 9, 8, 7, 6, 5, 4, 3, 2, 1});
+for (final var index : service.sort(new int[]{10, 9, 8, 7, 6, 5, 4, 3, 2, 1})) {
+    assertEquals(++i, index);
+}
 // Additional code
+var i = 0;
+final var service = new IndexService(new InsertionSort());
+for (final var index : service.sort(new int[]{10, 9, 8, 7, 6, 5, 4, 3, 2, 1})) {
+    assertEquals(++i, index);
+}
 ```
 
 ## More Examples

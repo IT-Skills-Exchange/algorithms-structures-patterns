@@ -89,8 +89,7 @@ And then it can be used as:
 
 ```java
 final var expression = parse("w x z - +");
-final var value = expression.interpret(Map.of("w", 5, "x", 10, "z", 42));
-// Additional code
+assertEquals(-27, expression.interpret(Map.of("w", 5, "x", 10, "z", 42)));
 ```
 
 ## More Examples

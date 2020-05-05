@@ -80,8 +80,18 @@ final class Runtime {
 And then it can be used as:
 
 ```java
-final var runtime = Runtime.getInstance();
+final var logger = Logger.INSTANCE;
+// Check test results
+assertNotNull(logger);
+assertEquals(0, logger.getLevel());
+logger.setLevel(1);
+assertEquals(logger, Logger.INSTANCE);
+assertEquals(1, Logger.INSTANCE.getLevel());
 // Additional code
+final var runtime = Runtime.getInstance();
+// Check test results
+assertNotNull(runtime);
+assertEquals(runtime, Runtime.getInstance());
 ```
 
 ## More Examples

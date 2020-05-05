@@ -99,10 +99,11 @@ And then it can be used as:
 ```java
 final var dbServers = new DbServers();
 final var dbServer = dbServers.newDbServer(ServerType.H2DB);
+assertNotNull(dbServer);
 // Additional code
 final var webServers = new WebServers();
 final var webServer = webServers.newWebServer(ServerType.HTTP);
-// Additional code
+assertNotNull(webServer);
 ```
 
 ## More Examples

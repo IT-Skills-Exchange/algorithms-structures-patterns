@@ -151,12 +151,20 @@ public final class WebServers {
 And then it can be used as:
 
 ```java
-final var dbServer = DbServers.newH2dbServer().start();
-dbServer.stop();
+final var server = DbServers.newH2dbServer().start();
+assertGetSchema();
+server.stop();
 // Additional code
-final var webServer = WebServers.newHttpServer().start();
-webServer.stop();
-// Additional code
+final var server = WebServers.newHttpServer().start();
+final var client = HttpClient.newHttpClient();
+final var request = HttpRequest.newBuilder()
+        .uri(URI.create("http://localhost:8080/ping"))
+        .GET()
+        .build();
+final var response = client.send(request, HttpResponse.BodyHandlers.ofString());
+assertEquals(200, response.statusCode());
+assertEquals("pong", response.body());
+server.stop();
 ```
 
 ## More Examples

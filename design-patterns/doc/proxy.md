@@ -91,9 +91,10 @@ And finally it can be used as:
 
 ```java
 final var runtimeConfig = new RuntimeConfig();
-final var id = runtimeConfig.getId();
+assertEquals(1100, runtimeConfig.getId());
 // Additional code
-final var name = runtimeConfig.getName());
+final var runtimeConfig = new RuntimeConfig();
+assertEquals("Runtime: Service Name", runtimeConfig.getName());
 ```
 
 ## More Examples

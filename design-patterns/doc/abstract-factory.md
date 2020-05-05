@@ -100,9 +100,10 @@ And then it can be used as:
 
 ```java
 final var platform = Platforms.newPlatform(Platforms.Type.EMBEDDED);
+assertNotNull(platform.newDbServer());
 // Additional code
 final var platform = Platforms.newPlatform(Platforms.Type.STANDALONE);
-// Additional code
+assertNotNull(platform.newDbServer());
 ```
 
 ## More Examples

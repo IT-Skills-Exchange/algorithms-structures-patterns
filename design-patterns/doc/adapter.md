@@ -81,8 +81,11 @@ final class PropConfig implements Config {
 And finally it can be used as:
 
 ```java
-final var log = new ConfigViewer(new PropConfig()).getLog();
+final var propConfig = new PropConfig();
+assertEquals(1, propConfig.getId());
+assertEquals("Property", propConfig.getName());
 // Additional code
+assertEquals("1|Property", new ConfigViewer(new PropConfig()).getLog());
 ```
 
 ## More Examples

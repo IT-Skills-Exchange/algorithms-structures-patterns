@@ -79,10 +79,10 @@ And then it can be used as:
 
 ```java
 final var dataLoader = new CollectionLoader();
-final var encoded = dataLoader.getEncoded());
+assertEquals("1:2:3:4:5:6:7:8:9:10", dataLoader.getEncoded());
 // Additional code
 final var dataLoader = new StreamLoader();
-final var encoded = dataLoader.getEncoded());
+assertEquals("1:2:3:4:5:6:7:8:9:10", dataLoader.getEncoded());
 ```
 
 ## More Examples

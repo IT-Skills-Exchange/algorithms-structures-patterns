@@ -88,7 +88,6 @@ final var context = SecurityContext.defaultContext(SecurityContext.AccessLevel.a
 context.filter(SecurityContext.AccessLevel.SYSTEM, "First request.");
 context.filter(SecurityContext.AccessLevel.APPLICATION, "Second request.");
 context.filter(SecurityContext.AccessLevel.USER, "Third request.");
-// Additional code
 ```
 
 ## More Examples

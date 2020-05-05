@@ -117,12 +117,14 @@ And then it can be used as:
 
 ```java
 final var storage = new Storage();
+
 final var executor = new ActionExecutor();
 executor.register("push", storage::push);
 executor.register("pop", storage::pop);
-// Additional code
-final var value = executor.execute("pop"));
-final var result = executor.execute("push"));
+
+assertEquals(0, executor.execute("pop"));
+assertEquals(1, executor.execute("push"));
+assertEquals(1000, executor.execute("pop"));
 ```
 
 ## More Examples

@@ -115,8 +115,7 @@ events.registerObserver(dispatcher);
 events.generate();
 events.removeObserver(dispatcher);
 
-final var buffer = dispatcher.getBuffer();
-// Additional code
+assertEquals("Event_0:Event_1:Event_2:Event_3:Event_4", dispatcher.getBuffer());
 ```
 
 ## More Examples

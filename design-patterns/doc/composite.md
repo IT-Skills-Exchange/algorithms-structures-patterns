@@ -110,9 +110,17 @@ And finally it can be used as:
 ```java
 final var configs = new Configs();
 configs.add(new UserConfig(100, "Name"));
+assertEquals(100, configs.getId());
 // Additional code
-final var id = configs.getId();
-final var name = configs.getName();
+final var configs = new Configs();
+configs.add(new UserConfig(100, "Name"));
+assertEquals("Name", configs.getName());
+// Additional code
+final var userConfig = new UserConfig(100, "Name");
+assertEquals(100, userConfig.getId());
+// Additional code
+final var userConfig = new UserConfig(100, "Name");
+assertEquals("Name", userConfig.getName());
 ```
 
 ## More Examples

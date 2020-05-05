@@ -66,8 +66,13 @@ And then it can be used as:
 
 ```java
 final var pair = new KeyValuePair<>("key", "value");
+// Check test results
+assertEquals("key", pair.getKey());
+assertEquals("value", pair.getValue());
+
 final var clonedPair = pair.clone();
-// Additional code
+assertEquals("key", clonedPair.getKey());
+assertEquals("value", clonedPair.getValue());
 ```
 
 ## More Examples

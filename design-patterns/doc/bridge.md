@@ -149,7 +149,11 @@ private final PropertyRepository repository = new InMemRepository(new LockTransa
 // Additional code
 final var property = new Property.Builder("Property", "Value").build();
 final var stream = repository.saveAndFlush(Stream.of(property));
-// Additional code
+final var foundProperty = stream.findFirst();
+// Check test results
+assertTrue(foundProperty.isPresent());
+assertEquals("Property", foundProperty.get().getName());
+assertEquals("Value", foundProperty.get().getValue());
 ```
 
 ## Applicability

@@ -116,7 +116,9 @@ final var basedConfig = new Config() {
 };
 
 final var appConfig = new AppConfig(1, new UserConfig(UUID.randomUUID(), new SystemConfig(basedConfig)));
-// Additional code
+assertEquals(100, appConfig.getId());
+assertEquals(1, appConfig.getVersion());
+assertEquals("Name", appConfig.getName());
 ```
 
 ## More Examples

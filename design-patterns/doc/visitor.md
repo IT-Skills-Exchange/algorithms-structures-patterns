@@ -113,7 +113,6 @@ And then it can be used as:
 final var app = new Application();
 app.accept(new PerformVisitor());
 app.accept((service, name) -> System.out.println("Test visited: " + name));
-// Additional code
 ```
 
 ## More Examples

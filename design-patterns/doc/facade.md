@@ -76,7 +76,7 @@ And finally it can be used as:
 ```java
 final var application = new Application();
 application.start();
-final var isRunning = application.isRunning();
+assertTrue(application.isRunning());
 application.stop();
 ```
 

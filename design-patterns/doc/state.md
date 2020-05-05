@@ -109,14 +109,13 @@ And then it can be used as:
 
 ```java
 final var context = new Context();
-final var offline = context.getState());
+assertEquals("Offline", context.getState());
 context.execute("start");
-final var online = context.getState());
+assertEquals("Online", context.getState());
 context.execute("pause");
-final var paused = context.getState());
+assertEquals("Paused", context.getState());
 context.execute("stop");
-final var offline = context.getState());
-// Additional code
+assertEquals("Offline", context.getState());
 ```
 
 ## More Examples

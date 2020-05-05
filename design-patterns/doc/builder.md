@@ -163,14 +163,29 @@ final var firstSubProperty = new Property.Builder("Sub-Property-1", "Sub-Value-1
 final var secondSubProperty = new Property.Builder("Sub-Property-2", "Sub-Value-2").build();
 final var thirdSubProperty = new Property.Builder("Sub-Property-3", "Sub-Value-3").build();
 final var property = new Property.Builder("Property", "Value").
-    caption("Caption").
-    description("Description").
-    attributes(Collections.singletonMap("key", "value")).
-    property(new String[0], firstSubProperty).
-    properties(new String[0], Collections.singletonList(secondSubProperty)).
-    properties(Collections.singletonList(thirdSubProperty)).
-    build();
-// Additional code
+        caption("Caption").
+        description("Description").
+        attributes(Collections.singletonMap("key", "value")).
+        property(new String[0], firstSubProperty).
+        properties(new String[0], Collections.singletonList(secondSubProperty)).
+        properties(Collections.singletonList(thirdSubProperty)).
+        build();
+// Check test results
+assertEquals("Property", property.getName());
+assertEquals(Property.Type.STRING, property.getType());
+assertEquals("Value", property.getValue());
+assertTrue(property.getCaption().isPresent());
+assertEquals("Caption", property.getCaption().get());
+assertTrue(property.getDescription().isPresent());
+assertEquals("Description", property.getDescription().get());
+assertTrue(property.getAttributes().isPresent());
+assertEquals(1, property.getAttributes().get().size());
+assertEquals(1, property.getAttributeKeys().count());
+assertTrue(property.getAttribute("key").isPresent());
+assertEquals(3, property.getProperties().count());
+assertTrue(property.getProperty("Sub-Property-1").isPresent());
+assertTrue(property.getProperty("Sub-Property-2").isPresent());
+assertTrue(property.getProperty("Sub-Property-3").isPresent());
 ```
 
 ## More Examples

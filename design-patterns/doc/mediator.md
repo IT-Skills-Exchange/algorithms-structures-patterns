@@ -151,9 +151,8 @@ exchanger.register(userService);
 systemService.send("setLevel");
 userService.send("setName");
 
-final var level = systemService.getLevel());
-final var name = userService.getName());
-// Additional code
+assertEquals(1000, systemService.getLevel());
+assertEquals("My Name", userService.getName());
 ```
 
 ## More Examples

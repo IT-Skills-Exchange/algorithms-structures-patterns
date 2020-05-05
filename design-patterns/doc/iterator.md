@@ -89,15 +89,14 @@ final var configs = new Configs();
 configs.add(new UserConfig(1001, "Name 1"));
 configs.add(new UserConfig(1002, "Name 2"));
 configs.add(new UserConfig(1003, "Name 3"));
-// Additional code
+
 var position = 1;
 while (configs.hasNext()) {
     final var config = configs.next();
-    final var id = config.getId();
-    final var name = config.getName();
+    assertEquals(1000 + position, config.getId());
+    assertEquals("Name " + position, config.getName());
     position++;
 }
-// Additional code
 ```
 
 ## More Examples

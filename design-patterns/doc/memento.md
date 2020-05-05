@@ -91,16 +91,15 @@ And then it can be used as:
 ```java
 final var environment = new Environment();
 environment.setVersion(1000);
-final var firstVersion = environment.getVersion();
+assertEquals(1000, environment.getVersion());
 
 final var buffer = new Buffer();
 buffer.setSnapshot(environment.create());
 environment.setVersion(1001);
-final lastVersion = environment.getVersion();
+assertEquals(1001, environment.getVersion());
 
 environment.restore(buffer.getSnapshot());
-final version = environment.getVersion();
-// Additional code
+assertEquals(1000, environment.getVersion());
 ```
 
 ## More Examples
