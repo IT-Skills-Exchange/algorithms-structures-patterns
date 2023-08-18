@@ -1,5 +1,7 @@
 # Algorithms Structures Patterns
 
+Version: **1.1**
+
 This tutorial is not a tutorial that intents teach you the language itself, it's a collection of code samples which 
 can be used for better understanding ideas behind the concepts of design patterns, data structures and algorithms. 
 
